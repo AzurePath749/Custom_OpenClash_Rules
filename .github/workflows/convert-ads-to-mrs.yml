@@ -1,0 +1,162 @@
+name: Convert ads rules to MRS format
+
+on:
+  schedule:
+    # 每天 UTC 时间 00:00 自动运行（北京时间 08:00）
+    - cron: '0 0 * * *'
+  workflow_dispatch:  # 支持手动触发
+  workflow_call:
+    inputs:
+      branch:
+        required: false
+        type: string
+        default: ''
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+    env:
+      TARGET_BRANCH: ${{ inputs.branch != '' && inputs.branch || github.ref_name }}
+    steps:
+      # 1️⃣ 检出仓库
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ env.TARGET_BRANCH }}
+          fetch-depth: 0
+
+      # 2️⃣ 下载并安装 mihomo
+      - name: Download and setup mihomo
+        run: |
+          echo "📦 Fetching latest mihomo release..."
+          LATEST_VERSION=$(curl -s https://api.github.com/repos/MetaCubeX/mihomo/releases/latest | grep '"tag_name"' | sed -E 's/.*"([^"]+)".*/\1/')
+          echo "✅ Latest version: $LATEST_VERSION"
+          
+          echo "⬇️ Downloading mihomo for Linux amd64..."
+          wget -q https://github.com/MetaCubeX/mihomo/releases/download/${LATEST_VERSION}/mihomo-linux-amd64-${LATEST_VERSION}.gz
+          
+          echo "📦 Extracting..."
+          gunzip mihomo-linux-amd64-${LATEST_VERSION}.gz
+          mv mihomo-linux-amd64-${LATEST_VERSION} mihomo
+          chmod +x mihomo
+          
+          echo "✅ mihomo is ready ($(./mihomo -v 2>&1 | head -n1 || echo 'version check skipped'))"
+
+      # 3️⃣ 下载广告拦截规则
+      - name: Download ads rules
+        run: |
+          echo "📥 Downloading ads blocking rules..."
+          
+          mkdir -p ads_rules_temp
+          
+          # 下载 anti-ad
+          echo "⬇️ Downloading anti-ad..."
+          wget -q -O ads_rules_temp/anti-ad.yaml https://anti-ad.net/clash.yaml
+          if [ $? -eq 0 ] && [ -f ads_rules_temp/anti-ad.yaml ]; then
+            echo "  ✅ anti-ad downloaded successfully"
+          else
+            echo "  ⚠️ Failed to download anti-ad"
+          fi
+          
+          # 下载 AWAvenue-Ads-Rule
+          echo "⬇️ Downloading AWAvenue-Ads-Rule..."
+          wget -q -O ads_rules_temp/AWAvenue-Ads-Rule.yaml https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-Clash.yaml
+          if [ $? -eq 0 ] && [ -f ads_rules_temp/AWAvenue-Ads-Rule.yaml ]; then
+            echo "  ✅ AWAvenue-Ads-Rule downloaded successfully"
+          else
+            echo "  ⚠️ Failed to download AWAvenue-Ads-Rule"
+          fi
+          
+          echo ""
+          echo "📋 Downloaded files:"
+          ls -lh ads_rules_temp/
+
+      # 4️⃣ 转换广告规则为 MRS 格式
+      - name: Convert ads rules to MRS format
+        run: |
+          echo "🔄 Converting ads rules to MRS format..."
+          
+          mkdir -p ads_rules_mrs
+          
+          # 使用临时文件存储统计信息
+          echo "0" > /tmp/total_count
+          echo "0" > /tmp/failed_count
+          
+          # 转换所有下载的规则文件
+          for file in ads_rules_temp/*.yaml; do
+            [ -f "$file" ] || continue
+            
+            # 获取文件名（不含扩展名）
+            filename=$(basename "$file")
+            name="${filename%.*}"
+            output_file="ads_rules_mrs/${name}.mrs"
+            
+            echo "📄 Converting: $filename"
+            echo "   → Output: $output_file"
+            
+            # 执行转换（广告规则都是 domain 类型）
+            if ./mihomo convert-ruleset domain yaml "$file" "$output_file" 2>&1; then
+              if [ -f "$output_file" ]; then
+                file_size=$(ls -lh "$output_file" | awk '{print $5}')
+                echo "   ✅ Success (size: $file_size)"
+                total=$(cat /tmp/total_count)
+                echo $((total + 1)) > /tmp/total_count
+              else
+                echo "   ⚠️ Failed: output file not created"
+                failed=$(cat /tmp/failed_count)
+                echo $((failed + 1)) > /tmp/failed_count
+              fi
+            else
+              echo "   ⚠️ Failed: conversion error"
+              failed=$(cat /tmp/failed_count)
+              echo $((failed + 1)) > /tmp/failed_count
+            fi
+            echo ""
+          done
+          
+          # 读取最终统计
+          total=$(cat /tmp/total_count)
+          failed=$(cat /tmp/failed_count)
+          
+          echo "🎉 Conversion complete!"
+          echo "   ✅ Successfully converted: $total files"
+          [ $failed -gt 0 ] && echo "   ⚠️ Failed/Skipped: $failed files"
+          
+          # 显示生成的文件列表
+          if [ $total -gt 0 ]; then
+            echo ""
+            echo "📋 Generated MRS files:"
+            ls -lh ads_rules_mrs/
+            echo ""
+            echo "📊 Total size:"
+            du -sh ads_rules_mrs
+          fi
+          
+          # 清理临时文件
+          rm -rf ads_rules_temp
+          rm -f /tmp/total_count /tmp/failed_count
+
+      # 5️⃣ 提交并推送结果
+      - name: Commit and push converted results
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add ads_rules_mrs
+          
+          # 检查是否有变化
+          if git diff --staged --quiet; then
+            echo "📝 No changes detected, skipping commit"
+          else
+            git commit -m "Auto update ads rules MRS format [$(date +'%Y-%m-%d %H:%M:%S UTC')]"
+            
+            echo "🔄 Pulling latest changes from remote before push..."
+            git pull --rebase origin "${TARGET_BRANCH}" || true
+            
+            echo "🚀 Pushing changes to ${TARGET_BRANCH}..."
+            git push origin HEAD:"${TARGET_BRANCH}" || {
+              echo "❌ Push failed after rebase attempt, retrying with force-with-lease..."
+              git push origin HEAD:"${TARGET_BRANCH}" --force-with-lease
+            }
+            
+            echo "✅ Changes pushed successfully!"
+          fi
