@@ -1,4 +1,5 @@
 name: Convert Clash Lists to SmartDNS
+
 on:
   schedule:
     # 每天 UTC 时间 02:00 自动运行（北京时间 10:00）
@@ -68,8 +69,8 @@ jobs:
           changed=false
           summary=""
           
-          # 从上游临时目录读取 .list 文件
-          for file in upstream_temp/rule/**/*.list; do
+          # 从上游临时目录读取 .list 文件（使用 find 避免 globstar 问题）
+          while IFS= read -r -d '' file; do
             [ -f "$file" ] || continue
             base_name=$(basename "${file%.list}")
             output="rule_converted_smartdns/${base_name}_smartdns.txt"
@@ -139,7 +140,7 @@ jobs:
               stats=$(tail -n1 /tmp/stats.txt | tr -d '#')
               summary+="${base_name}(${stats}) "
             fi
-          done
+          done < <(find upstream_temp/rule -type f -name "*.list" -print0)
           
           if [ "$changed" = false ]; then
             echo "⚠️ No valid .list files found to convert."
