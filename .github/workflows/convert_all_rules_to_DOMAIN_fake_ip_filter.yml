@@ -56,9 +56,11 @@ jobs:
               echo "✅ Rules extracted successfully"
               
               echo ""
-              echo "📊 Rules structure:"
+              echo "📊 Available rule files:"
+              file_count=$(find upstream_temp/rule -type f \( -name "*.yaml" -o -name "*.list" \) | wc -l)
+              echo "   Total: $file_count files"
               find upstream_temp/rule -type f \( -name "*.yaml" -o -name "*.list" \) | head -n 10
-              echo "..."
+              [ $file_count -gt 10 ] && echo "   ..."
             else
               echo "❌ Failed to find rule directory"
               exit 1
@@ -157,6 +159,10 @@ jobs:
           print(f"\n🎉 转换完成！")
           print(f"   📁 文件数: {total}")
           print(f"   📝 规则数: {total_domains}")
+          
+          # 保存统计信息供后续步骤使用
+          with open("convert_stats.txt", "w") as f:
+              f.write(f"{total} files, {total_domains} domains")
           PYCODE
 
       # 5️⃣ 清理临时文件
@@ -176,7 +182,13 @@ jobs:
           if git diff --staged --quiet; then
             echo "📝 No changes detected, skipping commit"
           else
-            git commit -m "Auto convert upstream rules to fake_ip_filter [$(date +'%Y-%m-%d %H:%M:%S UTC')]"
+            # 读取统计信息
+            stats=$(cat convert_stats.txt 2>/dev/null || echo "conversion complete")
+            
+            git commit -m "chore: sync upstream rules and convert to fake_ip_filter [skip ci]" \
+                       -m "Stats: $stats" \
+                       -m "Source: $UPSTREAM_REPO@$UPSTREAM_BRANCH" \
+                       -m "Updated: $(date +'%Y-%m-%d %H:%M:%S UTC')"
             
             echo "🔄 Pulling latest changes from remote before push..."
             git pull --rebase origin "${TARGET_BRANCH}" || true
@@ -189,3 +201,4 @@ jobs:
             
             echo "✅ Changes pushed successfully!"
           fi
+
