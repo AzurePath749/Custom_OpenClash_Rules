@@ -1,24 +1,24 @@
 name: Convert rules to DOMAIN fake_ip_filter
 
 on:
+  schedule:
+    # 每天 UTC 时间 02:00 自动运行（北京时间 10:00）
+    - cron: '0 2 * * *'
+  workflow_dispatch:  # 支持手动触发
   workflow_call:
     inputs:
       branch:
         required: false
         type: string
         default: ''
-  push:
-    branches: [ main ]
-    paths:
-      - "rule/**.yaml"
-      - "rule/**.list"
-  workflow_dispatch:
 
 jobs:
   convert:
     runs-on: ubuntu-latest
     env:
       TARGET_BRANCH: ${{ inputs.branch != '' && inputs.branch || github.ref_name }}
+      UPSTREAM_REPO: "Aethersailor/Custom_OpenClash_Rules"
+      UPSTREAM_BRANCH: "main"
     steps:
       # 1️⃣ 检出仓库
       - name: Checkout repository
@@ -33,11 +33,46 @@ jobs:
         with:
           python-version: "3.x"
 
-      # 3️⃣ 执行规则转换脚本
+      # 3️⃣ 下载上游规则文件
+      - name: Download upstream rules
+        run: |
+          echo "📥 Downloading rules from $UPSTREAM_REPO..."
+          
+          mkdir -p upstream_temp
+          
+          # 获取上游仓库的 rule 目录内容
+          wget -q -O upstream_temp/repo.zip "https://github.com/$UPSTREAM_REPO/archive/refs/heads/$UPSTREAM_BRANCH.zip"
+          
+          if [ $? -eq 0 ] && [ -f upstream_temp/repo.zip ]; then
+            echo "✅ Repository archive downloaded"
+            
+            # 解压并提取 rule 目录
+            unzip -q upstream_temp/repo.zip -d upstream_temp/
+            
+            # 查找并移动 rule 目录（处理解压后的目录名称）
+            EXTRACTED_DIR=$(find upstream_temp -maxdepth 1 -type d -name "*$UPSTREAM_BRANCH" | head -n1)
+            if [ -d "$EXTRACTED_DIR/rule" ]; then
+              mv "$EXTRACTED_DIR/rule" upstream_temp/rule
+              echo "✅ Rules extracted successfully"
+              
+              echo ""
+              echo "📊 Rules structure:"
+              find upstream_temp/rule -type f \( -name "*.yaml" -o -name "*.list" \) | head -n 10
+              echo "..."
+            else
+              echo "❌ Failed to find rule directory"
+              exit 1
+            fi
+          else
+            echo "❌ Failed to download repository archive"
+            exit 1
+          fi
+
+      # 4️⃣ 执行规则转换脚本
       - name: Convert all rules to DOMAIN fake_ip_filter
         run: |
           python <<'PYCODE'
-          import os, re, glob
+          import os, re, glob, shutil
 
           def convert_line(line: str):
               """将 Clash classical / list 规则行转换为 domain 模式（符合官方 fake-ip-filter 格式）"""
@@ -84,9 +119,17 @@ jobs:
 
               return None
 
-          os.makedirs("rule_converted", exist_ok=True)
-          files = glob.glob("rule/**/*.yaml", recursive=True) + glob.glob("rule/**/*.list", recursive=True)
+          # 清理并重建输出目录
+          output_dir = "rule_converted"
+          if os.path.exists(output_dir):
+              shutil.rmtree(output_dir)
+          os.makedirs(output_dir, exist_ok=True)
+
+          # 从上游临时目录读取规则文件
+          files = glob.glob("upstream_temp/rule/**/*.yaml", recursive=True) + \
+                  glob.glob("upstream_temp/rule/**/*.list", recursive=True)
           total = 0
+          total_domains = 0
 
           for path in files:
               with open(path, "r", encoding="utf-8") as f:
@@ -94,32 +137,55 @@ jobs:
               converted = [convert_line(l) for l in lines]
               converted = [x for x in converted if x]
               if not converted:
-                  print(f"⚠️ 跳过（无有效域名）: {path}")
+                  print(f"⚠️  跳过（无有效域名）: {path}")
                   continue
-              output = "payload:\n" + "\n".join([f" - '{x}'" for x in converted]) + "\n"
-              new_path = os.path.splitext(path)[0] + "_fake_ip_filter.yaml"
-              new_path = new_path.replace("rule/", "rule_converted/")
+              
+              output = "payload:\n" + "\n".join([f"  - '{x}'" for x in converted]) + "\n"
+              
+              # 生成输出路径（保持相对目录结构）
+              rel_path = os.path.relpath(path, "upstream_temp/rule")
+              new_path = os.path.splitext(rel_path)[0] + "_fake_ip_filter.yaml"
+              new_path = os.path.join(output_dir, new_path)
+              
               os.makedirs(os.path.dirname(new_path), exist_ok=True)
               with open(new_path, "w", encoding="utf-8") as f:
                   f.write(output)
               total += 1
-              print(f"✅ 已转换: {path} -> {new_path}")
+              total_domains += len(converted)
+              print(f"✅ 已转换: {os.path.basename(path)} ({len(converted)} 条规则)")
 
-          print(f"\n🎉 共生成 {total} 个 fake_ip_filter 文件")
+          print(f"\n🎉 转换完成！")
+          print(f"   📁 文件数: {total}")
+          print(f"   📝 规则数: {total_domains}")
           PYCODE
 
-      # 4️⃣ 提交并推送结果（含自动 rebase 保护）
+      # 5️⃣ 清理临时文件
+      - name: Clean up temporary files
+        run: |
+          rm -rf upstream_temp
+          echo "🧹 Temporary files cleaned up"
+
+      # 6️⃣ 提交并推送结果
       - name: Commit and push converted results
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add rule_converted
-          git commit -m "Auto convert to DOMAIN fake_ip_filter" || echo "No changes to commit."
-          echo "🔄 Pulling latest changes from remote before push..."
-          # 防止远程先更新导致 push 被拒绝
-          git pull --rebase origin "${TARGET_BRANCH}" || true
-          echo "🚀 Pushing changes to ${TARGET_BRANCH}..."
-          git push origin HEAD:"${TARGET_BRANCH}" || {
-            echo "❌ Push failed after rebase attempt, retrying with force-with-lease..."
-            git push origin HEAD:"${TARGET_BRANCH}" --force-with-lease
-          }
+          
+          # 检查是否有变化
+          if git diff --staged --quiet; then
+            echo "📝 No changes detected, skipping commit"
+          else
+            git commit -m "Auto convert upstream rules to fake_ip_filter [$(date +'%Y-%m-%d %H:%M:%S UTC')]"
+            
+            echo "🔄 Pulling latest changes from remote before push..."
+            git pull --rebase origin "${TARGET_BRANCH}" || true
+            
+            echo "🚀 Pushing changes to ${TARGET_BRANCH}..."
+            git push origin HEAD:"${TARGET_BRANCH}" || {
+              echo "❌ Push failed after rebase attempt, retrying with force-with-lease..."
+              git push origin HEAD:"${TARGET_BRANCH}" --force-with-lease
+            }
+            
+            echo "✅ Changes pushed successfully!"
+          fi
