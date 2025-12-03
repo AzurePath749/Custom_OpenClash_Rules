@@ -1,36 +1,80 @@
 name: Convert Clash Lists to SmartDNS
 on:
+  schedule:
+    # 每天 UTC 时间 02:00 自动运行（北京时间 10:00）
+    - cron: '0 2 * * *'
+  workflow_dispatch:  # 支持手动触发
   workflow_call:
     inputs:
       branch:
         required: false
         type: string
         default: ''
-  push:
-    paths:
-      - 'rule/*.list'
-  workflow_dispatch:
+
 jobs:
   convert:
     runs-on: ubuntu-latest
     env:
       TARGET_BRANCH: ${{ inputs.branch != '' && inputs.branch || github.ref_name }}
+      UPSTREAM_REPO: "Aethersailor/Custom_OpenClash_Rules"
+      UPSTREAM_BRANCH: "main"
     steps:
-      - uses: actions/checkout@v4
+      # 1️⃣ 检出仓库
+      - name: Checkout repository
+        uses: actions/checkout@v4
         with:
           ref: ${{ env.TARGET_BRANCH }}
           fetch-depth: 0
+
+      # 2️⃣ 下载上游规则文件
+      - name: Download upstream rules
+        run: |
+          echo "📥 Downloading rules from $UPSTREAM_REPO..."
+          
+          mkdir -p upstream_temp
+          
+          # 获取上游仓库的 rule 目录内容
+          wget -q -O upstream_temp/repo.zip "https://github.com/$UPSTREAM_REPO/archive/refs/heads/$UPSTREAM_BRANCH.zip"
+          
+          if [ $? -eq 0 ] && [ -f upstream_temp/repo.zip ]; then
+            echo "✅ Repository archive downloaded"
+            
+            # 解压并提取 rule 目录
+            unzip -q upstream_temp/repo.zip -d upstream_temp/
+            
+            # 查找并移动 rule 目录（处理解压后的目录名称）
+            EXTRACTED_DIR=$(find upstream_temp -maxdepth 1 -type d -name "*$UPSTREAM_BRANCH" | head -n1)
+            if [ -d "$EXTRACTED_DIR/rule" ]; then
+              mv "$EXTRACTED_DIR/rule" upstream_temp/rule
+              echo "✅ Rules extracted successfully"
+              
+              echo ""
+              echo "📊 Available .list files:"
+              find upstream_temp/rule -type f -name "*.list" | head -n 10
+            else
+              echo "❌ Failed to find rule directory"
+              exit 1
+            fi
+          else
+            echo "❌ Failed to download repository archive"
+            exit 1
+          fi
+
+      # 3️⃣ 转换为 SmartDNS 格式
       - name: Convert Clash list files to SmartDNS format
         shell: bash
         run: |
           mkdir -p rule_converted_smartdns
           changed=false
           summary=""
-          for file in rule/*.list; do
+          
+          # 从上游临时目录读取 .list 文件
+          for file in upstream_temp/rule/**/*.list; do
             [ -f "$file" ] || continue
             base_name=$(basename "${file%.list}")
             output="rule_converted_smartdns/${base_name}_smartdns.txt"
             echo "::group::Converting $file → $output"
+            
             # 初始化计数器
             suf=0; key=0; dom=0; full=0; reg=0; cidr=0; skip=0
             awk '
@@ -96,21 +140,32 @@ jobs:
               summary+="${base_name}(${stats}) "
             fi
           done
+          
           if [ "$changed" = false ]; then
-            echo "No valid .list files found to convert."
+            echo "⚠️ No valid .list files found to convert."
             exit 0
           fi
-          echo "Summary: $summary"
+          
+          echo "✅ Summary: $summary"
           echo "$summary" > summary.log
+
+      # 4️⃣ 清理临时文件
+      - name: Clean up temporary files
+        run: |
+          rm -rf upstream_temp
+          echo "🧹 Temporary files cleaned up"
+
+      # 5️⃣ 提交并推送结果
       - name: Commit and push SmartDNS lists
         shell: bash
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          
           if [ -n "$(git status --porcelain rule_converted_smartdns/*_smartdns.txt || true)" ]; then
             summary=$(cat summary.log)
             git add rule_converted_smartdns/*_smartdns.txt
-            git commit -m "Auto convert Clash → SmartDNS (Pro Enhanced) [$summary]"
+            git commit -m "Auto convert upstream Clash → SmartDNS (Pro Enhanced) [$summary]"
             
             echo "🔄 Pulling latest changes from remote before push..."
             git pull --rebase origin "${TARGET_BRANCH}" || true
@@ -120,6 +175,8 @@ jobs:
               echo "❌ Push failed after rebase attempt, retrying with force-with-lease..."
               git push origin HEAD:"${TARGET_BRANCH}" --force-with-lease
             }
+            
+            echo "✅ Changes pushed successfully!"
           else
-            echo "No SmartDNS list changes to commit."
+            echo "📝 No SmartDNS list changes to commit."
           fi
