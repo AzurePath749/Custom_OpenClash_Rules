@@ -1,5 +1,7 @@
 name: Convert Clash Lists to SmartDNS
 
+name: Convert upstream Clash Lists to SmartDNS
+
 on:
   schedule:
     # 每天 UTC 时间 02:00 自动运行（北京时间 10:00）
@@ -163,9 +165,14 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           
-          if [ -n "$(git status --porcelain rule_converted_smartdns/*_smartdns.txt || true)" ]; then
+          # 添加所有转换后的文件
+          git add rule_converted_smartdns
+          
+          # 检查是否有变化
+          if git diff --staged --quiet; then
+            echo "📝 No changes detected, skipping commit"
+          else
             summary=$(cat summary.log)
-            git add rule_converted_smartdns/*_smartdns.txt
             git commit -m "Auto convert upstream Clash → SmartDNS (Pro Enhanced) [$summary]"
             
             echo "🔄 Pulling latest changes from remote before push..."
@@ -178,6 +185,4 @@ jobs:
             }
             
             echo "✅ Changes pushed successfully!"
-          else
-            echo "📝 No SmartDNS list changes to commit."
           fi
