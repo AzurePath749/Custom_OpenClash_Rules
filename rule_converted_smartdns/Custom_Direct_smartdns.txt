@@ -70,6 +70,7 @@
 # add by Telegram user: Aethersailor / Date: 2025-11-16 18:39:46
 # add by Telegram user: Aethersailor / Date: 2025-11-19 13:19:54
 # add by Telegram user: Aethersailor / Date: 2025-11-24 00:04:50
+# add by Telegram user: Aethersailor / Date: 2025-12-03 18:35:00
 # add by Telegram user: Aethersailor / Date:2025-07-21 22:18:39
 # add by Telegram user: Aethersailor / Date:2025-07-22 04:14:28
 # add by Telegram user: Aethersailor / Date:2025-07-22 11:41:34
@@ -324,6 +325,7 @@
 # 逸掌柜电商软件 / add by Telegram user: Q / Date: 2025-09-20 05:40:16
 # 金融数据 / add by Telegram user: ai / Date: 2025-11-26 14:33:09
 # 金融类
+# 锐捷网络 / add by Telegram user: ai / Date: 2025-12-03 20:30:34
 # 长白山景区网站 / add by Telegram user: Coco / Date: 2025-11-13 17:55:27
 # 问卷星 / add by Telegram user: 法兰西 / Date: 2025-09-17 21:06:29
 # 问道手游聚宝斋app / add by Telegram user: young / Date: 2025-10-08 16:43:02
@@ -391,6 +393,7 @@
 204cloud.com
 3d-apollo.com
 3dwhere.com
+3gxk.net
 4399zmxy.com
 51wanxue.com
 51zmt.top
@@ -651,6 +654,7 @@ registry.dockermirror.com
 rewards.bing.com
 royqh.net
 rsfcxq.com
+ruijie.com
 saduck.top
 sanligu.top
 sapphiretech.com
