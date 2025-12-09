@@ -1,7 +1,7 @@
 
 # ---------------------------------------
 # 115
-# 2025.11.21 分类整理完毕
+# 2025.12.8 分类整理完毕
 # 3D模型下载网站 / add by Telegram user: 哆啦A梦 / Date: 2025-11-10 13:20:28
 # 6V电影网 / add by Telegram user: 鱼 / Date: 2025-10-08 17:51:33
 # 985宇宙盒子官网（steam离线号库） / add by Telegram user: 真怪誕呀 / Date: 2025-08-01 01:20:05
@@ -72,6 +72,7 @@
 # add by Telegram user: Aethersailor / Date: 2025-11-24 00:04:50
 # add by Telegram user: Aethersailor / Date: 2025-12-03 18:35:00
 # add by Telegram user: Aethersailor / Date: 2025-12-05 14:30:18
+# add by Telegram user: Aethersailor / Date: 2025-12-08 14:59:40
 # add by Telegram user: Aethersailor / Date:2025-07-21 22:18:39
 # add by Telegram user: Aethersailor / Date:2025-07-22 04:14:28
 # add by Telegram user: Aethersailor / Date:2025-07-22 11:41:34
@@ -740,6 +741,7 @@ z6e.com
 zctnet.top
 zeekrline.com
 zhi10.com
+zhituwujie.com
 zhixingyunke.com
 zhongancloud.com
 zjxhedu.com
