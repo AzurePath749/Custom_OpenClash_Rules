@@ -286,6 +286,7 @@
 # 浩物生活 / add by Telegram user: EzrAAA / Date: 2025-09-06 18:01:14
 # 海信供应商登录系统 / add by Telegram user: 雪菜 / Date: 2025-09-20 22:52:55
 # 海翔登录
+# 深圳第一健康机构网站 / add by Telegram user: Animi / Date: 2025-12-13 00:42:45
 # 游戏类规则
 # 游戏网站 / add by Telegram user: Leo / Date: 2025-07-23 17:52:55
 # 灵溪网 绿色软件下载与技术分享 / add by Telegram user: ecerc / Date: 2025-10-28 20:04:52
@@ -687,6 +688,7 @@ tcp.pub
 tcp5.com
 tcy365.net
 thinkerride.com
+thmnet.com
 tool56.com
 topwd.top
 tozi-cn.top
