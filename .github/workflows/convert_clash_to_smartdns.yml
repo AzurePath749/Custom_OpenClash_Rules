@@ -102,26 +102,32 @@ jobs:
             exit 1
           fi
 
-      # 4️⃣ 转换为 SmartDNS 格式（修复版 - 简化输出）
+      # 4️⃣ 转换为 SmartDNS 格式（简化版 - 不用 export）
       - name: Convert Clash list files to SmartDNS format
         if: steps.check_upstream.outputs.needs_update == 'true'
         shell: bash
         run: |
           mkdir -p rule_converted_smartdns
           
-          # 定义转换函数
-          convert_file() {
-            local file="$1"
-            local base_name=$(basename "${file%.list}")
-            local output="rule_converted_smartdns/${base_name}_smartdns.txt"
+          echo "📋 Found .list files to convert:"
+          find upstream_temp/rule -type f -name "*.list"
+          echo ""
+          
+          total_count=0
+          success_count=0
+          
+          # 使用 while 循环处理每个文件
+          while IFS= read -r file; do
+            base_name=$(basename "${file%.list}")
+            output="rule_converted_smartdns/${base_name}_smartdns.txt"
             
             echo "🔄 Converting: $base_name"
             
-            # AWK 转换脚本 - 只输出域名到 stdout
+            # AWK 转换 - 直接内联，不使用函数
             awk '
               BEGIN { 
                 IGNORECASE=1
-                suf=0; key=0; dom=0; full=0; reg=0; cidr=0; skip=0
+                suf=0; key=0; dom=0; full=0
               }
               # full: 精确匹配
               /^full:/ {
@@ -151,68 +157,42 @@ jobs:
                 dom++;
                 next
               }
-              # regexp: → 跳过（不输出）
-              /^regexp:/ {
-                reg++;
-                next
-              }
-              # IP-CIDR → 跳过（不输出）
-              /^IP-CIDR/ {
-                cidr++;
-                next
-              }
-              # 注释或空行 → 跳过
-              /^[[:space:]]*#/ || /^[[:space:]]*$/ {
-                next
-              }
-              # 其他未知 → 跳过
-              { 
-                skip++; 
-                next 
-              }
+              # 跳过其他所有内容
+              {next}
               END {
                 total = suf + key + dom + full
-                printf("   📊 SUF=%d KEY=%d DOM=%d FULL=%d (Total=%d)\n", suf,key,dom,full,total) >> "/dev/stderr"
+                if (total > 0) {
+                  printf("   📊 SUF=%d KEY=%d DOM=%d FULL=%d Total=%d\n", suf, key, dom, full, total) > "/dev/stderr"
+                }
               }
-            ' "$file" | sort -u > "$output" 2>&1
+            ' "$file" 2>&1 | sort -u > "$output"
+            
+            total_count=$((total_count + 1))
             
             if [ -s "$output" ]; then
               lines=$(wc -l < "$output")
               echo "   ✅ Success: $lines unique domains"
-              return 0
+              success_count=$((success_count + 1))
             else
               echo "   ⚠️ Warning: no output generated"
-              return 1
             fi
-          }
+            echo ""
+          done < <(find upstream_temp/rule -type f -name "*.list")
           
-          export -f convert_file
-          
-          echo "📋 Found .list files to convert:"
-          find upstream_temp/rule -type f -name "*.list"
-          echo ""
-          
-          # 并行转换所有 .list 文件（4个并发）
-          find upstream_temp/rule -type f -name "*.list" -print0 | \
-            xargs -0 -P 4 -I {} bash -c 'convert_file "$@"' _ {}
-          
-          # 统计结果
-          total=$(find rule_converted_smartdns -type f -name "*.txt" 2>/dev/null | wc -l)
-          expected=$(find upstream_temp/rule -type f -name "*.list" 2>/dev/null | wc -l)
-          
-          echo ""
           echo "🎉 Conversion summary:"
-          echo "   📁 Expected: $expected files"
-          echo "   ✅ Converted: $total files"
+          echo "   📁 Total files: $total_count"
+          echo "   ✅ Successful: $success_count"
+          echo "   ⚠️ Failed: $((total_count - success_count))"
           
-          if [ "$total" -eq 0 ]; then
-            echo "   ❌ No files converted successfully"
+          if [ "$success_count" -eq 0 ]; then
+            echo ""
+            echo "❌ No files converted successfully"
             exit 1
           fi
           
           echo ""
           echo "📋 Generated files:"
-          ls -lh rule_converted_smartdns/ | tail -n +2
+          ls -lh rule_converted_smartdns/ 2>/dev/null || echo "None"
 
       # 5️⃣ 清理临时文件
       - name: Clean up temporary files
@@ -256,4 +236,5 @@ jobs:
             
             echo "✅ Changes pushed successfully!"
           fi
+
 
