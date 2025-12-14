@@ -102,7 +102,7 @@ jobs:
             exit 1
           fi
 
-      # 4️⃣ 转换为 SmartDNS 格式（并行处理 + 修复 AWK）
+      # 4️⃣ 转换为 SmartDNS 格式（修复版 - 简化输出）
       - name: Convert Clash list files to SmartDNS format
         if: steps.check_upstream.outputs.needs_update == 'true'
         shell: bash
@@ -117,7 +117,7 @@ jobs:
             
             echo "🔄 Converting: $base_name"
             
-            # AWK 转换脚本（修复：初始化所有变量）
+            # AWK 转换脚本 - 只输出域名到 stdout
             awk '
               BEGIN { 
                 IGNORECASE=1
@@ -151,43 +151,37 @@ jobs:
                 dom++;
                 next
               }
-              # regexp: → 注释保留
+              # regexp: → 跳过（不输出）
               /^regexp:/ {
-                sub(/^regexp:/,"");
-                print "# regexp:"$0;
                 reg++;
                 next
               }
-              # IP-CIDR → 注释保留
+              # IP-CIDR → 跳过（不输出）
               /^IP-CIDR/ {
-                print "# skipped (CIDR): "$0;
                 cidr++;
                 next
               }
-              # 注释或空行
+              # 注释或空行 → 跳过
               /^[[:space:]]*#/ || /^[[:space:]]*$/ {
-                print $0;
                 next
               }
-              # 其他未知
+              # 其他未知 → 跳过
               { 
-                print "# skipped: "$0; 
                 skip++; 
                 next 
               }
               END {
-                if (NR > 0) {
-                  printf("SUF=%d KEY=%d DOM=%d FULL=%d REG=%d CIDR=%d SKIP=%d\n", suf,key,dom,full,reg,cidr,skip) >> "/dev/stderr"
-                }
+                total = suf + key + dom + full
+                printf("   📊 SUF=%d KEY=%d DOM=%d FULL=%d (Total=%d)\n", suf,key,dom,full,total) >> "/dev/stderr"
               }
-            ' "$file" 2>&1 | grep -v '^#' | sort -u > "$output"
+            ' "$file" | sort -u > "$output" 2>&1
             
             if [ -s "$output" ]; then
               lines=$(wc -l < "$output")
-              echo "   ✅ $base_name: $lines lines"
+              echo "   ✅ Success: $lines unique domains"
               return 0
             else
-              echo "   ⚠️ $base_name: no output"
+              echo "   ⚠️ Warning: no output generated"
               return 1
             fi
           }
@@ -204,20 +198,21 @@ jobs:
           
           # 统计结果
           total=$(find rule_converted_smartdns -type f -name "*.txt" 2>/dev/null | wc -l)
+          expected=$(find upstream_temp/rule -type f -name "*.list" 2>/dev/null | wc -l)
+          
+          echo ""
+          echo "🎉 Conversion summary:"
+          echo "   📁 Expected: $expected files"
+          echo "   ✅ Converted: $total files"
           
           if [ "$total" -eq 0 ]; then
-            echo ""
-            echo "⚠️ No files converted successfully"
+            echo "   ❌ No files converted successfully"
             exit 1
           fi
           
           echo ""
-          echo "🎉 Conversion complete!"
-          echo "   📁 Converted files: $total"
-          
-          echo ""
           echo "📋 Generated files:"
-          ls -lh rule_converted_smartdns/
+          ls -lh rule_converted_smartdns/ | tail -n +2
 
       # 5️⃣ 清理临时文件
       - name: Clean up temporary files
@@ -226,7 +221,7 @@ jobs:
           rm -rf upstream_temp
           echo "🧹 Temporary files cleaned up"
 
-      # 6️⃣ 提交并推送结果（仅在有更新时）
+      # 6️⃣ 提交并推送结果
       - name: Commit and push SmartDNS lists
         if: steps.check_upstream.outputs.needs_update == 'true'
         shell: bash
@@ -234,10 +229,8 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           
-          # 添加 .upstream_sha_smartdns 和转换后的文件
           git add .upstream_sha_smartdns rule_converted_smartdns
           
-          # 检查是否有变化
           if git diff --staged --quiet; then
             echo "📝 No changes detected, skipping commit"
           else
@@ -260,3 +253,7 @@ jobs:
             
             echo "✅ Changes pushed successfully!"
           fi
+            
+            echo "✅ Changes pushed successfully!"
+          fi
+
