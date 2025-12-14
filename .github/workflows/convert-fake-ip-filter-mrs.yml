@@ -7,19 +7,16 @@ on:
         required: false
         type: string
         default: ''
-  # 方案1: 使用 workflow_run 等待前置 workflow 完成
   workflow_run:
     workflows: ["Convert rules to DOMAIN fake_ip_filter"]
     types:
       - completed
     branches: [ main ]
-  # 方案2: 也支持手动触发
   workflow_dispatch:
 
 jobs:
   convert:
     runs-on: ubuntu-latest
-    # 只在前置 workflow 成功时运行
     if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch' || github.event_name == 'workflow_call' }}
     env:
       TARGET_BRANCH: ${{ inputs.branch != '' && inputs.branch || github.ref_name }}
@@ -31,15 +28,46 @@ jobs:
           ref: ${{ env.TARGET_BRANCH }}
           fetch-depth: 0
 
-      # 2️⃣ 下载并安装 mihomo
+      # 2️⃣ 缓存 mihomo 二进制文件
+      - name: Cache mihomo binary
+        id: cache-mihomo
+        uses: actions/cache@v4
+        with:
+          path: |
+            mihomo
+            mihomo-version.txt
+          key: mihomo-${{ runner.os }}-${{ hashFiles('mihomo-version.txt') }}
+          restore-keys: |
+            mihomo-${{ runner.os }}-
+
+      # 3️⃣ 下载并安装 mihomo（仅在缓存未命中时）
       - name: Download and setup mihomo
+        if: steps.cache-mihomo.outputs.cache-hit != 'true'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           echo "📦 Fetching latest mihomo release..."
-          LATEST_VERSION=$(curl -s https://api.github.com/repos/MetaCubeX/mihomo/releases/latest | grep '"tag_name"' | sed -E 's/.*"([^"]+)".*/\1/')
+          
+          # 使用 jq 解析 JSON
+          LATEST_VERSION=$(curl -s -H "Authorization: token $GITHUB_TOKEN" \
+            https://api.github.com/repos/MetaCubeX/mihomo/releases/latest | \
+            jq -r '.tag_name // empty')
+          
+          if [ -z "$LATEST_VERSION" ]; then
+            echo "⚠️ Failed to fetch latest version, using fallback version"
+            LATEST_VERSION="v1.18.10"
+          fi
+          
+          echo "$LATEST_VERSION" > mihomo-version.txt
           echo "✅ Latest version: $LATEST_VERSION"
           
           echo "⬇️ Downloading mihomo for Linux amd64..."
           wget -q https://github.com/MetaCubeX/mihomo/releases/download/${LATEST_VERSION}/mihomo-linux-amd64-${LATEST_VERSION}.gz
+          
+          if [ $? -ne 0 ]; then
+            echo "❌ Download failed"
+            exit 1
+          fi
           
           echo "📦 Extracting..."
           gunzip mihomo-linux-amd64-${LATEST_VERSION}.gz
@@ -48,11 +76,30 @@ jobs:
           
           echo "✅ mihomo is ready ($(./mihomo -v 2>&1 | head -n1 || echo 'version check skipped'))"
 
-      # 3️⃣ 检查 rule_converted 目录是否存在文件
+      - name: Verify mihomo installation
+        run: |
+          if [ -f "mihomo" ]; then
+            chmod +x mihomo
+            echo "✅ Using mihomo: $(./mihomo -v 2>&1 | head -n1 || echo 'version unknown')"
+            if [ -f "mihomo-version.txt" ]; then
+              echo "📌 Version: $(cat mihomo-version.txt)"
+            fi
+          else
+            echo "❌ mihomo binary not found"
+            exit 1
+          fi
+
+      # 4️⃣ 检查 rule_converted 目录是否存在文件
       - name: Check if fake_ip_filter files exist
         id: check_files
         run: |
           echo "🔍 Checking for fake_ip_filter files..."
+          
+          if [ ! -d "rule_converted" ]; then
+            echo "⚠️ rule_converted directory does not exist"
+            echo "file_count=0" >> $GITHUB_OUTPUT
+            exit 0
+          fi
           
           file_count=$(find rule_converted -name "*_fake_ip_filter.yaml" -type f 2>/dev/null | wc -l)
           echo "file_count=$file_count" >> $GITHUB_OUTPUT
@@ -60,12 +107,11 @@ jobs:
           if [ "$file_count" -eq 0 ]; then
             echo "⚠️ No fake_ip_filter files found in rule_converted/"
             echo "⚠️ Skipping MRS conversion..."
-            exit 0
           else
             echo "✅ Found $file_count fake_ip_filter file(s)"
           fi
 
-      # 4️⃣ 转换 rule_converted 中的 fake_ip_filter 为 MRS 格式
+      # 5️⃣ 转换 fake_ip_filter 为 MRS 格式（并行处理）
       - name: Convert fake_ip_filter YAML to MRS format
         if: steps.check_files.outputs.file_count != '0'
         run: |
@@ -73,80 +119,82 @@ jobs:
           
           mkdir -p rule_converted_mrs
           
-          # 使用临时文件存储统计信息
-          echo "0" > /tmp/total_count
-          echo "0" > /tmp/failed_count
-          
-          # 查找所有 fake_ip_filter.yaml 文件
-          while IFS= read -r file; do
-            # 获取文件名
+          # 创建转换函数
+          convert_file() {
+            file="$1"
             filename=$(basename "$file")
             name="${filename%.*}"
-            
-            # 直接输出到 rule_converted_mrs 根目录
             output_file="rule_converted_mrs/${name}.mrs"
             
-            echo "📄 Converting: $file"
-            echo "   → Output: $output_file"
-            
-            # mihomo convert-ruleset 正确用法: 
-            # mihomo convert-ruleset <behavior> <input-format> <input-file> <output-file>
-            # 输出格式通过输出文件的扩展名自动判断 (.mrs = mrs 格式)
             if ./mihomo convert-ruleset domain yaml "$file" "$output_file" 2>&1; then
               if [ -f "$output_file" ]; then
-                file_size=$(ls -lh "$output_file" | awk '{print $5}')
-                echo "   ✅ Success (size: $file_size)"
-                total=$(cat /tmp/total_count)
-                echo $((total + 1)) > /tmp/total_count
+                size=$(stat -f%z "$output_file" 2>/dev/null || stat -c%s "$output_file")
+                echo "✅ $filename ($(numfmt --to=iec-i --suffix=B $size 2>/dev/null || echo $size))"
+                return 0
               else
-                echo "   ⚠️ Failed: output file not created"
-                failed=$(cat /tmp/failed_count)
-                echo $((failed + 1)) > /tmp/failed_count
+                echo "⚠️ $filename - output not created"
+                return 1
               fi
             else
-              echo "   ⚠️ Failed: conversion error"
-              failed=$(cat /tmp/failed_count)
-              echo $((failed + 1)) > /tmp/failed_count
+              echo "⚠️ $filename - conversion error"
+              return 1
             fi
-            echo ""
-          done < <(find rule_converted -name "*_fake_ip_filter.yaml" -type f)
+          }
           
-          # 读取最终统计
-          total=$(cat /tmp/total_count)
-          failed=$(cat /tmp/failed_count)
+          export -f convert_file
           
+          # 并行处理（4个并发进程）
+          find rule_converted -name "*_fake_ip_filter.yaml" -type f | \
+            xargs -P 4 -I {} bash -c 'convert_file "$@"' _ {}
+          
+          # 统计结果
+          total=$(find rule_converted_mrs -name "*.mrs" -type f 2>/dev/null | wc -l)
+          expected=$(find rule_converted -name "*_fake_ip_filter.yaml" -type f 2>/dev/null | wc -l)
+          failed=$((expected - total))
+          
+          echo ""
           echo "🎉 Conversion complete!"
           echo "   ✅ Successfully converted: $total files"
           [ $failed -gt 0 ] && echo "   ⚠️ Failed/Skipped: $failed files"
           
-          # 显示生成的文件列表
           if [ $total -gt 0 ]; then
             echo ""
             echo "📋 Generated MRS files:"
-            find rule_converted_mrs -name "*.mrs" -type f | sort
+            find rule_converted_mrs -name "*.mrs" -type f | sort | head -n 20
+            [ $total -gt 20 ] && echo "   ... and $((total - 20)) more"
+            
             echo ""
             echo "📊 Total size:"
             du -sh rule_converted_mrs
           fi
-          
-          # 清理临时文件
-          rm -f /tmp/total_count /tmp/failed_count
 
-      # 5️⃣ 提交并推送结果（含自动 rebase 保护）
+      # 6️⃣ 提交并推送结果
       - name: Commit and push converted results
         if: steps.check_files.outputs.file_count != '0'
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add rule_converted_mrs
-          git commit -m "Auto convert fake_ip_filter to MRS format" || echo "No changes to commit."
           
-          echo "🔄 Pulling latest changes from remote before push..."
-          # 防止远程先更新导致 push 被拒绝
-          git pull --rebase origin "${TARGET_BRANCH}" || true
-          
-          echo "🚀 Pushing changes to ${TARGET_BRANCH}..."
-          git push origin HEAD:"${TARGET_BRANCH}" || {
-            echo "❌ Push failed after rebase attempt, retrying with force-with-lease..."
-            git push origin HEAD:"${TARGET_BRANCH}" --force-with-lease
-          }
+          # 检查是否有变化
+          if git diff --staged --quiet; then
+            echo "📝 No changes detected, skipping commit"
+          else
+            # 统计信息
+            total=$(find rule_converted_mrs -name "*.mrs" -type f 2>/dev/null | wc -l)
+            
+            git commit -m "chore: convert fake_ip_filter to MRS format" \
+                       -m "Converted: $total MRS files" \
+                       -m "Updated: $(date +'%Y-%m-%d %H:%M:%S UTC')"
+            
+            echo "🔄 Pulling latest changes from remote..."
+            git pull --rebase origin "${TARGET_BRANCH}" || true
+            
+            echo "🚀 Pushing changes to ${TARGET_BRANCH}..."
+            git push origin HEAD:"${TARGET_BRANCH}" || {
+              echo "⚠️ Push failed, retrying with force-with-lease..."
+              git push origin HEAD:"${TARGET_BRANCH}" --force-with-lease
+            }
+            
+            echo "✅ Changes pushed successfully!"
+          fi
