@@ -102,7 +102,7 @@ jobs:
             exit 1
           fi
 
-      # 4️⃣ 转换为 SmartDNS 格式（并行处理）
+      # 4️⃣ 转换为 SmartDNS 格式（并行处理 + 修复 AWK）
       - name: Convert Clash list files to SmartDNS format
         if: steps.check_upstream.outputs.needs_update == 'true'
         shell: bash
@@ -117,9 +117,12 @@ jobs:
             
             echo "🔄 Converting: $base_name"
             
-            # AWK 转换脚本
+            # AWK 转换脚本（修复：初始化所有变量）
             awk '
-              BEGIN { IGNORECASE=1 }
+              BEGIN { 
+                IGNORECASE=1
+                suf=0; key=0; dom=0; full=0; reg=0; cidr=0; skip=0
+              }
               # full: 精确匹配
               /^full:/ {
                 sub(/^full:/, "");
@@ -167,42 +170,54 @@ jobs:
                 next
               }
               # 其他未知
-              { print "# skipped: "$0; skip++; next }
-              END {
-                printf("SUF=%d KEY=%d DOM=%d FULL=%d REG=%d CIDR=%d SKIP=%d", suf,key,dom,full,reg,cidr,skip)
+              { 
+                print "# skipped: "$0; 
+                skip++; 
+                next 
               }
-            ' "$file" | sort -u > "$output"
+              END {
+                if (NR > 0) {
+                  printf("SUF=%d KEY=%d DOM=%d FULL=%d REG=%d CIDR=%d SKIP=%d\n", suf,key,dom,full,reg,cidr,skip) >> "/dev/stderr"
+                }
+              }
+            ' "$file" 2>&1 | grep -v '^#' | sort -u > "$output"
             
             if [ -s "$output" ]; then
-              # 获取统计信息（从最后一行）
-              stats=$(tail -n1 "$output" | grep -o 'SUF=[0-9].*' || echo "converted")
               lines=$(wc -l < "$output")
-              echo "   ✅ $base_name: $lines lines ($stats)"
-              echo "$base_name($stats)"
+              echo "   ✅ $base_name: $lines lines"
+              return 0
             else
               echo "   ⚠️ $base_name: no output"
-              echo ""
+              return 1
             fi
           }
           
           export -f convert_file
           
+          echo "📋 Found .list files to convert:"
+          find upstream_temp/rule -type f -name "*.list"
+          echo ""
+          
           # 并行转换所有 .list 文件（4个并发）
-          find upstream_temp/rule -type f -name "*.list" | \
-            xargs -P 4 -I {} bash -c 'convert_file "$@"' _ {} | \
-            tee summary.log
+          find upstream_temp/rule -type f -name "*.list" -print0 | \
+            xargs -0 -P 4 -I {} bash -c 'convert_file "$@"' _ {}
           
           # 统计结果
           total=$(find rule_converted_smartdns -type f -name "*.txt" 2>/dev/null | wc -l)
           
           if [ "$total" -eq 0 ]; then
-            echo "⚠️ No valid .list files found to convert."
-            exit 0
+            echo ""
+            echo "⚠️ No files converted successfully"
+            exit 1
           fi
           
           echo ""
           echo "🎉 Conversion complete!"
           echo "   📁 Converted files: $total"
+          
+          echo ""
+          echo "📋 Generated files:"
+          ls -lh rule_converted_smartdns/
 
       # 5️⃣ 清理临时文件
       - name: Clean up temporary files
@@ -226,13 +241,10 @@ jobs:
           if git diff --staged --quiet; then
             echo "📝 No changes detected, skipping commit"
           else
-            # 获取统计摘要
-            summary=$(cat summary.log | tr '\n' ' ' | sed 's/  */ /g' | head -c 200)
             total=$(find rule_converted_smartdns -type f -name "*.txt" 2>/dev/null | wc -l)
             
             git commit -m "chore: convert Clash lists to SmartDNS format" \
                        -m "Converted: $total files" \
-                       -m "Summary: $summary" \
                        -m "Source: $UPSTREAM_REPO@$UPSTREAM_BRANCH" \
                        -m "Upstream SHA: $(cat .upstream_sha_smartdns)" \
                        -m "Updated: $(date +'%Y-%m-%d %H:%M:%S UTC')"
