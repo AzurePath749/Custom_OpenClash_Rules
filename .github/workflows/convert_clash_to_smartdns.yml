@@ -27,57 +27,97 @@ jobs:
           ref: ${{ env.TARGET_BRANCH }}
           fetch-depth: 0
 
-      # 2️⃣ 下载上游规则文件
-      - name: Download upstream rules
+      # 2️⃣ 检查上游仓库是否有更新（使用 jq）
+      - name: Check upstream updates
+        id: check_upstream
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          echo "📥 Downloading rules from $UPSTREAM_REPO..."
+          echo "🔍 Checking upstream repository updates..."
           
-          mkdir -p upstream_temp
+          # 使用 jq 解析 GitHub API 返回的 JSON
+          UPSTREAM_SHA=$(curl -s -H "Authorization: token $GITHUB_TOKEN" \
+            "https://api.github.com/repos/$UPSTREAM_REPO/commits/$UPSTREAM_BRANCH" | \
+            jq -r '.sha // empty')
           
-          # 获取上游仓库的 rule 目录内容
-          wget -q -O upstream_temp/repo.zip "https://github.com/$UPSTREAM_REPO/archive/refs/heads/$UPSTREAM_BRANCH.zip"
+          if [ -z "$UPSTREAM_SHA" ]; then
+            echo "⚠️ Failed to fetch upstream SHA, will proceed with conversion"
+            echo "needs_update=true" >> $GITHUB_OUTPUT
+            exit 0
+          fi
           
-          if [ $? -eq 0 ] && [ -f upstream_temp/repo.zip ]; then
-            echo "✅ Repository archive downloaded"
+          echo "📌 Upstream SHA: $UPSTREAM_SHA"
+          
+          # 检查本地记录的上游 SHA
+          if [ -f ".upstream_sha_smartdns" ]; then
+            LOCAL_SHA=$(cat .upstream_sha_smartdns)
+            echo "📌 Local SHA: $LOCAL_SHA"
             
-            # 解压并提取 rule 目录
-            unzip -q upstream_temp/repo.zip -d upstream_temp/
-            
-            # 查找并移动 rule 目录（处理解压后的目录名称）
-            EXTRACTED_DIR=$(find upstream_temp -maxdepth 1 -type d -name "*$UPSTREAM_BRANCH" | head -n1)
-            if [ -d "$EXTRACTED_DIR/rule" ]; then
-              mv "$EXTRACTED_DIR/rule" upstream_temp/rule
-              echo "✅ Rules extracted successfully"
-              
-              echo ""
-              echo "📊 Available .list files:"
-              find upstream_temp/rule -type f -name "*.list" | head -n 10
+            if [ "$UPSTREAM_SHA" = "$LOCAL_SHA" ]; then
+              echo "✅ No updates from upstream, skipping conversion"
+              echo "needs_update=false" >> $GITHUB_OUTPUT
             else
-              echo "❌ Failed to find rule directory"
-              exit 1
+              echo "🔄 Upstream has updates, will convert"
+              echo "needs_update=true" >> $GITHUB_OUTPUT
+              echo "$UPSTREAM_SHA" > .upstream_sha_smartdns
             fi
           else
-            echo "❌ Failed to download repository archive"
+            echo "🆕 First run, will convert"
+            echo "needs_update=true" >> $GITHUB_OUTPUT
+            echo "$UPSTREAM_SHA" > .upstream_sha_smartdns
+          fi
+
+      # 3️⃣ 下载上游规则文件（使用 sparse-checkout 优化）
+      - name: Download upstream rules
+        if: steps.check_upstream.outputs.needs_update == 'true'
+        run: |
+          echo "📥 Downloading rules from $UPSTREAM_REPO (sparse checkout)..."
+          
+          mkdir -p upstream_temp
+          cd upstream_temp
+          
+          # 使用 sparse-checkout 只克隆 rule 目录
+          git init
+          git remote add origin "https://github.com/$UPSTREAM_REPO.git"
+          git config core.sparseCheckout true
+          
+          # 只检出 rule 目录
+          echo "rule/*" >> .git/info/sparse-checkout
+          
+          echo "⬇️ Pulling rule directory..."
+          git pull --depth=1 origin "$UPSTREAM_BRANCH"
+          
+          cd ..
+          
+          if [ -d "upstream_temp/rule" ]; then
+            echo "✅ Rules downloaded successfully"
+            echo ""
+            echo "📊 Available .list files:"
+            file_count=$(find upstream_temp/rule -type f -name "*.list" | wc -l)
+            echo "   Total: $file_count files"
+            find upstream_temp/rule -type f -name "*.list" | head -n 10
+            [ $file_count -gt 10 ] && echo "   ..."
+          else
+            echo "❌ Failed to download rules"
             exit 1
           fi
 
-      # 3️⃣ 转换为 SmartDNS 格式
+      # 4️⃣ 转换为 SmartDNS 格式（并行处理）
       - name: Convert Clash list files to SmartDNS format
+        if: steps.check_upstream.outputs.needs_update == 'true'
         shell: bash
         run: |
           mkdir -p rule_converted_smartdns
-          changed=false
-          summary=""
           
-          # 从上游临时目录读取 .list 文件（使用 find 避免 globstar 问题）
-          while IFS= read -r -d '' file; do
-            [ -f "$file" ] || continue
-            base_name=$(basename "${file%.list}")
-            output="rule_converted_smartdns/${base_name}_smartdns.txt"
-            echo "::group::Converting $file → $output"
+          # 定义转换函数
+          convert_file() {
+            local file="$1"
+            local base_name=$(basename "${file%.list}")
+            local output="rule_converted_smartdns/${base_name}_smartdns.txt"
             
-            # 初始化计数器
-            suf=0; key=0; dom=0; full=0; reg=0; cidr=0; skip=0
+            echo "🔄 Converting: $base_name"
+            
+            # AWK 转换脚本
             awk '
               BEGIN { IGNORECASE=1 }
               # full: 精确匹配
@@ -129,59 +169,82 @@ jobs:
               # 其他未知
               { print "# skipped: "$0; skip++; next }
               END {
-                printf("# Stats: SUF=%d KEY=%d DOM=%d FULL=%d REG=%d CIDR=%d SKIP=%d\n", suf,key,dom,full,reg,cidr,skip) > "/dev/stderr"
+                printf("SUF=%d KEY=%d DOM=%d FULL=%d REG=%d CIDR=%d SKIP=%d", suf,key,dom,full,reg,cidr,skip)
               }
-            ' "$file" | sort -u > "$output" 2> >(tee /tmp/stats.txt >&2)
-            echo "Generated $output (preview):"
-            head -n 10 "$output" || true
-            echo "::endgroup::"
+            ' "$file" | sort -u > "$output"
+            
             if [ -s "$output" ]; then
-              changed=true
-              stats=$(tail -n1 /tmp/stats.txt | tr -d '#')
-              summary+="${base_name}(${stats}) "
+              # 获取统计信息（从最后一行）
+              stats=$(tail -n1 "$output" | grep -o 'SUF=[0-9].*' || echo "converted")
+              lines=$(wc -l < "$output")
+              echo "   ✅ $base_name: $lines lines ($stats)"
+              echo "$base_name($stats)"
+            else
+              echo "   ⚠️ $base_name: no output"
+              echo ""
             fi
-          done < <(find upstream_temp/rule -type f -name "*.list" -print0)
+          }
           
-          if [ "$changed" = false ]; then
+          export -f convert_file
+          
+          # 并行转换所有 .list 文件（4个并发）
+          find upstream_temp/rule -type f -name "*.list" | \
+            xargs -P 4 -I {} bash -c 'convert_file "$@"' _ {} | \
+            tee summary.log
+          
+          # 统计结果
+          total=$(find rule_converted_smartdns -type f -name "*.txt" 2>/dev/null | wc -l)
+          
+          if [ "$total" -eq 0 ]; then
             echo "⚠️ No valid .list files found to convert."
             exit 0
           fi
           
-          echo "✅ Summary: $summary"
-          echo "$summary" > summary.log
+          echo ""
+          echo "🎉 Conversion complete!"
+          echo "   📁 Converted files: $total"
 
-      # 4️⃣ 清理临时文件
+      # 5️⃣ 清理临时文件
       - name: Clean up temporary files
+        if: steps.check_upstream.outputs.needs_update == 'true'
         run: |
           rm -rf upstream_temp
           echo "🧹 Temporary files cleaned up"
 
-      # 5️⃣ 提交并推送结果
+      # 6️⃣ 提交并推送结果（仅在有更新时）
       - name: Commit and push SmartDNS lists
+        if: steps.check_upstream.outputs.needs_update == 'true'
         shell: bash
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           
-          # 添加所有转换后的文件
-          git add rule_converted_smartdns
+          # 添加 .upstream_sha_smartdns 和转换后的文件
+          git add .upstream_sha_smartdns rule_converted_smartdns
           
           # 检查是否有变化
           if git diff --staged --quiet; then
             echo "📝 No changes detected, skipping commit"
           else
-            summary=$(cat summary.log)
-            git commit -m "Auto convert upstream Clash → SmartDNS (Pro Enhanced) [$summary]"
+            # 获取统计摘要
+            summary=$(cat summary.log | tr '\n' ' ' | sed 's/  */ /g' | head -c 200)
+            total=$(find rule_converted_smartdns -type f -name "*.txt" 2>/dev/null | wc -l)
             
-            echo "🔄 Pulling latest changes from remote before push..."
+            git commit -m "chore: convert Clash lists to SmartDNS format" \
+                       -m "Converted: $total files" \
+                       -m "Summary: $summary" \
+                       -m "Source: $UPSTREAM_REPO@$UPSTREAM_BRANCH" \
+                       -m "Upstream SHA: $(cat .upstream_sha_smartdns)" \
+                       -m "Updated: $(date +'%Y-%m-%d %H:%M:%S UTC')"
+            
+            echo "🔄 Pulling latest changes from remote..."
             git pull --rebase origin "${TARGET_BRANCH}" || true
             
             echo "🚀 Pushing changes to ${TARGET_BRANCH}..."
             git push origin HEAD:"${TARGET_BRANCH}" || {
-              echo "❌ Push failed after rebase attempt, retrying with force-with-lease..."
+              echo "⚠️ Push failed, retrying with force-with-lease..."
               git push origin HEAD:"${TARGET_BRANCH}" --force-with-lease
             }
             
             echo "✅ Changes pushed successfully!"
           fi
-
