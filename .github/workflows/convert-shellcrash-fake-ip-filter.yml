@@ -25,31 +25,45 @@ jobs:
           ref: ${{ env.TARGET_BRANCH }}
           fetch-depth: 0
 
-      # 2️⃣ 下载并安装 mihomo
+      # 2️⃣ 缓存 mihomo 二进制文件
+      - name: Cache mihomo binary
+        id: cache-mihomo
+        uses: actions/cache@v4
+        with:
+          path: |
+            mihomo
+            mihomo-version.txt
+          key: mihomo-${{ runner.os }}-${{ hashFiles('mihomo-version.txt') }}
+          restore-keys: |
+            mihomo-${{ runner.os }}-
+
+      # 3️⃣ 下载并安装 mihomo（仅在缓存未命中时）
       - name: Download and setup mihomo
+        if: steps.cache-mihomo.outputs.cache-hit != 'true'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           echo "📦 Fetching latest mihomo release..."
           
-          # 使用 GITHUB_TOKEN 提高 API 速率限制
+          # 使用 jq 解析 JSON
           LATEST_VERSION=$(curl -s -H "Authorization: token $GITHUB_TOKEN" \
             https://api.github.com/repos/MetaCubeX/mihomo/releases/latest | \
-            grep '"tag_name"' | sed -E 's/.*"([^"]+)".*/\1/')
+            jq -r '.tag_name // empty')
           
           # 检查版本号是否获取成功
           if [ -z "$LATEST_VERSION" ]; then
-            echo "❌ Failed to fetch latest version, using fallback version"
-            LATEST_VERSION="v1.18.10"  # 设置一个已知的稳定版本
+            echo "⚠️ Failed to fetch latest version, using fallback version"
+            LATEST_VERSION="v1.18.10"
           fi
           
-          echo "✅ Using version: $LATEST_VERSION"
+          echo "$LATEST_VERSION" > mihomo-version.txt
+          echo "✅ Latest version: $LATEST_VERSION"
           
           echo "⬇️ Downloading mihomo for Linux amd64..."
           wget -q https://github.com/MetaCubeX/mihomo/releases/download/${LATEST_VERSION}/mihomo-linux-amd64-${LATEST_VERSION}.gz
           
           if [ $? -ne 0 ]; then
-            echo "❌ Download failed, exit code: $?"
+            echo "❌ Download failed"
             exit 1
           fi
           
@@ -60,7 +74,20 @@ jobs:
           
           echo "✅ mihomo is ready ($(./mihomo -v 2>&1 | head -n1 || echo 'version check skipped'))"
 
-      # 3️⃣ 下载 ShellCrash fake_ip_filter.list
+      - name: Verify mihomo installation
+        run: |
+          if [ -f "mihomo" ]; then
+            chmod +x mihomo
+            echo "✅ Using cached mihomo: $(./mihomo -v 2>&1 | head -n1 || echo 'version unknown')"
+            if [ -f "mihomo-version.txt" ]; then
+              echo "📌 Version: $(cat mihomo-version.txt)"
+            fi
+          else
+            echo "❌ mihomo binary not found"
+            exit 1
+          fi
+
+      # 4️⃣ 下载 ShellCrash fake_ip_filter.list
       - name: Download fake_ip_filter.list
         run: |
           echo "📥 Downloading fake_ip_filter.list from ShellCrash..."
@@ -82,7 +109,7 @@ jobs:
             exit 1
           fi
 
-      # 4️⃣ 转换 list 格式为 YAML 格式
+      # 5️⃣ 转换 list 格式为 YAML 格式
       - name: Convert list to YAML format
         run: |
           echo "🔄 Converting list format to YAML format..."
@@ -119,7 +146,7 @@ jobs:
           echo "📝 First 15 lines of YAML:"
           head -n 15 "$output_file"
 
-      # 5️⃣ 转换 YAML 为 MRS 格式
+      # 6️⃣ 转换 YAML 为 MRS 格式
       - name: Convert YAML to MRS format
         run: |
           echo "🔄 Converting YAML to MRS format..."
@@ -153,7 +180,7 @@ jobs:
           # 清理临时文件
           rm -rf shellcrash_temp
 
-      # 6️⃣ 提交并推送结果
+      # 7️⃣ 提交并推送结果
       - name: Commit and push converted results
         run: |
           git config --global user.name "github-actions[bot]"
@@ -176,5 +203,4 @@ jobs:
             }
             
             echo "✅ Changes pushed successfully!"
-
           fi
