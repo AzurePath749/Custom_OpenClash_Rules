@@ -27,13 +27,31 @@ jobs:
 
       # 2️⃣ 下载并安装 mihomo
       - name: Download and setup mihomo
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           echo "📦 Fetching latest mihomo release..."
-          LATEST_VERSION=$(curl -s https://api.github.com/repos/MetaCubeX/mihomo/releases/latest | grep '"tag_name"' | sed -E 's/.*"([^"]+)".*/\1/')
-          echo "✅ Latest version: $LATEST_VERSION"
+          
+          # 使用 GITHUB_TOKEN 提高 API 速率限制
+          LATEST_VERSION=$(curl -s -H "Authorization: token $GITHUB_TOKEN" \
+            https://api.github.com/repos/MetaCubeX/mihomo/releases/latest | \
+            grep '"tag_name"' | sed -E 's/.*"([^"]+)".*/\1/')
+          
+          # 检查版本号是否获取成功
+          if [ -z "$LATEST_VERSION" ]; then
+            echo "❌ Failed to fetch latest version, using fallback version"
+            LATEST_VERSION="v1.18.10"  # 设置一个已知的稳定版本
+          fi
+          
+          echo "✅ Using version: $LATEST_VERSION"
           
           echo "⬇️ Downloading mihomo for Linux amd64..."
           wget -q https://github.com/MetaCubeX/mihomo/releases/download/${LATEST_VERSION}/mihomo-linux-amd64-${LATEST_VERSION}.gz
+          
+          if [ $? -ne 0 ]; then
+            echo "❌ Download failed, exit code: $?"
+            exit 1
+          fi
           
           echo "📦 Extracting..."
           gunzip mihomo-linux-amd64-${LATEST_VERSION}.gz
@@ -158,4 +176,5 @@ jobs:
             }
             
             echo "✅ Changes pushed successfully!"
+
           fi
