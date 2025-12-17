@@ -1,7 +1,7 @@
 
 # ---------------------------------------
 # 115
-# 2025.12.8 分类整理完毕
+# 2025.12.17 分类整理完毕
 # 3D模型下载网站 / add by Telegram user: 哆啦A梦 / Date: 2025-11-10 13:20:28
 # 6V电影网 / add by Telegram user: 鱼 / Date: 2025-10-08 17:51:33
 # 985宇宙盒子官网（steam离线号库） / add by Telegram user: 真怪誕呀 / Date: 2025-08-01 01:20:05
@@ -326,6 +326,8 @@
 # 论坛网站 / add by Telegram user: Shady / Date: 2025-08-25 19:21:52
 # 设计模型网站 / add by Telegram user: 石 / Date:2025-07-22 18:53:50
 # 财经网站 / add by Telegram user: Mouton / Date: 2025-10-18 22:48:47
+# 购物 / add by Telegram user: 𝓚𝓮𝓵𝓿𝓲𝓷𝓟 / Date: 2025-12-16 20:25:09
+# 购物 / add by Telegram user: 𝓚𝓮𝓵𝓿𝓲𝓷𝓟 / Date: 2025-12-16 20:26:12
 # 软件及服务 / add by Telegram user: rl / Date: 2025-08-14 09:47:11
 # 软件类规则
 # 通信厂商官网 / add by Telegram user: Animi / Date: 2025-12-13 12:50:40
@@ -484,6 +486,7 @@ dushe1.app
 easytier.top
 einfo-tech.com
 englibrary.com
+epark.cc
 epg.aptv.app
 epg.v1.mk
 everdrawing.com
@@ -675,6 +678,7 @@ seaflysoft.com
 seedpace.com
 sgtv.ii00.cc
 shineacc.com
+shuinfo.com
 shunjing.xin
 shuqiandiqiu.com
 shyxhy.com
