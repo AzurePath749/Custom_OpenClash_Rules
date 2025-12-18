@@ -10,6 +10,7 @@
 # Akamai CDN
 # BLOG / add by Telegram user: rl / Date: 2025-08-26 20:20:13
 # Bangumi番组计划
+# CDN / add by Telegram user: 𝓚𝓮𝓵𝓿𝓲𝓷𝓟 / Date: 2025-12-17 11:16:00
 # CG相关资源分享网站 / add by Telegram user: 慧慧 / Date: 2025-08-14 13:51:28
 # DDNS
 # DOMAIN-SUFFIX,ip-api.com 会影响某些 DNS 泄露检测网站的结果，暂时屏蔽
@@ -147,6 +148,7 @@
 # add by Telegram user: 石 / Date: 2025-08-08 22:48:01
 # add by Telegram user: 网猫-工作时间早10-晚11 / Date: 2025-09-10 09:21:45
 # add by Telegram user: 花火 / Date: 2025-08-14 21:01:04
+# add by Telegram user: 𝓚𝓮𝓵𝓿𝓲𝓷𝓟 / Date: 2025-12-17 21:15:29
 # bark默认服务器的域名 / add by Telegram user: Shu / Date: 2025-11-15 18:41:59
 # cent浏览器论坛网站 / add by Telegram user: li / Date: 2025-08-20 11:59:34
 # easytier服务 / add by Telegram user: hvccff / Date: 2025-11-17 08:22:05
@@ -443,6 +445,7 @@ biaoda.me
 bochk.com
 boyuemobile.com
 bsbsb.top
+bunny.net
 canghaiip.com
 cdn.ist
 centbrowser.net
@@ -723,6 +726,7 @@ warmheart.top
 we-stats.com
 webs.vc
 wenyi188.com
+weshape3d.com
 wewillpro.com
 wjx.top
 wlcdn88.com
