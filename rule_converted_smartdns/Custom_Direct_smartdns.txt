@@ -74,6 +74,7 @@
 # add by Telegram user: Aethersailor / Date: 2025-12-03 18:35:00
 # add by Telegram user: Aethersailor / Date: 2025-12-05 14:30:18
 # add by Telegram user: Aethersailor / Date: 2025-12-08 14:59:40
+# add by Telegram user: Aethersailor / Date: 2025-12-18 10:33:27
 # add by Telegram user: Aethersailor / Date:2025-07-21 22:18:39
 # add by Telegram user: Aethersailor / Date:2025-07-22 04:14:28
 # add by Telegram user: Aethersailor / Date:2025-07-22 11:41:34
@@ -207,6 +208,7 @@
 # 儿童学习机 / add by Telegram user: sanligu / Date: 2025-07-29 15:54:04
 # 公益open-webui / add by Telegram user: 真怪誕呀 / Date: 2025-08-23 17:41:37
 # 其他
+# 分享网站 / add by Telegram user: 哈Lay / Date: 2025-12-18 22:10:39
 # 医疗健康 / add by Telegram user: 闹斯特麻麻 / Date: 2025-07-30 10:07:17
 # 医疗门户 / add by Telegram user: Evan / Date: 2025-09-21 11:45:41
 # 千学云在线教育平台 / add by Telegram user: 木2 / Date: 2025-10-02 15:55:10
@@ -242,6 +244,7 @@
 # 学习网站 / add by Telegram user: Shady / Date: 2025-08-31 16:45:54
 # 学校 / add by Telegram user: lei / Date: 2025-09-20 16:48:58
 # 学校洗衣机APP：悠洗 / add by Telegram user: lei / Date: 2025-09-20 16:47:16
+# 安卓车机app应用市场 / add by Telegram user: 哈Lay / Date: 2025-12-18 21:59:15
 # 小熊猫c＋＋ IDE / add by Telegram user: y / Date: 2025-10-31 22:16:45
 # 小电视空降助手，跳过 b 站广告 / add by Telegram user: chrysaly / Date: 2025-08-21 14:19:34
 # 小说网站 / add by Telegram user: 楉笙 / Date: 2025-12-15 21:46:50
@@ -313,6 +316,7 @@
 # 肥羊 All in One
 # 脚本官网 / add by Telegram user: 网猫-工作时间早10-晚11 / Date: 2025-09-08 11:32:11
 # 腾讯云CNB WebIDE / add by Telegram user: y / Date: 2025-09-29 17:11:53
+# 自媒体新闻网站 / add by Telegram user: 哈Lay / Date: 2025-12-18 22:29:42
 # 英语训练 / add by Telegram user: More / Date: 2025-10-02 17:20:22
 # 葱米APP家长版 / add by Telegram user: Evan / Date: 2025-08-21 21:23:34
 # 蓝宝石显卡官网 / add by Telegram user: 💡💡 / Date: 2025-08-07 06:58:20
@@ -330,6 +334,7 @@
 # 财经网站 / add by Telegram user: Mouton / Date: 2025-10-18 22:48:47
 # 购物 / add by Telegram user: 𝓚𝓮𝓵𝓿𝓲𝓷𝓟 / Date: 2025-12-16 20:25:09
 # 购物 / add by Telegram user: 𝓚𝓮𝓵𝓿𝓲𝓷𝓟 / Date: 2025-12-16 20:26:12
+# 购物网站 / add by Telegram user: 哈Lay / Date: 2025-12-18 22:06:20
 # 软件及服务 / add by Telegram user: rl / Date: 2025-08-14 09:47:11
 # 软件类规则
 # 通信厂商官网 / add by Telegram user: Animi / Date: 2025-12-13 12:50:40
@@ -486,6 +491,7 @@ douqq.com
 drvceo.com
 dskj-ops.com
 dushe1.app
+eagsen.com
 easytier.top
 einfo-tech.com
 englibrary.com
@@ -588,6 +594,7 @@ istoreos.com
 itptg.com
 jfjt.cc
 jh96095.com
+jiliuwang.net
 jingheiot.com
 jiqw.com
 jsdelivr.net
@@ -597,6 +604,7 @@ jxpp.com
 kaijiejinrong.com
 kaspersky-labs.com
 kaspersky.com
+kejiweixun.com
 keyoo.com
 kgithub.com
 kit327.com
@@ -739,6 +747,7 @@ xdtool.com
 xiankabao.com
 xiaochuanyun.com
 xiberia.net
+ximogo.com
 xinghaiwaimai.com
 xixih.cc
 xkkapk.com
@@ -748,6 +757,7 @@ xxir.com
 xxrsm.com
 xzsckj.com
 xzzhtc.com
+ycjintou.com
 ydayc.com
 yiso.fun
 yixc.com
