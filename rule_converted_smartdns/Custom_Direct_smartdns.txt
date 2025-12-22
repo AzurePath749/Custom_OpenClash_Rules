@@ -75,6 +75,7 @@
 # add by Telegram user: Aethersailor / Date: 2025-12-05 14:30:18
 # add by Telegram user: Aethersailor / Date: 2025-12-08 14:59:40
 # add by Telegram user: Aethersailor / Date: 2025-12-18 10:33:27
+# add by Telegram user: Aethersailor / Date: 2025-12-22 01:34:51
 # add by Telegram user: Aethersailor / Date:2025-07-21 22:18:39
 # add by Telegram user: Aethersailor / Date:2025-07-22 04:14:28
 # add by Telegram user: Aethersailor / Date:2025-07-22 11:41:34
@@ -248,6 +249,7 @@
 # 小熊猫c＋＋ IDE / add by Telegram user: y / Date: 2025-10-31 22:16:45
 # 小电视空降助手，跳过 b 站广告 / add by Telegram user: chrysaly / Date: 2025-08-21 14:19:34
 # 小说网站 / add by Telegram user: 楉笙 / Date: 2025-12-15 21:46:50
+# 巨正源旗下电商平台 / add by Telegram user: 做一晚泥工 / Date: 2025-12-21 16:54:25
 # 希沃学习机
 # 强制直连域名列表，来自个人收集
 # 影视站 / add by Telegram user: Feng Ninger / Date: 2025-08-11 11:55:42
@@ -335,6 +337,7 @@
 # 购物 / add by Telegram user: 𝓚𝓮𝓵𝓿𝓲𝓷𝓟 / Date: 2025-12-16 20:25:09
 # 购物 / add by Telegram user: 𝓚𝓮𝓵𝓿𝓲𝓷𝓟 / Date: 2025-12-16 20:26:12
 # 购物网站 / add by Telegram user: 哈Lay / Date: 2025-12-18 22:06:20
+# 资源网站 / add by Telegram user: 哈Lay / Date: 2025-12-21 23:07:01
 # 软件及服务 / add by Telegram user: rl / Date: 2025-08-14 09:47:11
 # 软件类规则
 # 通信厂商官网 / add by Telegram user: Animi / Date: 2025-12-13 12:50:40
@@ -412,6 +415,7 @@
 3dwhere.com
 3gxk.net
 4399zmxy.com
+51tbox.com
 51wanxue.com
 51zmt.top
 52jiawei.com
@@ -592,6 +596,7 @@ ipapi.co
 ipshu.com
 istoreos.com
 itptg.com
+jduoduo.com
 jfjt.cc
 jh96095.com
 jiliuwang.net
@@ -632,6 +637,7 @@ mifeng.plus
 mifon.com
 mobai.sbs
 modelscope.net
+morefuntengyun.com
 msftconnecttest.com
 msftncsi.com
 mslmc.net
