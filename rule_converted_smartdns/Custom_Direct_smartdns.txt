@@ -76,6 +76,8 @@
 # add by Telegram user: Aethersailor / Date: 2025-12-08 14:59:40
 # add by Telegram user: Aethersailor / Date: 2025-12-18 10:33:27
 # add by Telegram user: Aethersailor / Date: 2025-12-22 01:34:51
+# add by Telegram user: Aethersailor / Date: 2025-12-22 11:37:14
+# add by Telegram user: Aethersailor / Date: 2025-12-22 11:49:20
 # add by Telegram user: Aethersailor / Date:2025-07-21 22:18:39
 # add by Telegram user: Aethersailor / Date:2025-07-22 04:14:28
 # add by Telegram user: Aethersailor / Date:2025-07-22 11:41:34
@@ -482,6 +484,7 @@ dcgstd.com
 ddsrem.com
 ddzn.tech
 dell.com
+dfhog.com
 dhub.kubesre.xyz
 dingdingzn.com
 diyiedu.com
@@ -566,6 +569,7 @@ hbctic.com
 hdbz.net
 hexiny.com
 hf-mirror.com
+hhtvc.com
 hijin.vip
 hnxzctec.com
 hsbc.com.hk
