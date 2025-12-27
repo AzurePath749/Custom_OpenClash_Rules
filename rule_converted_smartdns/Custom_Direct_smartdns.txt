@@ -1,7 +1,7 @@
 
 # ---------------------------------------
 # 115
-# 2025.12.17 分类整理完毕
+# 2025.12.26 分类整理完毕
 # 3D模型下载网站 / add by Telegram user: 哆啦A梦 / Date: 2025-11-10 13:20:28
 # 6V电影网 / add by Telegram user: 鱼 / Date: 2025-10-08 17:51:33
 # 985宇宙盒子官网（steam离线号库） / add by Telegram user: 真怪誕呀 / Date: 2025-08-01 01:20:05
@@ -153,6 +153,7 @@
 # add by Telegram user: 网猫-工作时间早10-晚11 / Date: 2025-09-10 09:21:45
 # add by Telegram user: 花火 / Date: 2025-08-14 21:01:04
 # add by Telegram user: 𝓚𝓮𝓵𝓿𝓲𝓷𝓟 / Date: 2025-12-17 21:15:29
+# aicoding / add by Telegram user: Makka / Date: 2025-12-27 10:11:32
 # bark默认服务器的域名 / add by Telegram user: Shu / Date: 2025-11-15 18:41:59
 # cent浏览器论坛网站 / add by Telegram user: li / Date: 2025-08-20 11:59:34
 # easytier服务 / add by Telegram user: hvccff / Date: 2025-11-17 08:22:05
@@ -290,7 +291,6 @@
 # 樱花内网穿透节点域名 / add by Telegram user: 花火 / Date: 2025-08-24 15:04:10
 # 此规则文件中的域名会定期 PR 至 Geosite 数据库，并删除已被 Geosite 收录的域名，因此请在支持 Geosite 的软件（如 OpenClash）中使用。
 # 民生门户 / add by Telegram user: Evan / Date: 2025-07-23 08:48:17
-# 水弹玩具论坛 / add by Telegram user: kisigrant / Date: 2025-12-26 00:39:03
 # 水族用品 / add by Telegram user: Shady / Date: 2025-09-03 15:39:07
 # 汇丰 / add by Telegram user: FengNinger / Date: 2025-12-14 10:04:00
 # 汇丰银行
@@ -444,6 +444,7 @@ akamaized.net
 aloys233.top
 antping.com
 anycubic.com
+anyrouter.top
 api.myip.com
 armvm.com
 atticus.vip
@@ -696,7 +697,6 @@ sanligu.top
 sapphiretech.com
 scbaijia.com
 sct.ftqq.com
-sdgun.net
 seaflysoft.com
 seedpace.com
 sgtv.ii00.cc
