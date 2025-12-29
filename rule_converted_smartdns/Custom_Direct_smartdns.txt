@@ -305,6 +305,7 @@
 # 深圳第一健康机构网站 / add by Telegram user: Animi / Date: 2025-12-13 00:42:45
 # 游戏类规则
 # 游戏网站 / add by Telegram user: Leo / Date: 2025-07-23 17:52:55
+# 游戏资讯网站 / add by Telegram user: 麦香鸡 / Date: 2025-12-28 14:36:02
 # 灵溪网 绿色软件下载与技术分享 / add by Telegram user: ecerc / Date: 2025-10-28 20:04:52
 # 牛逼云无需富强官网 / add by Telegram user: 真怪誕呀 / Date: 2025-08-23 17:18:18
 # 环球英语多媒体资料库 / add by Telegram user: 真怪誕呀 / Date: 2025-08-01 01:32:58
@@ -451,6 +452,7 @@ antping.com
 anycubic.com
 anyrouter.top
 api.myip.com
+aqtwwx.net
 armvm.com
 atticus.vip
 baiyishequ.com
