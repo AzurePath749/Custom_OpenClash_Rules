@@ -307,6 +307,7 @@
 # 游戏网站 / add by Telegram user: Leo / Date: 2025-07-23 17:52:55
 # 游戏资讯网站 / add by Telegram user: 麦香鸡 / Date: 2025-12-28 14:36:02
 # 灵溪网 绿色软件下载与技术分享 / add by Telegram user: ecerc / Date: 2025-10-28 20:04:52
+# 爱普生打印机
 # 牛逼云无需富强官网 / add by Telegram user: 真怪誕呀 / Date: 2025-08-23 17:18:18
 # 环球英语多媒体资料库 / add by Telegram user: 真怪誕呀 / Date: 2025-08-01 01:32:58
 # 生死狙击2客户端域名 / add by Telegram user: 花火 / Date: 2025-09-27 00:43:49
@@ -315,6 +316,7 @@
 # 电费计算器-在线工具 / add by Telegram user: 哆啦A梦 / Date: 2025-11-21 11:05:50
 # 百度网盘解析 / add by Telegram user: x / Date: 2025-12-07 18:19:35
 # 盖世童书的网址 / add by Telegram user: sanligu / Date: 2025-07-29 15:52:19
+# 社区 / add by Telegram user: 哈Lay / Date: 2025-12-29 12:54:22
 # 立林全屋智能 / add by Telegram user: Q / Date: 2025-09-20 05:42:29
 # 笔袋应用 学习网站 / add by Telegram user: Jiajun / Date: 2025-09-11 19:23:53
 # 精准定位 / add by Telegram user: 真怪誕呀 / Date: 2025-08-01 01:47:12
@@ -373,6 +375,7 @@
 #DOMAIN-SUFFIX,115vod.com
 #DOMAIN-SUFFIX,5ddd.com
 #DOMAIN-SUFFIX,agentyun.com
+#DOMAIN-SUFFIX,asailor.org
 #DOMAIN-SUFFIX,astral-vector.com
 #DOMAIN-SUFFIX,benfuip.com
 #DOMAIN-SUFFIX,buy0596.com
@@ -437,6 +440,7 @@
 900cha.com
 985hezi.com
 998tool.com
+a0d.top
 aaawz.cc
 acggit.com
 adobe.com
@@ -670,6 +674,7 @@ onebuygz.com
 opentrust.net
 ottai.com
 ourschool.cc
+p01.epsonconnect.com
 paperang.com
 pixcheese.com
 plusde1.younoyes.com
