@@ -340,6 +340,7 @@
 # 视频网站 / add by Telegram user: hvccff / Date: 2025-10-06 18:30:24
 # 视频网站 / add by Telegram user: jiro / Date:2025-07-22 12:04:55
 # 视频网站 / add by Telegram user: sanligu / Date: 2025-08-03 10:15:19
+# 视频网站 / add by Telegram user: 哈Lay / Date: 2025-12-30 19:45:33
 # 论坛网站 / add by Telegram user: Shady / Date: 2025-08-25 19:21:52
 # 设计模型网站 / add by Telegram user: 石 / Date:2025-07-22 18:53:50
 # 财经网站 / add by Telegram user: Mouton / Date: 2025-10-18 22:48:47
@@ -539,6 +540,7 @@ gaishitongshu.com
 game.maj-soul.com
 gangtise.com
 gaojiua.com
+gaze.run
 gdcucc.v1.mk
 geektool.top
 ggbond.org
