@@ -126,6 +126,8 @@
 # add by Telegram user: Yongyu / Date: 2025-08-17 01:12:13
 # add by Telegram user: chrysaly / Date: 2025-07-25 11:31:30
 # add by Telegram user: h / Date: 2025-08-27 22:24:19
+# add by Telegram user: h / Date: 2026-01-01 14:23:06
+# add by Telegram user: kk / Date: 2026-01-02 02:54:35
 # add by Telegram user: kk / Date:2025-07-22 20:32:43
 # add by Telegram user: lei / Date: 2025-10-16 13:27:16
 # add by Telegram user: lei / Date: 2025-10-21 23:06:22
@@ -544,6 +546,7 @@ gaojiua.com
 gaze.run
 gdcucc.v1.mk
 geektool.top
+gegeselect.hk
 ggbond.org
 gh-proxy.com
 gh.con.sh
@@ -729,6 +732,7 @@ ssjj2.com
 starlink.uno
 stkfanli.com
 suyur.com
+svyun.com
 sxlljm.com
 tailgdd.com
 tangguobaohe.com
