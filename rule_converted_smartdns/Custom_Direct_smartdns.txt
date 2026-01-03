@@ -78,6 +78,7 @@
 # add by Telegram user: Aethersailor / Date: 2025-12-22 01:34:51
 # add by Telegram user: Aethersailor / Date: 2025-12-22 11:37:14
 # add by Telegram user: Aethersailor / Date: 2025-12-22 11:49:20
+# add by Telegram user: Aethersailor / Date: 2026-01-02 16:29:48
 # add by Telegram user: Aethersailor / Date:2025-07-21 22:18:39
 # add by Telegram user: Aethersailor / Date:2025-07-22 04:14:28
 # add by Telegram user: Aethersailor / Date:2025-07-22 11:41:34
@@ -190,6 +191,7 @@
 # 个人博客 / add by Telegram user: Skyllar / Date: 2025-11-07 23:43:59
 # 个人导航网站及游戏站点 / add by Telegram user: Char / Date: 2025-10-28 00:00:59
 # 个人技术博客 / add by Telegram user: 慧慧 / Date: 2025-08-14 14:02:50
+# 个人网站 / add by Telegram user: Awt / Date: 2026-01-03 00:58:13
 # 个人网站 / add by Telegram user: Km / Date: 2025-07-23 03:31:58
 # 个人网站 / add by Telegram user: Km / Date:2025-07-22 13:53:32
 # 中国资讯门户 / add by Telegram user: Joe / Date: 2025-11-14 11:14:30
@@ -217,6 +219,7 @@
 # 公益open-webui / add by Telegram user: 真怪誕呀 / Date: 2025-08-23 17:41:37
 # 其他
 # 分享网站 / add by Telegram user: 哈Lay / Date: 2025-12-18 22:10:39
+# 北京公交地铁APP："亿通行" / add by Telegram user: zero / Date: 2026-01-02 23:03:30
 # 医疗健康 / add by Telegram user: 闹斯特麻麻 / Date: 2025-07-30 10:07:17
 # 医疗门户 / add by Telegram user: Evan / Date: 2025-09-21 11:45:41
 # 千学云在线教育平台 / add by Telegram user: 木2 / Date: 2025-10-02 15:55:10
@@ -263,6 +266,7 @@
 # 强制直连域名列表，来自个人收集
 # 影视站 / add by Telegram user: Feng Ninger / Date: 2025-08-11 11:55:42
 # 影视站 / add by Telegram user: Feng Ninger / Date: 2025-08-11 11:56:12
+# 影视站 / add by Telegram user: 哈Lay / Date: 2026-01-02 15:26:38
 # 律师在线办公平台 / add by Telegram user: Coco / Date: 2025-07-23 22:56:02
 # 微信小程序 / add by Telegram user: EzrAAA / Date: 2025-08-10 19:02:13
 # 微信智能设备控制小程序 / add by Telegram user: 李白 / Date: 2025-09-19 10:15:59
@@ -451,6 +455,7 @@ adobe.com
 afeica.com
 afuns.me
 aichangbaishan.com
+aidien.fun
 aigodlike.com
 aistudio-app.com
 akamaihd.net
@@ -463,6 +468,7 @@ api.myip.com
 aqtwwx.net
 armvm.com
 atticus.vip
+awstme.top
 baiyishequ.com
 bangumi.tv
 bdcb.cc
@@ -517,6 +523,7 @@ dskj-ops.com
 dushe1.app
 eagsen.com
 easytier.top
+easytomessage.com
 einfo-tech.com
 englibrary.com
 epark.cc
@@ -625,6 +632,7 @@ jh96095.com
 jiliuwang.net
 jingheiot.com
 jiqw.com
+jsdelivr.com
 jsdelivr.net
 julebu.co
 jxjktzjt.com
@@ -718,6 +726,7 @@ sct.ftqq.com
 seaflysoft.com
 seedpace.com
 sgtv.ii00.cc
+shanghai-parking.com
 shineacc.com
 shuinfo.com
 shunjing.xin
