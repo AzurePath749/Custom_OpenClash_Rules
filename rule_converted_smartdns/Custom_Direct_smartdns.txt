@@ -150,6 +150,7 @@
 # add by Telegram user: 你是 / Date: 2025-07-28 14:03:53
 # add by Telegram user: 你是 / Date: 2025-07-28 14:04:57
 # add by Telegram user: 你是 / Date: 2025-07-28 14:05:38
+# add by Telegram user: 哈Lay / Date: 2026-01-03 21:57:08
 # add by Telegram user: 啥也不是 / Date: 2025-10-11 14:33:51
 # add by Telegram user: 尼古拉斯 / Date: 2025-11-02 10:53:57
 # add by Telegram user: 法兰西 / Date: 2025-09-22 20:12:53
@@ -360,6 +361,8 @@
 # 通信厂商官网 / add by Telegram user: Animi / Date: 2025-12-13 12:50:40
 # 速推客后台管理 / add by Telegram user: 吃吃吃吃 / Date: 2025-09-30 10:39:48
 # 逸掌柜电商软件 / add by Telegram user: Q / Date: 2025-09-20 05:40:16
+# 酷友社 / add by Telegram user: zero / Date: 2026-01-03 12:27:09
+# 酷咖游戏官网 / add by Telegram user: kisigrant / Date: 2026-01-03 20:40:43
 # 金融数据 / add by Telegram user: ai / Date: 2025-11-26 14:33:09
 # 金融类
 # 锐捷网络 / add by Telegram user: ai / Date: 2025-12-03 20:30:34
@@ -497,11 +500,13 @@ chujingapp.com
 clivia.fun
 cn-music.mefun.vip
 cnb.space
+cocav.com
 codeloop.top
 coffee-iot.com
 congmiqq.com
 coros.com
 crtyhr.com
+d4ctech.com
 day.app
 dcgstd.com
 ddsrem.com
@@ -787,6 +792,7 @@ xdqtech.com
 xdtool.com
 xiankabao.com
 xiaochuanyun.com
+xiaoxia.vip
 xiberia.net
 ximogo.com
 xinghaiwaimai.com
