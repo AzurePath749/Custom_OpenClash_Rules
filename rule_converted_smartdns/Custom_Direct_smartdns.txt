@@ -133,6 +133,7 @@
 # add by Telegram user: chrysaly / Date: 2025-07-25 11:31:30
 # add by Telegram user: h / Date: 2025-08-27 22:24:19
 # add by Telegram user: h / Date: 2026-01-01 14:23:06
+# add by Telegram user: hlly / Date: 2026-01-06 22:51:31
 # add by Telegram user: kk / Date: 2026-01-02 02:54:35
 # add by Telegram user: kk / Date:2025-07-22 20:32:43
 # add by Telegram user: lei / Date: 2025-10-16 13:27:16
@@ -222,6 +223,8 @@
 # 便单APP / add by Telegram user: y / Date: 2025-10-31 01:24:28
 # 像素芝士 / add by Telegram user: ecerc / Date: 2025-10-26 23:22:45
 # 儿童学习机 / add by Telegram user: sanligu / Date: 2025-07-29 15:54:04
+# 公务网 / add by Telegram user: 哈Lay / Date: 2026-01-06 17:36:23
+# 公务行 / add by Telegram user: 哈Lay / Date: 2026-01-06 17:37:14
 # 公益open-webui / add by Telegram user: 真怪誕呀 / Date: 2025-08-23 17:41:37
 # 其他
 # 分享网站 / add by Telegram user: 哈Lay / Date: 2025-12-18 22:10:39
@@ -354,6 +357,7 @@
 # 视频网站 / add by Telegram user: jiro / Date:2025-07-22 12:04:55
 # 视频网站 / add by Telegram user: sanligu / Date: 2025-08-03 10:15:19
 # 视频网站 / add by Telegram user: 哈Lay / Date: 2025-12-30 19:45:33
+# 视频网站 / add by Telegram user: 哈Lay / Date: 2026-01-06 21:13:37
 # 论坛网站 / add by Telegram user: Shady / Date: 2025-08-25 19:21:52
 # 设计模型网站 / add by Telegram user: 石 / Date:2025-07-22 18:53:50
 # 财经网站 / add by Telegram user: Mouton / Date: 2025-10-18 22:48:47
@@ -592,6 +596,8 @@ goalmapapp.com
 goka.top
 googoc.com
 gootho.com
+gpetrip.com
+gpgwx.com
 gseen.com
 gsgltz.com
 gsjkjt.com
@@ -652,6 +658,7 @@ jxpp.com
 kaijiejinrong.com
 kaspersky-labs.com
 kaspersky.com
+kcbd.top
 kejiweixun.com
 keyoo.com
 kgithub.com
@@ -762,6 +769,7 @@ tclai.top
 tcp.pub
 tcp5.com
 tcy365.net
+theluyuan.com
 thinkerride.com
 thmnet.com
 timbrd.com
