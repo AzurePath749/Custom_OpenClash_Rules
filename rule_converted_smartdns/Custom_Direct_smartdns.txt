@@ -244,6 +244,7 @@
 # 华盛通 / add by Telegram user: 真怪誕呀 / Date: 2025-08-03 12:50:59
 # 南方电网
 # 博客 / add by Telegram user: Aloys / Date: 2025-09-18 22:38:49
+# 博客 / add by Telegram user: 哈Lay / Date: 2026-01-07 21:31:37
 # 卡券交易 / add by Telegram user: 闹斯特麻麻 / Date: 2025-07-30 10:08:28
 # 卡商网站 / add by Telegram user: ✈️ / Date: 2025-10-02 00:39:22
 # 台铃电动车管理 / add by Telegram user: Lailin / Date: 2025-08-28 03:37:02
@@ -358,6 +359,7 @@
 # 视频网站 / add by Telegram user: sanligu / Date: 2025-08-03 10:15:19
 # 视频网站 / add by Telegram user: 哈Lay / Date: 2025-12-30 19:45:33
 # 视频网站 / add by Telegram user: 哈Lay / Date: 2026-01-06 21:13:37
+# 视频网站 / add by Telegram user: 哈Lay / Date: 2026-01-07 19:18:30
 # 论坛网站 / add by Telegram user: Shady / Date: 2025-08-25 19:21:52
 # 设计模型网站 / add by Telegram user: 石 / Date:2025-07-22 18:53:50
 # 财经网站 / add by Telegram user: Mouton / Date: 2025-10-18 22:48:47
@@ -366,6 +368,7 @@
 # 购物网站 / add by Telegram user: 哈Lay / Date: 2025-12-18 22:06:20
 # 资源网站 / add by Telegram user: 哈Lay / Date: 2025-12-21 23:07:01
 # 软件及服务 / add by Telegram user: rl / Date: 2025-08-14 09:47:11
+# 软件官网 / add by Telegram user: 哈Lay / Date: 2026-01-07 21:32:03
 # 软件类规则
 # 通信厂商官网 / add by Telegram user: Animi / Date: 2025-12-13 12:50:40
 # 速推客后台管理 / add by Telegram user: 吃吃吃吃 / Date: 2025-09-30 10:39:48
@@ -457,6 +460,7 @@
 737698.xyz
 7sef.com
 86656.net
+8kc.top
 900cha.com
 985hezi.com
 998tool.com
@@ -709,6 +713,7 @@ ottai.com
 ourschool.cc
 p01.epsonconnect.com
 paperang.com
+passnat.com
 pixcheese.com
 plusde1.younoyes.com
 plushk1.younoyes.com
@@ -840,6 +845,7 @@ zhituwujie.com
 zhixingyunke.com
 zhongancloud.com
 zjxhedu.com
+zmis.me
 znnu.com
 znztv.com
 zsytit.com
