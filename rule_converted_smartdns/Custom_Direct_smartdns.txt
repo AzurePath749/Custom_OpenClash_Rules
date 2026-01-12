@@ -158,6 +158,7 @@
 # add by Telegram user: 你是 / Date: 2025-07-28 14:05:38
 # add by Telegram user: 哈Lay / Date: 2026-01-03 21:57:08
 # add by Telegram user: 啥也不是 / Date: 2025-10-11 14:33:51
+# add by Telegram user: 嘿嘿 / Date: 2026-01-11 20:42:55
 # add by Telegram user: 尼古拉斯 / Date: 2025-11-02 10:53:57
 # add by Telegram user: 法兰西 / Date: 2025-09-22 20:12:53
 # add by Telegram user: 石 / Date: 2025-08-08 22:48:01
@@ -211,7 +212,6 @@
 # 以下域名已提交 PR
 # 以下域名已被 GeoSite 上游项目收录，定期删除
 # 以下域名已被收录，计划于 2025.10.6 删除
-# 以下域名已被收录，计划于 2025.12.5 删除
 # 以下域名待提交 PR
 # 以下域名由用户通过机器人添加，无备案且 NS 不属于中国大陆，或解析结果不属于中国大陆
 # 以下是准备向 GeoSite 上游仓库提交 PR 的国内冷门域名，收录后会注释对应内容
@@ -336,6 +336,7 @@
 # 社区 / add by Telegram user: 哈Lay / Date: 2025-12-29 12:54:22
 # 立林全屋智能 / add by Telegram user: Q / Date: 2025-09-20 05:42:29
 # 笔袋应用 学习网站 / add by Telegram user: Jiajun / Date: 2025-09-11 19:23:53
+# 米思齐官网 / add by Telegram user: 嘿嘿 / Date: 2026-01-11 20:41:54
 # 精准定位 / add by Telegram user: 真怪誕呀 / Date: 2025-08-01 01:47:12
 # 红警重聚 Reunion 2023
 # 纵维立方3d打印 fmd光固化生产厂家 / add by Telegram user: 芒果 / Date: 2025-08-19 03:46:55
@@ -377,6 +378,9 @@
 # 酷咖游戏官网 / add by Telegram user: kisigrant / Date: 2026-01-03 20:40:43
 # 金融数据 / add by Telegram user: ai / Date: 2025-11-26 14:33:09
 # 金融类
+# 铁威马NAS远程访问服务 / add by Telegram user: 嘿嘿 / Date: 2026-01-11 20:36:32
+# 铁威马NAS远程访问服务 / add by Telegram user: 嘿嘿 / Date: 2026-01-11 20:40:12
+# 铁威马官网 / add by Telegram user: 嘿嘿 / Date: 2026-01-11 20:39:01
 # 锐捷网络 / add by Telegram user: ai / Date: 2025-12-03 20:30:34
 # 长白山景区网站 / add by Telegram user: Coco / Date: 2025-11-13 17:55:27
 # 问卷星 / add by Telegram user: 法兰西 / Date: 2025-09-17 21:06:29
@@ -689,6 +693,7 @@ members.3322.org
 micu.hk
 mifeng.plus
 mifon.com
+mixly.org
 mobai.sbs
 modelscope.net
 morefuntengyun.com
@@ -747,6 +752,7 @@ sanligu.top
 sapphiretech.com
 scbaijia.com
 scnyw.com
+scratch5.com
 sct.ftqq.com
 seaflysoft.com
 seedpace.com
@@ -774,10 +780,13 @@ tclai.top
 tcp.pub
 tcp5.com
 tcy365.net
+terra-master.com
 theluyuan.com
 thinkerride.com
 thmnet.com
 timbrd.com
+tnas.link
+tnas.online
 tool56.com
 topwd.top
 tozi-cn.top
