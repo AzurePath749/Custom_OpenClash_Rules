@@ -270,6 +270,7 @@
 # 安卓车机app应用市场 / add by Telegram user: 哈Lay / Date: 2025-12-18 21:59:15
 # 小熊猫c＋＋ IDE / add by Telegram user: y / Date: 2025-10-31 22:16:45
 # 小电视空降助手，跳过 b 站广告 / add by Telegram user: chrysaly / Date: 2025-08-21 14:19:34
+# 小白打印 / add by Telegram user: r / Date: 2026-01-13 02:29:27
 # 小说网站 / add by Telegram user: 楉笙 / Date: 2025-12-15 21:46:50
 # 巨正源旗下电商平台 / add by Telegram user: 做一晚泥工 / Date: 2025-12-21 16:54:25
 # 希沃学习机
@@ -368,6 +369,7 @@
 # 购物 / add by Telegram user: 𝓚𝓮𝓵𝓿𝓲𝓷𝓟 / Date: 2025-12-16 20:26:12
 # 购物网站 / add by Telegram user: 哈Lay / Date: 2025-12-18 22:06:20
 # 资源网站 / add by Telegram user: 哈Lay / Date: 2025-12-21 23:07:01
+# 轩辕的编程宇宙 / add by Telegram user: Mayfly / Date: 2026-01-12 20:44:53
 # 软件及服务 / add by Telegram user: rl / Date: 2025-08-14 09:47:11
 # 软件官网 / add by Telegram user: 哈Lay / Date: 2026-01-07 21:32:03
 # 软件类规则
@@ -818,6 +820,7 @@ wlcdn88.com
 wpurl.cc
 wwwh.eu.org
 x86pi.com
+xbcloudprint.com
 xbgjw.com
 xdqtech.com
 xdtool.com
@@ -833,6 +836,7 @@ xkkapk.com
 xn--4kq62z5rby2qupq9ub.top
 xn--cesw6hd3s99f.com
 xopenbeta.com
+xuanyuancode.com
 xxir.com
 xxrsm.com
 xzsckj.com
