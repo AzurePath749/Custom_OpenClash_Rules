@@ -245,6 +245,7 @@
 # 南方电网
 # 博客 / add by Telegram user: Aloys / Date: 2025-09-18 22:38:49
 # 博客 / add by Telegram user: 哈Lay / Date: 2026-01-07 21:31:37
+# 博客 / add by Telegram user: 哈Lay / Date: 2026-01-13 23:37:24
 # 卡券交易 / add by Telegram user: 闹斯特麻麻 / Date: 2025-07-30 10:08:28
 # 卡商网站 / add by Telegram user: ✈️ / Date: 2025-10-02 00:39:22
 # 台铃电动车管理 / add by Telegram user: Lailin / Date: 2025-08-28 03:37:02
@@ -268,6 +269,7 @@
 # 学校 / add by Telegram user: lei / Date: 2025-09-20 16:48:58
 # 学校洗衣机APP：悠洗 / add by Telegram user: lei / Date: 2025-09-20 16:47:16
 # 安卓车机app应用市场 / add by Telegram user: 哈Lay / Date: 2025-12-18 21:59:15
+# 小倍养基 / add by Telegram user: Mairs / Date: 2026-01-13 17:11:39
 # 小熊猫c＋＋ IDE / add by Telegram user: y / Date: 2025-10-31 22:16:45
 # 小电视空降助手，跳过 b 站广告 / add by Telegram user: chrysaly / Date: 2025-08-21 14:19:34
 # 小白打印 / add by Telegram user: r / Date: 2026-01-13 02:29:27
@@ -300,6 +302,7 @@
 # 易搜-云盘资源搜索引擎 / add by Telegram user: Fruit / Date: 2025-07-31 11:05:10
 # 易班网是高校教育教学等功能社区 / add by Telegram user: 仔 / Date: 2025-08-16 10:02:18
 # 星愿浏览器官方网站 / add by Telegram user: ai / Date: 2025-11-22 00:07:50
+# 星耀充值 / add by Telegram user: r / Date: 2026-01-13 19:50:19
 # 智慧笑联
 # 更多已被收录的域名，此处未做保留
 # 未泱阅读
@@ -680,6 +683,7 @@ lanyun.net
 laogongju.com
 leelen.com
 letaoedu.com
+lg3000.top
 liunn.com
 liveperson.net
 longmenshuju.com
@@ -825,11 +829,13 @@ xbgjw.com
 xdqtech.com
 xdtool.com
 xiankabao.com
+xiaobeiyangji.com
 xiaochuanyun.com
 xiaoxia.vip
 xiberia.net
 ximogo.com
 xinghaiwaimai.com
+xingyaozhilian.com
 xiwang.com
 xixih.cc
 xkkapk.com
