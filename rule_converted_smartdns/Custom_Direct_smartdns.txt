@@ -157,6 +157,7 @@
 # add by Telegram user: 你是 / Date: 2025-07-28 14:04:57
 # add by Telegram user: 你是 / Date: 2025-07-28 14:05:38
 # add by Telegram user: 哈Lay / Date: 2026-01-03 21:57:08
+# add by Telegram user: 哈Lay / Date: 2026-01-14 18:11:07
 # add by Telegram user: 啥也不是 / Date: 2025-10-11 14:33:51
 # add by Telegram user: 嘿嘿 / Date: 2026-01-11 20:42:55
 # add by Telegram user: 尼古拉斯 / Date: 2025-11-02 10:53:57
@@ -168,6 +169,7 @@
 # aicoding / add by Telegram user: Makka / Date: 2025-12-27 10:11:32
 # bark默认服务器的域名 / add by Telegram user: Shu / Date: 2025-11-15 18:41:59
 # cent浏览器论坛网站 / add by Telegram user: li / Date: 2025-08-20 11:59:34
+# dnshe免费域名 / add by Telegram user: r / Date: 2026-01-14 17:48:56
 # easytier服务 / add by Telegram user: hvccff / Date: 2025-11-17 08:22:05
 # fnOS
 # girigirilove在线追番网站 / add by Telegram user: 真怪誕呀 / Date: 2025-08-23 17:26:28
@@ -540,6 +542,7 @@ dfhog.com
 dhub.kubesre.xyz
 dingdingzn.com
 diyiedu.com
+dnshe.com
 docker.1panel.live
 docker.kejilion.pro
 docker.unsee.tech
@@ -747,6 +750,7 @@ qianxueyunke.com
 qiaoxuesi.com
 qinglue.com
 qmeng.top
+rayws.top
 redenmc.com
 registry.dockermirror.com
 rewards.bing.com
