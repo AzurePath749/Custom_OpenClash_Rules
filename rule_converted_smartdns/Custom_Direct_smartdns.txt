@@ -46,6 +46,7 @@
 # REPO: https://github.com/Aethersailor/Custom_OpenClash_Rules
 # Server酱
 # Server酱³ · 极简推送服务 / add by Telegram user: 雪菜 / Date: 2025-10-20 18:34:08
+# Tailscale
 # Telegram user：Aethersailor / Date:2025-07-21
 # UniGetUI
 # VPS服务商 / add by Telegram user: Saulmini / Date: 2025-07-23 09:20:11
@@ -188,6 +189,7 @@
 # skipped (CIDR): IP-CIDR,218.78.7.16/32,no-resolve
 # skipped (CIDR): IP-CIDR,5.5.5.5/32,no-resolve
 # skipped (CIDR): IP-CIDR,98.126.27.164/32,no-resolve
+# skipped: SRC-PORT,41641
 # steamcommunity 302
 # steam离线号游戏库 / add by Telegram user: 真怪誕呀 / Date: 2025-07-29 13:59:20
 # x86Pi / add by Telegram user: Aethersailor / Date: 2025-09-08 12:03:12
@@ -785,6 +787,7 @@ suyur.com
 svyun.com
 sxlljm.com
 tailgdd.com
+tailscale.com
 tangguobaohe.com
 tclai.top
 tcp.pub
