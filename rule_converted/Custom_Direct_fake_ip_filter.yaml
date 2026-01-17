@@ -1,6 +1,7 @@
 payload:
   - '+.immortalwrt.org'
   - '+.kyarucloud.moe'
+  - '+.tailscale.com'
   - '+.gh-proxy.com'
   - '+.gh.con.sh'
   - '+.gh.ddlc.top'
