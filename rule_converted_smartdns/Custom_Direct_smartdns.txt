@@ -175,6 +175,7 @@
 # easytier服务 / add by Telegram user: hvccff / Date: 2025-11-17 08:22:05
 # fnOS
 # girigirilove在线追番网站 / add by Telegram user: 真怪誕呀 / Date: 2025-08-23 17:26:28
+# hoyoverse.com
 # iOS旧版App服务 / add by Telegram user: 雪菜 / Date: 2025-12-27 11:39:43
 # iptv源 / add by Telegram user: sanligu / Date: 2025-09-11 19:15:47
 # ip地址查询 / add by Telegram user: Blunt / Date: 2025-08-30 03:17:50
@@ -198,6 +199,7 @@
 # 一码贵州 / add by Telegram user: SychO / Date: 2025-08-18 01:41:36
 # 一码贵州 / add by Telegram user: SychO / Date: 2025-08-18 01:42:03
 # 三国杀打小抄官网 / add by Telegram user: 真怪誕呀 / Date: 2025-07-29 14:03:56
+# 上海车又在信息技术有限公司 / add by Telegram user: Evan / Date: 2026-01-18 14:24:13
 # 下载类
 # 专业网站 / add by Telegram user: Aaa / Date: 2025-07-25 22:15:27
 # 专业网站 / add by Telegram user: Aaa / Date: 2025-11-05 16:33:52
@@ -362,6 +364,7 @@
 # 蜜蜂试卷APP 域名 / add by Telegram user: hjxt / Date: 2025-08-21 09:44:58
 # 表答 / add by Telegram user: Joe / Date: 2025-11-14 21:24:45
 # 观看的emby域名 / add by Telegram user: Lilith / Date: 2025-09-05 01:20:55
+# 觅凹宠物喂食器 / add by Telegram user: Ping / Date: 2026-01-18 20:04:11
 # 视频 / add by Telegram user: siri / Date: 2025-11-23 13:05:05
 # 视频下载网站 / add by Telegram user: 尼古拉斯 / Date: 2025-11-02 11:00:56
 # 视频网站 / add by Telegram user: Shady / Date: 2025-08-26 13:07:08
@@ -496,6 +499,7 @@ antping.com
 anycubic.com
 anyrouter.top
 api.myip.com
+apm-log-upload-os.hoyoverse.com
 aqtwwx.net
 armvm.com
 atticus.vip
@@ -536,6 +540,7 @@ coffee-iot.com
 congmiqq.com
 coros.com
 crtyhr.com
+cyouzai.com
 d4ctech.com
 day.app
 dcgstd.com
@@ -703,9 +708,11 @@ manfuz.co
 mc-user.com
 meishiffx.online
 members.3322.org
+meoof-pet.com
 micu.hk
 mifeng.plus
 mifon.com
+minor-api-os.hoyoverse.com
 mixly.org
 mobai.sbs
 modelscope.net
@@ -769,6 +776,7 @@ scbaijia.com
 scnyw.com
 scratch5.com
 sct.ftqq.com
+sdk-log-upload-os.hoyoverse.com
 seaflysoft.com
 seedpace.com
 sgtv.ii00.cc
@@ -881,3 +889,4 @@ znztv.com
 zsytit.com
 ztytech.com
 zuobiao.press
+zzz-log-upload-os.hoyoverse.com
