@@ -148,6 +148,8 @@
 # add by Telegram user: lu / Date: 2025-11-15 20:39:15
 # add by Telegram user: r / Date: 2025-08-13 23:24:39
 # add by Telegram user: r / Date: 2025-08-14 00:22:00
+# add by Telegram user: r / Date: 2026-01-19 16:33:36
+# add by Telegram user: r / Date: 2026-01-19 16:34:38
 # add by Telegram user: y / Date: 2025-10-18 22:22:04
 # add by Telegram user: young / Date: 2025-10-26 11:13:59
 # add by Telegram user: young / Date: 2025-11-03 23:58:00
@@ -275,6 +277,7 @@
 # 学习网站 / add by Telegram user: Shady / Date: 2025-08-31 16:45:54
 # 学校 / add by Telegram user: lei / Date: 2025-09-20 16:48:58
 # 学校洗衣机APP：悠洗 / add by Telegram user: lei / Date: 2025-09-20 16:47:16
+# 守候网络
 # 安卓车机app应用市场 / add by Telegram user: 哈Lay / Date: 2025-12-18 21:59:15
 # 小倍养基 / add by Telegram user: Mairs / Date: 2026-01-13 17:11:39
 # 小熊猫c＋＋ IDE / add by Telegram user: y / Date: 2025-10-31 22:16:45
@@ -516,6 +519,7 @@ boyuemobile.com
 bsbsb.top
 bunny.net
 canghaiip.com
+cc.cd
 cdn.ist
 centbrowser.net
 cg3da.com
@@ -779,6 +783,7 @@ sct.ftqq.com
 sdk-log-upload-os.hoyoverse.com
 seaflysoft.com
 seedpace.com
+server2.cn2gias.uk
 sgtv.ii00.cc
 shanghai-parking.com
 shineacc.com
@@ -823,6 +828,7 @@ u-carloan.com
 uascent-iot.com
 ugdocker.link
 ulife.group
+us.ci
 vbkhk.com
 vbkr.com
 vbkrhk.com
