@@ -12,6 +12,7 @@
 # Bangumi番组计划
 # CDN / add by Telegram user: 𝓚𝓮𝓵𝓿𝓲𝓷𝓟 / Date: 2025-12-17 11:16:00
 # CG相关资源分享网站 / add by Telegram user: 慧慧 / Date: 2025-08-14 13:51:28
+# Cloudflare Tunnel
 # DDNS
 # DOMAIN-SUFFIX,ip-api.com 会影响某些 DNS 泄露检测网站的结果，暂时屏蔽
 # Dell
@@ -504,6 +505,7 @@ anyrouter.top
 api.myip.com
 apm-log-upload-os.hoyoverse.com
 aqtwwx.net
+argotunnel.com
 armvm.com
 atticus.vip
 awstme.top
