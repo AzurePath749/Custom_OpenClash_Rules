@@ -1,7 +1,7 @@
 
 # ---------------------------------------
 # 115
-# 2026.1.18 分类整理完毕
+# 2026.1.22 分类整理完毕
 # 3D模型下载网站 / add by Telegram user: 哆啦A梦 / Date: 2025-11-10 13:20:28
 # 6V电影网 / add by Telegram user: 鱼 / Date: 2025-10-08 17:51:33
 # 985宇宙盒子官网（steam离线号库） / add by Telegram user: 真怪誕呀 / Date: 2025-08-01 01:20:05
@@ -122,6 +122,24 @@
 # add by Telegram user: Jack / Date: 2025-12-01 23:43:46
 # add by Telegram user: Lailin / Date: 2025-09-14 12:09:49
 # add by Telegram user: Leo / Date:2025-07-22 11:07:09
+# add by Telegram user: Mairs / Date: 2026-01-22 17:46:08
+# add by Telegram user: Mairs / Date: 2026-01-22 17:48:05
+# add by Telegram user: Mairs / Date: 2026-01-22 17:48:20
+# add by Telegram user: Mairs / Date: 2026-01-22 17:48:42
+# add by Telegram user: Mairs / Date: 2026-01-22 17:50:39
+# add by Telegram user: Mairs / Date: 2026-01-22 17:50:54
+# add by Telegram user: Mairs / Date: 2026-01-22 17:53:12
+# add by Telegram user: Mairs / Date: 2026-01-22 17:53:25
+# add by Telegram user: Mairs / Date: 2026-01-22 17:53:48
+# add by Telegram user: Mairs / Date: 2026-01-22 17:54:06
+# add by Telegram user: Mairs / Date: 2026-01-22 17:54:28
+# add by Telegram user: Mairs / Date: 2026-01-22 17:55:44
+# add by Telegram user: Mairs / Date: 2026-01-22 17:56:06
+# add by Telegram user: Mairs / Date: 2026-01-22 17:56:20
+# add by Telegram user: Mairs / Date: 2026-01-22 17:57:34
+# add by Telegram user: Mairs / Date: 2026-01-22 17:58:00
+# add by Telegram user: Mairs / Date: 2026-01-22 17:58:29
+# add by Telegram user: Mairs / Date: 2026-01-22 17:59:20
 # add by Telegram user: P / Date: 2025-07-26 01:45:38
 # add by Telegram user: P / Date: 2025-07-26 01:49:54
 # add by Telegram user: Saulmini / Date: 2025-07-23 09:33:33
@@ -201,6 +219,8 @@
 # xiaomi.com / add by Telegram user: r / Date: 2025-08-21 18:58:58
 # 一码贵州 / add by Telegram user: SychO / Date: 2025-08-18 01:41:36
 # 一码贵州 / add by Telegram user: SychO / Date: 2025-08-18 01:42:03
+# 一财有看投 / add by Telegram user: Mairs / Date: 2026-01-22 17:52:01
+# 万家乐 / add by Telegram user: Mairs / Date: 2026-01-22 17:52:18
 # 三国杀打小抄官网 / add by Telegram user: 真怪誕呀 / Date: 2025-07-29 14:03:56
 # 上海车又在信息技术有限公司 / add by Telegram user: Evan / Date: 2026-01-18 14:24:13
 # 下载类
@@ -233,12 +253,15 @@
 # 便单APP / add by Telegram user: y / Date: 2025-10-31 01:24:28
 # 像素芝士 / add by Telegram user: ecerc / Date: 2025-10-26 23:22:45
 # 儿童学习机 / add by Telegram user: sanligu / Date: 2025-07-29 15:54:04
+# 先锋学霸 / add by Telegram user: Mairs / Date: 2026-01-22 17:46:58
 # 公务网 / add by Telegram user: 哈Lay / Date: 2026-01-06 17:36:23
 # 公务行 / add by Telegram user: 哈Lay / Date: 2026-01-06 17:37:14
 # 公益open-webui / add by Telegram user: 真怪誕呀 / Date: 2025-08-23 17:41:37
 # 其他
+# 冰山数据 / add by Telegram user: Mairs / Date: 2026-01-22 17:51:23
 # 分享网站 / add by Telegram user: 哈Lay / Date: 2025-12-18 22:10:39
 # 北京公交地铁APP："亿通行" / add by Telegram user: zero / Date: 2026-01-02 23:03:30
+# 北京教委 / add by Telegram user: Mairs / Date: 2026-01-22 17:50:02
 # 医疗健康 / add by Telegram user: 闹斯特麻麻 / Date: 2025-07-30 10:07:17
 # 医疗门户 / add by Telegram user: Evan / Date: 2025-09-21 11:45:41
 # 千学云在线教育平台 / add by Telegram user: 木2 / Date: 2025-10-02 15:55:10
@@ -259,6 +282,7 @@
 # 卡券交易 / add by Telegram user: 闹斯特麻麻 / Date: 2025-07-30 10:08:28
 # 卡商网站 / add by Telegram user: ✈️ / Date: 2025-10-02 00:39:22
 # 台铃电动车管理 / add by Telegram user: Lailin / Date: 2025-08-28 03:37:02
+# 和风天气 API / add by Telegram user: Mairs / Date: 2026-01-22 17:47:47
 # 咖啡自由咖啡机 / add by Telegram user: chrysaly / Date: 2025-11-10 17:53:04
 # 商务 / add by Telegram user: lu / Date:2025-07-22 14:02:38
 # 国内企业地址 / add by Telegram user: cook / Date: 2025-10-16 17:35:12
@@ -305,12 +329,14 @@
 # 招聘网站 / add by Telegram user: Feng Ninger / Date:2025-07-22 13:55:25
 # 换汇小程序 / add by Telegram user: Feng Ninger / Date: 2025-08-13 04:17:49
 # 提供NS工具和个人技术与爱好分享网站 / add by Telegram user: 慧慧 / Date: 2025-08-14 14:09:04
+# 播客 / add by Telegram user: Mairs / Date: 2026-01-22 17:49:33
 # 教育 / add by Telegram user: lu / Date:2025-07-22 13:54:28
 # 教育 / add by Telegram user: lu / Date:2025-07-22 14:00:43
 # 教育域名 / add by Telegram user: Feng Ninger / Date:2025-07-22 13:56:06
 # 教育网站 / add by Telegram user: lu / Date: 2025-10-14 20:39:39
 # 教育门户 / add by Telegram user: Evan / Date: 2025-07-23 08:49:00
 # 教育门户 / add by Telegram user: Evan / Date: 2025-07-23 08:49:41
+# 斑斑低代码 / add by Telegram user: Mairs / Date: 2026-01-22 17:45:45
 # 易搜-云盘资源搜索引擎 / add by Telegram user: Fruit / Date: 2025-07-31 11:05:10
 # 易班网是高校教育教学等功能社区 / add by Telegram user: 仔 / Date: 2025-08-16 10:02:18
 # 星愿浏览器官方网站 / add by Telegram user: ai / Date: 2025-11-22 00:07:50
@@ -340,6 +366,7 @@
 # 游戏网站 / add by Telegram user: Leo / Date: 2025-07-23 17:52:55
 # 游戏资讯网站 / add by Telegram user: 麦香鸡 / Date: 2025-12-28 14:36:02
 # 灵溪网 绿色软件下载与技术分享 / add by Telegram user: ecerc / Date: 2025-10-28 20:04:52
+# 点可云 / add by Telegram user: Mairs / Date: 2026-01-22 17:50:23
 # 爱普生打印机
 # 牛逼云无需富强官网 / add by Telegram user: 真怪誕呀 / Date: 2025-08-23 17:18:18
 # 环球英语多媒体资料库 / add by Telegram user: 真怪誕呀 / Date: 2025-08-01 01:32:58
@@ -492,6 +519,7 @@ acggit.com
 adobe.com
 afeica.com
 afuns.me
+aibeike.com
 aichangbaishan.com
 aidien.fun
 aigodlike.com
@@ -509,13 +537,17 @@ argotunnel.com
 armvm.com
 atticus.vip
 awstme.top
+axuex.top
 baiyishequ.com
+banban.work
 bangumi.tv
 bdcb.cc
 belimked.com
 bgm.tv
 biandangroup.com
 biaoda.me
+bingshandashu.com
+bjtzeduyun.com
 bochk.com
 boyuemobile.com
 bsbsb.top
@@ -548,6 +580,8 @@ coros.com
 crtyhr.com
 cyouzai.com
 d4ctech.com
+dadateach.com
+dahai96.com
 day.app
 dcgstd.com
 ddsrem.com
@@ -573,6 +607,7 @@ easytier.top
 easytomessage.com
 einfo-tech.com
 englibrary.com
+enyugame.net
 epark.cc
 epg.aptv.app
 epg.v1.mk
@@ -590,6 +625,7 @@ frp-ski.com
 fssbcc.top
 fsytss.com
 ft07.com
+functorz.com
 fuziche.com
 fzvcolco.com
 fzwqq.com
@@ -646,6 +682,7 @@ hexiny.com
 hf-mirror.com
 hhtvc.com
 hijin.vip
+hiwms.com
 hnxzctec.com
 hsbc.com.hk
 hstbroker.com
@@ -666,6 +703,7 @@ ifconfig.co
 ifengmap.com
 ifish7.com
 igpsport.com
+ilucky.net
 imacos.top
 immortalwrt.org
 iotrix.net
@@ -678,6 +716,7 @@ itptg.com
 jduoduo.com
 jfjt.cc
 jh96095.com
+jiaoyanyun.com
 jiliuwang.net
 jingheiot.com
 jiqw.com
@@ -687,6 +726,7 @@ julebu.co
 jxjktzjt.com
 jxpp.com
 kaijiejinrong.com
+kancaibao.com
 kaspersky-labs.com
 kaspersky.com
 kcbd.top
@@ -706,19 +746,23 @@ liunn.com
 liveperson.net
 longmenshuju.com
 lsbj365.com
+lucky.gd
 lyihub.com
 lyilife.com
 m-team.cc
 m-team.io
+machtalk.net
 manfuz.co
 mc-user.com
 meishiffx.online
+meiyitou.top
 members.3322.org
 meoof-pet.com
 micu.hk
 mifeng.plus
 mifon.com
 minor-api-os.hoyoverse.com
+misea.top
 mixly.org
 mobai.sbs
 modelscope.net
@@ -735,6 +779,7 @@ netzz.net
 nhk.or.jp
 nicezhuanye.com
 nn.ci
+nodcloud.com
 nxog.top
 oceando.cloud
 ok321.top
@@ -768,6 +813,7 @@ qianxueyunke.com
 qiaoxuesi.com
 qinglue.com
 qmeng.top
+qweatherapi.com
 rayws.top
 redenmc.com
 registry.dockermirror.com
@@ -808,6 +854,7 @@ tailgdd.com
 tailscale.com
 tangguobaohe.com
 tclai.top
+tcp.mk
 tcp.pub
 tcp5.com
 tcy365.net
@@ -816,6 +863,7 @@ theluyuan.com
 thinkerride.com
 thmnet.com
 timbrd.com
+tixue.net
 tnas.link
 tnas.online
 tool56.com
@@ -847,6 +895,7 @@ weshape3d.com
 wewillpro.com
 wjx.top
 wlcdn88.com
+wologic.net
 wpurl.cc
 wwwh.eu.org
 wxdw.top
@@ -855,6 +904,7 @@ xbcloudprint.com
 xbgjw.com
 xdqtech.com
 xdtool.com
+xesabc.com
 xiankabao.com
 xiaobeiyangji.com
 xiaochuanyun.com
@@ -870,12 +920,14 @@ xn--4kq62z5rby2qupq9ub.top
 xn--cesw6hd3s99f.com
 xopenbeta.com
 xuanyuancode.com
+xuepaipai.com
 xxir.com
 xxrsm.com
 xzsckj.com
 xzzhtc.com
 ycjintou.com
 ydayc.com
+yicaiykt.com
 yiso.fun
 yixc.com
 yongyu.xyz
@@ -884,12 +936,14 @@ yunzuoye.net
 yyshub.top
 yzcsoft.com
 z6e.com
+zcloud.world
 zctnet.top
 zeekrline.com
 zhi10.com
 zhituwujie.com
 zhixingyunke.com
 zhongancloud.com
+zhu.today
 zjxhedu.com
 zmis.me
 znnu.com
