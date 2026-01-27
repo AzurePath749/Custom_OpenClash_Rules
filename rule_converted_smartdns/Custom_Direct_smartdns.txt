@@ -189,6 +189,8 @@
 # add by Telegram user: 石 / Date: 2025-08-08 22:48:01
 # add by Telegram user: 网猫-工作时间早10-晚11 / Date: 2025-09-10 09:21:45
 # add by Telegram user: 花火 / Date: 2025-08-14 21:01:04
+# add by Telegram user: 蛋中央 / Date: 2026-01-26 20:08:51
+# add by Telegram user: 蛋中央 / Date: 2026-01-26 20:34:21
 # add by Telegram user: 𝓚𝓮𝓵𝓿𝓲𝓷𝓟 / Date: 2025-12-17 21:15:29
 # aicoding / add by Telegram user: Makka / Date: 2025-12-27 10:11:32
 # bark默认服务器的域名 / add by Telegram user: Shu / Date: 2025-11-15 18:41:59
@@ -206,6 +208,7 @@
 # istore / add by Telegram user: rl / Date: 2025-08-17 14:48:32
 # mc投影图下载 / add by Telegram user: Aloys / Date: 2025-09-18 22:43:15
 # msl官网 / add by Telegram user: Giveup. / Date: 2025-07-30 22:13:02
+# nat 类型检测 / add by Telegram user: 一只 / Date: 2026-01-26 21:02:18
 # pt站劳教所 / add by Telegram user: kevin / Date: 2025-09-22 14:35:53
 # pt站劳教所 / add by Telegram user: kevin / Date: 2025-09-22 14:36:31
 # ros路由表更新 / add by Telegram user: 雪菜 / Date: 2025-09-20 23:14:04
@@ -758,6 +761,8 @@ m-team.io
 machtalk.net
 manfuz.co
 mc-user.com
+mchuiji.com
+mcxyzt.cc
 meishiffx.online
 meiyitou.top
 members.3322.org
@@ -779,6 +784,7 @@ mykuaidi.com
 myshopex.com
 naixi.com
 nanshe-tech.com
+natchecker.com
 neihang.net
 netzz.net
 nhk.or.jp
