@@ -242,6 +242,7 @@
 # 个人网站 / add by Telegram user: Km / Date:2025-07-22 13:53:32
 # 中国资讯门户 / add by Telegram user: Joe / Date: 2025-11-14 11:14:30
 # 中国银行香港，如果走代理，会被风控 / add by Telegram user: victory / Date: 2025-09-20 08:33:44
+# 主机游戏模拟器软件服务器 / add by Telegram user: abcd / Date: 2026-01-30 23:18:06
 # 么么辰的游戏百宝箱
 # 九九互动
 # 云手机 / add by Telegram user: hanshan / Date:2025-07-22 10:35:28
@@ -265,6 +266,7 @@
 # 公务网 / add by Telegram user: 哈Lay / Date: 2026-01-06 17:36:23
 # 公务行 / add by Telegram user: 哈Lay / Date: 2026-01-06 17:37:14
 # 公益open-webui / add by Telegram user: 真怪誕呀 / Date: 2025-08-23 17:41:37
+# 共享账号出售平台 / add by Telegram user: abcd / Date: 2026-01-31 00:13:30
 # 其他
 # 冰山数据 / add by Telegram user: Mairs / Date: 2026-01-22 17:51:23
 # 分享网站 / add by Telegram user: 哈Lay / Date: 2025-12-18 22:10:39
@@ -449,6 +451,7 @@
 # 馒头
 # 驱动总裁 / add by Telegram user: 雪菜 / Date: 2025-12-01 00:04:13
 # 驾校学时APP / add by Telegram user: lei / Date: 2025-10-16 13:26:35
+# 高校教务系统 / add by Telegram user: abcd / Date: 2026-01-30 23:13:44
 # 高驰手表app / add by Telegram user: nmd / Date: 2025-07-28 16:21:27
 # 鸿蒙出境易
 # 鸿蒙智行 / add by Telegram user: rl / Date: 2025-08-14 19:33:16
@@ -690,6 +693,7 @@ hbcof.com
 hbctic.com
 hdbz.net
 hexiny.com
+hezuvip.com
 hf-mirror.com
 hhtvc.com
 hijin.vip
@@ -817,6 +821,7 @@ plusjp1.younoyes.com
 plusus1.younoyes.com
 plusus2.younoyes.com
 plusus3.younoyes.com
+ponyemu.com
 pool.ntp.org
 powershellgallery.com
 privateapi.xyz
@@ -930,6 +935,7 @@ xiberia.net
 ximogo.com
 xinghaiwaimai.com
 xingyaozhilian.com
+xiqueer.com
 xiwang.com
 xixih.cc
 xkkapk.com
