@@ -115,6 +115,7 @@
 # add by Telegram user: Evan / Date: 2025-07-23 08:46:35
 # add by Telegram user: Evan / Date: 2025-07-23 08:47:03
 # add by Telegram user: Evan / Date: 2025-07-23 08:50:23
+# add by Telegram user: Evan / Date: 2026-01-31 13:18:47
 # add by Telegram user: Holyn / Date: 2025-10-13 23:10:34
 # add by Telegram user: Iceberg / Date: 2026-01-30 01:54:58
 # add by Telegram user: Iceberg / Date: 2026-01-30 01:55:40
@@ -245,6 +246,7 @@
 # 主机游戏模拟器软件服务器 / add by Telegram user: abcd / Date: 2026-01-30 23:18:06
 # 么么辰的游戏百宝箱
 # 九九互动
+# 云平台 / add by Telegram user: along / Date: 2026-01-31 19:27:59
 # 云手机 / add by Telegram user: hanshan / Date:2025-07-22 10:35:28
 # 云手机 / add by Telegram user: hanshan / Date:2025-07-22 10:36:21
 # 代理网站 / add by Telegram user: 网猫-工作时间早10-晚11 / Date: 2025-09-15 12:34:42
@@ -400,6 +402,8 @@
 # 脚本官网 / add by Telegram user: 网猫-工作时间早10-晚11 / Date: 2025-09-08 11:32:11
 # 腾讯云CNB WebIDE / add by Telegram user: y / Date: 2025-09-29 17:11:53
 # 自媒体新闻网站 / add by Telegram user: 哈Lay / Date: 2025-12-18 22:29:42
+# 自用 / add by Telegram user: along / Date: 2026-01-31 19:37:29
+# 自用 / add by Telegram user: along / Date: 2026-01-31 19:38:38
 # 英语训练 / add by Telegram user: More / Date: 2025-10-02 17:20:22
 # 葱米APP家长版 / add by Telegram user: Evan / Date: 2025-08-21 21:23:34
 # 蓝宝石显卡官网 / add by Telegram user: 💡💡 / Date: 2025-08-07 06:58:20
@@ -538,6 +542,8 @@ aigodlike.com
 aistudio-app.com
 akamaihd.net
 akamaized.net
+alonginwind.eu.org
+alonginwind.top
 aloys233.top
 antping.com
 anycubic.com
@@ -793,6 +799,7 @@ mtaokj.com
 mykuaidi.com
 myshopex.com
 naixi.com
+nanhuabx.com
 nanshe-tech.com
 natchecker.com
 neihang.net
@@ -857,6 +864,7 @@ server2.cn2gias.uk
 sgtv.ii00.cc
 shanghai-parking.com
 shineacc.com
+shuangqingtech.com
 shuinfo.com
 shunjing.xin
 shuqiandiqiu.com
