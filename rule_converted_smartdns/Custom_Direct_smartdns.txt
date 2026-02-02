@@ -84,6 +84,9 @@
 # add by Telegram user: Aethersailor / Date: 2026-01-02 16:29:48
 # add by Telegram user: Aethersailor / Date: 2026-01-05 10:59:31
 # add by Telegram user: Aethersailor / Date: 2026-01-05 11:18:51
+# add by Telegram user: Aethersailor / Date: 2026-02-01 15:40:42
+# add by Telegram user: Aethersailor / Date: 2026-02-01 19:16:40
+# add by Telegram user: Aethersailor / Date: 2026-02-01 21:20:36
 # add by Telegram user: Aethersailor / Date:2025-07-21 22:18:39
 # add by Telegram user: Aethersailor / Date:2025-07-22 04:14:28
 # add by Telegram user: Aethersailor / Date:2025-07-22 11:41:34
@@ -149,6 +152,7 @@
 # add by Telegram user: Saulmini / Date: 2025-07-23 09:33:33
 # add by Telegram user: Toby / Date: 2025-08-30 08:11:38
 # add by Telegram user: Waldo / Date: 2025-11-26 09:36:29
+# add by Telegram user: X_X233 / Date: 2026-02-01 15:36:09
 # add by Telegram user: Yilan / Date: 2025-08-16 09:47:19
 # add by Telegram user: Yilan / Date: 2025-10-24 21:54:54
 # add by Telegram user: Yilan / Date: 2025-10-24 21:56:04
@@ -206,6 +210,7 @@
 # hoyoverse.com
 # https://github.com/Aethersailor/Custom_OpenClash_Rules/issues/355
 # iOS旧版App服务 / add by Telegram user: 雪菜 / Date: 2025-12-27 11:39:43
+# ios 固件下载
 # iptv源 / add by Telegram user: sanligu / Date: 2025-09-11 19:15:47
 # ip地址查询 / add by Telegram user: Blunt / Date: 2025-08-30 03:17:50
 # ip地址查询 / add by Telegram user: Blunt / Date: 2025-08-30 04:33:30
@@ -294,6 +299,7 @@
 # 卡券交易 / add by Telegram user: 闹斯特麻麻 / Date: 2025-07-30 10:08:28
 # 卡商网站 / add by Telegram user: ✈️ / Date: 2025-10-02 00:39:22
 # 台铃电动车管理 / add by Telegram user: Lailin / Date: 2025-08-28 03:37:02
+# 听书网站 / add by Telegram user: 哈Lay / Date: 2026-02-01 22:51:50
 # 和风天气 API / add by Telegram user: Mairs / Date: 2026-01-22 17:47:47
 # 咖啡自由咖啡机 / add by Telegram user: chrysaly / Date: 2025-11-10 17:53:04
 # 商务 / add by Telegram user: lu / Date:2025-07-22 14:02:38
@@ -338,6 +344,7 @@
 # 我的世界服务器 / add by Telegram user: 💡💡 / Date: 2025-09-16 10:40:27
 # 我的世界游戏服务器 / add by Telegram user: 💡💡 / Date: 2025-09-04 22:56:13
 # 手机系统优化工具网站 / add by Telegram user: 法兰西 / Date: 2025-08-03 16:34:24
+# 手游无期迷途官网
 # 招聘网站 / add by Telegram user: Feng Ninger / Date:2025-07-22 13:55:25
 # 换汇小程序 / add by Telegram user: Feng Ninger / Date: 2025-08-13 04:17:49
 # 提供NS工具和个人技术与爱好分享网站 / add by Telegram user: 慧慧 / Date: 2025-08-14 14:09:04
@@ -504,11 +511,13 @@
 *-m-team.*
 *-quickconnect.*
 *-synology.*
+0044696.com
 03241119.xyz
 112114.xyz
 115cdn.de
 1996999.xyz
 204cloud.com
+365ting.com
 3d-apollo.com
 3dwhere.com
 3gxk.net
@@ -539,6 +548,7 @@ aibeike.com
 aichangbaishan.com
 aidien.fun
 aigodlike.com
+aisnogames.com
 aistudio-app.com
 akamaihd.net
 akamaized.net
@@ -693,6 +703,7 @@ gxnnjidingkeji.top
 gzybao.com
 halvie.com
 ham.xin
+hangnakeji.com
 haoxueche.com
 harbourmooc.com
 hbcof.com
@@ -708,6 +719,7 @@ hnxzctec.com
 hsbc.com.hk
 hstbroker.com
 hszq6.com
+htkgsx.com
 hub.crdz.gq
 hub.gitmirror.com
 hub.rat.dev
@@ -727,6 +739,7 @@ igpsport.com
 ilucky.net
 imacos.top
 immortalwrt.org
+iosgujian.com
 iotrix.net
 ip159.com
 ip6.seeip.org
@@ -820,6 +833,7 @@ p01.epsonconnect.com
 paperang.com
 passnat.com
 pixcheese.com
+pkghund.com
 plusde1.younoyes.com
 plushk1.younoyes.com
 plushk2.younoyes.com
