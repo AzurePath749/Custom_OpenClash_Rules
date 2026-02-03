@@ -250,6 +250,7 @@
 # 中国银行香港，如果走代理，会被风控 / add by Telegram user: victory / Date: 2025-09-20 08:33:44
 # 主机游戏模拟器软件服务器 / add by Telegram user: abcd / Date: 2026-01-30 23:18:06
 # 么么辰的游戏百宝箱
+# 乖淘app / add by Telegram user: 闻西 / Date: 2026-02-02 14:58:30
 # 九九互动
 # 云平台 / add by Telegram user: along / Date: 2026-01-31 19:27:59
 # 云手机 / add by Telegram user: hanshan / Date:2025-07-22 10:35:28
@@ -411,6 +412,7 @@
 # 自媒体新闻网站 / add by Telegram user: 哈Lay / Date: 2025-12-18 22:29:42
 # 自用 / add by Telegram user: along / Date: 2026-01-31 19:37:29
 # 自用 / add by Telegram user: along / Date: 2026-01-31 19:38:38
+# 舒达app域名 / add by Telegram user: 闻西 / Date: 2026-02-02 15:01:12
 # 英语训练 / add by Telegram user: More / Date: 2025-10-02 17:20:22
 # 葱米APP家长版 / add by Telegram user: Evan / Date: 2025-08-21 21:23:34
 # 蓝宝石显卡官网 / add by Telegram user: 💡💡 / Date: 2025-08-07 06:58:20
@@ -547,6 +549,7 @@ afuns.me
 aibeike.com
 aichangbaishan.com
 aidien.fun
+aidream.website
 aigodlike.com
 aisnogames.com
 aistudio-app.com
@@ -699,6 +702,7 @@ gsgltz.com
 gsjkjt.com
 gsnhcg.com
 gsstic.com
+guaitao.cc
 gxnnjidingkeji.top
 gzybao.com
 halvie.com
