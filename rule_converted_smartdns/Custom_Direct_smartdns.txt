@@ -383,6 +383,7 @@
 # 海信供应商登录系统 / add by Telegram user: 雪菜 / Date: 2025-09-20 22:52:55
 # 海翔登录
 # 深圳第一健康机构网站 / add by Telegram user: Animi / Date: 2025-12-13 00:42:45
+# 港话通 / add by Telegram user: 真怪誕呀 / Date: 2026-02-03 19:00:10
 # 游戏类规则
 # 游戏网站 / add by Telegram user: Leo / Date: 2025-07-23 17:52:55
 # 游戏资讯网站 / add by Telegram user: 麦香鸡 / Date: 2025-12-28 14:36:02
@@ -719,6 +720,7 @@ hf-mirror.com
 hhtvc.com
 hijin.vip
 hiwms.com
+hkchat.app
 hnxzctec.com
 hsbc.com.hk
 hstbroker.com
