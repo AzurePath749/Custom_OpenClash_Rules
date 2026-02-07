@@ -313,6 +313,7 @@
 # 国内网站 / add by Telegram user: sanligu / Date: 2025-07-30 20:55:25
 # 在线 ip 工具 / add by Telegram user: 哆啦A梦 / Date: 2025-11-19 11:28:46
 # 在线AI生成 / add by Telegram user: ecerc / Date: 2025-10-29 09:30:57
+# 在线LaTeX公式编辑器 / add by Telegram user: 真怪誕呀 / Date: 2026-02-07 01:01:20
 # 培训网站 / add by Telegram user: chrysaly / Date: 2025-07-24 20:29:33
 # 墨督督私域网课 / add by Telegram user: Fruit / Date: 2025-07-29 19:33:49
 # 大象駕駛 / add by Telegram user: Joe / Date: 2025-11-15 15:05:31
@@ -386,6 +387,7 @@
 # 海翔登录
 # 深圳第一健康机构网站 / add by Telegram user: Animi / Date: 2025-12-13 00:42:45
 # 港话通 / add by Telegram user: 真怪誕呀 / Date: 2026-02-03 19:00:10
+# 游戏PP / add by Telegram user: 雪菜 / Date: 2026-02-06 13:45:01
 # 游戏类规则
 # 游戏网站 / add by Telegram user: Leo / Date: 2025-07-23 17:52:55
 # 游戏资讯网站 / add by Telegram user: 麦香鸡 / Date: 2025-12-28 14:36:02
@@ -667,6 +669,7 @@ fzvcolco.com
 fzwqq.com
 gaishitongshu.com
 game.maj-soul.com
+gamepp.com
 gangtise.com
 gaojiua.com
 gaze.run
@@ -784,6 +787,7 @@ kuaicha888.com
 kyarucloud.moe
 lanyun.net
 laogongju.com
+latexlive.com
 leelen.com
 letaoedu.com
 lg3000.top
