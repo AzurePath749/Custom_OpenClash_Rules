@@ -197,6 +197,7 @@
 # add by Telegram user: 哈Lay / Date: 2026-01-14 18:11:07
 # add by Telegram user: 啥也不是 / Date: 2025-10-11 14:33:51
 # add by Telegram user: 嘿嘿 / Date: 2026-01-11 20:42:55
+# add by Telegram user: 嘿嘿 / Date: 2026-02-10 18:40:48
 # add by Telegram user: 尼古拉斯 / Date: 2025-11-02 10:53:57
 # add by Telegram user: 法兰西 / Date: 2025-09-22 20:12:53
 # add by Telegram user: 石 / Date: 2025-08-08 22:48:01
@@ -404,6 +405,7 @@
 # 点可云 / add by Telegram user: Mairs / Date: 2026-01-22 17:50:23
 # 爱普生打印机
 # 牛逼云无需富强官网 / add by Telegram user: 真怪誕呀 / Date: 2025-08-23 17:18:18
+# 独家御膳房小程序 / add by Telegram user: 闻西 / Date: 2026-02-10 19:17:02
 # 环球英语多媒体资料库 / add by Telegram user: 真怪誕呀 / Date: 2025-08-01 01:32:58
 # 生死狙击2客户端域名 / add by Telegram user: 花火 / Date: 2025-09-27 00:43:49
 # 电动车管理 / add by Telegram user: Lailin / Date: 2025-08-28 03:36:00
@@ -465,6 +467,7 @@
 # 铁威马NAS远程访问服务 / add by Telegram user: 嘿嘿 / Date: 2026-01-11 20:40:12
 # 铁威马官网 / add by Telegram user: 嘿嘿 / Date: 2026-01-11 20:39:01
 # 锐捷网络 / add by Telegram user: ai / Date: 2025-12-03 20:30:34
+# 长城汽车 / add by Telegram user: Zuo / Date: 2026-02-11 08:47:14
 # 长白山景区网站 / add by Telegram user: Coco / Date: 2025-11-13 17:55:27
 # 问卷星 / add by Telegram user: 法兰西 / Date: 2025-09-17 21:06:29
 # 问道手游聚宝斋app / add by Telegram user: young / Date: 2025-10-08 16:43:02
@@ -588,6 +591,7 @@ baiyishequ.com
 banban.work
 bangumi.tv
 bdcb.cc
+beautifulcarrot.com
 belimked.com
 bgm.tv
 biandangroup.com
@@ -721,6 +725,7 @@ gsjkjt.com
 gsnhcg.com
 gsstic.com
 guaitao.cc
+gwmapp-w.com
 gxnnjidingkeji.top
 gzybao.com
 halvie.com
@@ -980,6 +985,7 @@ xesabc.com
 xiankabao.com
 xiaobeiyangji.com
 xiaochuanyun.com
+xiaolikj.online
 xiaoxia.vip
 xiberia.net
 ximogo.com
