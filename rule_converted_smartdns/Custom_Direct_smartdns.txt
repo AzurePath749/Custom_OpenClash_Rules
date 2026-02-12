@@ -198,6 +198,7 @@
 # add by Telegram user: 啥也不是 / Date: 2025-10-11 14:33:51
 # add by Telegram user: 嘿嘿 / Date: 2026-01-11 20:42:55
 # add by Telegram user: 嘿嘿 / Date: 2026-02-10 18:40:48
+# add by Telegram user: 嘿嘿 / Date: 2026-02-11 19:11:44
 # add by Telegram user: 尼古拉斯 / Date: 2025-11-02 10:53:57
 # add by Telegram user: 法兰西 / Date: 2025-09-22 20:12:53
 # add by Telegram user: 石 / Date: 2025-08-08 22:48:01
@@ -244,6 +245,7 @@
 # 一码贵州 / add by Telegram user: SychO / Date: 2025-08-18 01:42:03
 # 一财有看投 / add by Telegram user: Mairs / Date: 2026-01-22 17:52:01
 # 万家乐 / add by Telegram user: Mairs / Date: 2026-01-22 17:52:18
+# 万集科技 / add by Telegram user: 闻西 / Date: 2026-02-11 18:39:58
 # 三国杀打小抄官网 / add by Telegram user: 真怪誕呀 / Date: 2025-07-29 14:03:56
 # 上海车又在信息技术有限公司 / add by Telegram user: Evan / Date: 2026-01-18 14:24:13
 # 下载类
@@ -888,6 +890,7 @@ qiaoqiaoyun.com
 qiaoxuesi.com
 qinglue.com
 qmeng.top
+quanxinfu.com
 qweatherapi.com
 rayws.top
 redenmc.com
@@ -956,6 +959,7 @@ uascent-iot.com
 ugdocker.link
 ulife.group
 us.ci
+vanjee.net
 vbkhk.com
 vbkr.com
 vbkrhk.com
