@@ -336,6 +336,7 @@
 # 学习报名网站 / add by Telegram user: 阿 / Date: 2025-11-23 11:00:14
 # 学习网站 / add by Telegram user: Shady / Date: 2025-08-31 16:45:54
 # 学校 / add by Telegram user: lei / Date: 2025-09-20 16:48:58
+# 学校官网 / add by Telegram user: More / Date: 2026-02-14 23:15:33
 # 学校洗衣机APP：悠洗 / add by Telegram user: lei / Date: 2025-09-20 16:47:16
 # 守候网络
 # 安卓车机app应用市场 / add by Telegram user: 哈Lay / Date: 2025-12-18 21:59:15
@@ -798,6 +799,7 @@ jsdelivr.net
 julebu.co
 jxjktzjt.com
 jxpp.com
+jzagile.com
 kaijiejinrong.com
 kancaibao.com
 kaspersky-labs.com
