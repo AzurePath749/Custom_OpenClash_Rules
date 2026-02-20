@@ -382,6 +382,7 @@
 # 易班网是高校教育教学等功能社区 / add by Telegram user: 仔 / Date: 2025-08-16 10:02:18
 # 星愿浏览器官方网站 / add by Telegram user: ai / Date: 2025-11-22 00:07:50
 # 星耀充值 / add by Telegram user: r / Date: 2026-01-13 19:50:19
+# 晋江中医院 / add by Telegram user: 嘿嘿 / Date: 2026-02-19 12:42:55
 # 智慧笑联
 # 更多已被收录的域名，此处未做保留
 # 未泱阅读
@@ -794,6 +795,7 @@ jieyoutsg.com
 jiliuwang.net
 jingheiot.com
 jiqw.com
+jjzyy.org
 jsdelivr.com
 jsdelivr.net
 julebu.co
