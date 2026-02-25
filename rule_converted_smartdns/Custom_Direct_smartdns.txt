@@ -449,6 +449,7 @@
 # 观看的emby域名 / add by Telegram user: Lilith / Date: 2025-09-05 01:20:55
 # 觅凹宠物喂食器 / add by Telegram user: Ping / Date: 2026-01-18 20:04:11
 # 视频 / add by Telegram user: siri / Date: 2025-11-23 13:05:05
+# 视频上传 / add by Telegram user: 美 / Date: 2026-02-24 18:53:14
 # 视频下载网站 / add by Telegram user: 尼古拉斯 / Date: 2025-11-02 11:00:56
 # 视频网站 / add by Telegram user: Shady / Date: 2025-08-26 13:07:08
 # 视频网站 / add by Telegram user: hvccff / Date: 2025-10-06 18:30:24
@@ -546,6 +547,7 @@
 03241119.xyz
 112114.xyz
 115cdn.de
+17van.com
 1996999.xyz
 204cloud.com
 365ting.com
