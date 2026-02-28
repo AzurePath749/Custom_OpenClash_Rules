@@ -346,6 +346,7 @@
 # 小熊猫c＋＋ IDE / add by Telegram user: y / Date: 2025-10-31 22:16:45
 # 小电视空降助手，跳过 b 站广告 / add by Telegram user: chrysaly / Date: 2025-08-21 14:19:34
 # 小白打印 / add by Telegram user: r / Date: 2026-01-13 02:29:27
+# 小说网站 / add by Telegram user: 晨曦 / Date: 2026-02-27 22:26:08
 # 小说网站 / add by Telegram user: 楉笙 / Date: 2025-12-15 21:46:50
 # 巨正源旗下电商平台 / add by Telegram user: 做一晚泥工 / Date: 2025-12-21 16:54:25
 # 希沃学习机
@@ -418,6 +419,7 @@
 # 烟花云小程序 / add by Telegram user: o.O? / Date: 2026-02-21 22:25:27
 # 爱普生打印机
 # 牛逼云无需富强官网 / add by Telegram user: 真怪誕呀 / Date: 2025-08-23 17:18:18
+# 特力科技 / add by Telegram user: Evan / Date: 2026-02-28 10:00:18
 # 独家御膳房小程序 / add by Telegram user: 闻西 / Date: 2026-02-10 19:17:02
 # 环球英语多媒体资料库 / add by Telegram user: 真怪誕呀 / Date: 2025-08-01 01:32:58
 # 生死狙击2客户端域名 / add by Telegram user: 花火 / Date: 2025-09-27 00:43:49
@@ -567,6 +569,7 @@
 657192.com
 6v520.net
 737698.xyz
+77shuku.org
 7sef.com
 86656.net
 8kc.top
@@ -1043,6 +1046,7 @@ youzhiyouxing.com
 yunzuoye.net
 yyshub.top
 yzcsoft.com
+z-tek.com
 z6e.com
 zcloud.world
 zctnet.top
