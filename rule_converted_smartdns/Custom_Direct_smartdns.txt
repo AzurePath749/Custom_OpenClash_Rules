@@ -15,7 +15,6 @@
 # CG相关资源分享网站 / add by Telegram user: 慧慧 / Date: 2025-08-14 13:51:28
 # Cloudflare Tunnel
 # DDNS
-# DOMAIN-SUFFIX,akamaized.net
 # DOMAIN-SUFFIX,ip-api.com 会影响某些 DNS 泄露检测网站的结果，暂时屏蔽
 # Dell
 # Docker 反代 CDN
@@ -360,6 +359,7 @@
 # 微信小程序 / add by Telegram user: EzrAAA / Date: 2025-08-10 19:02:13
 # 微信智能设备控制小程序 / add by Telegram user: 李白 / Date: 2025-09-19 10:15:59
 # 微信：智能空间Pro 小程序 / add by Telegram user: 哆啦A梦 / Date: 2025-12-01 12:15:08
+# 微软模拟飞行2024
 # 德佟电子科技（上海）有限公司 / add by Telegram user: Evan / Date: 2025-08-21 21:24:11
 # 情侣软件suki / add by Telegram user: e / Date: 2025-08-03 21:01:20
 # 我的世界服务器 / add by Telegram user: 💡💡 / Date: 2025-09-12 12:44:33
@@ -591,6 +591,7 @@ aigodlike.com
 aisnogames.com
 aistudio-app.com
 akamaihd.net
+akamaized.net
 alonginwind.eu.org
 alonginwind.top
 aloys233.top
@@ -952,6 +953,7 @@ sptv.ii00.cc
 ssjj2.com
 starlink.uno
 stkfanli.com
+sunrisecontent.akamaized.net
 suyur.com
 svyun.com
 sxlljm.com
