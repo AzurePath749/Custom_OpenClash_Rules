@@ -91,6 +91,7 @@
 # add by Telegram user: Aethersailor / Date: 2026-02-01 21:20:36
 # add by Telegram user: Aethersailor / Date: 2026-02-04 16:59:37
 # add by Telegram user: Aethersailor / Date: 2026-02-07 13:37:00
+# add by Telegram user: Aethersailor / Date: 2026-03-05 10:48:07
 # add by Telegram user: Aethersailor / Date:2025-07-21 22:18:39
 # add by Telegram user: Aethersailor / Date:2025-07-22 04:14:28
 # add by Telegram user: Aethersailor / Date:2025-07-22 11:41:34
@@ -526,6 +527,8 @@
 #DOMAIN-SUFFIX,immersivetranslate.com
 #DOMAIN-SUFFIX,ipinfo.io
 #DOMAIN-SUFFIX,jiucaishuo.com
+#DOMAIN-SUFFIX,kaspersky-labs.com
+#DOMAIN-SUFFIX,kaspersky.com
 #DOMAIN-SUFFIX,lvfapiao.com
 #DOMAIN-SUFFIX,mashangfangxin.com
 #DOMAIN-SUFFIX,megawords.cc
@@ -547,6 +550,7 @@
 *-m-team.*
 *-quickconnect.*
 *-synology.*
+00333118.com
 0044696.com
 03241119.xyz
 112114.xyz
@@ -817,8 +821,6 @@ jzagile.com
 kaihong.com
 kaijiejinrong.com
 kancaibao.com
-kaspersky-labs.com
-kaspersky.com
 kcbd.top
 kejiweixun.com
 keyoo.com
