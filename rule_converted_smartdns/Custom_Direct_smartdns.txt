@@ -346,6 +346,7 @@
 # 小熊猫c＋＋ IDE / add by Telegram user: y / Date: 2025-10-31 22:16:45
 # 小电视空降助手，跳过 b 站广告 / add by Telegram user: chrysaly / Date: 2025-08-21 14:19:34
 # 小白打印 / add by Telegram user: r / Date: 2026-01-13 02:29:27
+# 小说网站 / add by Telegram user: Zero / Date: 2026-03-05 22:37:16
 # 小说网站 / add by Telegram user: 晨曦 / Date: 2026-02-27 22:26:08
 # 小说网站 / add by Telegram user: 楉笙 / Date: 2025-12-15 21:46:50
 # 巨正源旗下电商平台 / add by Telegram user: 做一晚泥工 / Date: 2025-12-21 16:54:25
@@ -563,6 +564,7 @@
 3dwhere.com
 3gxk.net
 4399zmxy.com
+4xiaoshuo.org
 51tbox.com
 51wanxue.com
 51zmt.top
