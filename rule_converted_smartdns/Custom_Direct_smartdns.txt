@@ -26,6 +26,7 @@
 # FinalShell
 # GitHub 反代 CDN
 # GoLink 加速器
+# HAP Store / add by Telegram user: y / Date: 2026-03-07 10:06:39
 # HD墻紙 / add by Telegram user: Joe / Date: 2025-11-19 01:23:14
 # Hugging Face 镜像
 # IPTV 相关
@@ -153,6 +154,7 @@
 # add by Telegram user: Mairs / Date: 2026-01-22 17:58:29
 # add by Telegram user: Mairs / Date: 2026-01-22 17:59:20
 # add by Telegram user: Mairs / Date: 2026-02-12 17:16:27
+# add by Telegram user: Mairs / Date: 2026-03-06 12:04:21
 # add by Telegram user: P / Date: 2025-07-26 01:45:38
 # add by Telegram user: P / Date: 2025-07-26 01:49:54
 # add by Telegram user: Saulmini / Date: 2025-07-23 09:33:33
@@ -186,6 +188,7 @@
 # add by Telegram user: r / Date: 2026-01-23 16:13:33
 # add by Telegram user: y / Date: 2025-10-18 22:22:04
 # add by Telegram user: y / Date: 2026-02-09 19:31:31
+# add by Telegram user: y / Date: 2026-03-07 10:08:17
 # add by Telegram user: young / Date: 2025-10-26 11:13:59
 # add by Telegram user: young / Date: 2025-11-03 23:58:00
 # add by Telegram user: young / Date: 2025-11-12 18:25:51
@@ -619,6 +622,7 @@ bangumi.tv
 bdcb.cc
 beautifulcarrot.com
 belimked.com
+betahub.tech
 bgm.tv
 biandangroup.com
 biaoda.me
@@ -889,6 +893,7 @@ ok321.top
 onebuygz.com
 onetools.top
 opentrust.net
+osbdf.com
 ottai.com
 ottiptv.cc
 ourschool.cc
@@ -1011,6 +1016,7 @@ wlcdn88.com
 wologic.net
 wpurl.cc
 wwwh.eu.org
+wwwwqq.com
 wxdw.top
 x86pi.com
 xbcloudprint.com
