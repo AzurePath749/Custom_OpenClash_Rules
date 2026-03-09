@@ -474,6 +474,7 @@
 # 购物 / add by Telegram user: 𝓚𝓮𝓵𝓿𝓲𝓷𝓟 / Date: 2025-12-16 20:25:09
 # 购物 / add by Telegram user: 𝓚𝓮𝓵𝓿𝓲𝓷𝓟 / Date: 2025-12-16 20:26:12
 # 购物网站 / add by Telegram user: 哈Lay / Date: 2025-12-18 22:06:20
+# 资源搜索 / add by Telegram user: j / Date: 2026-03-08 22:07:40
 # 资源网站 / add by Telegram user: 哈Lay / Date: 2025-12-21 23:07:01
 # 轩辕的编程宇宙 / add by Telegram user: Mayfly / Date: 2026-01-12 20:44:53
 # 软件及服务 / add by Telegram user: rl / Date: 2025-08-14 09:47:11
@@ -1078,4 +1079,5 @@ zqin758.xyz
 zsytit.com
 ztytech.com
 zuobiao.press
+zysou.com
 zzz-log-upload-os.hoyoverse.com
