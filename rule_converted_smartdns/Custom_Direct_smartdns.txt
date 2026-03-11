@@ -157,6 +157,7 @@
 # add by Telegram user: Mairs / Date: 2026-01-22 17:59:20
 # add by Telegram user: Mairs / Date: 2026-02-12 17:16:27
 # add by Telegram user: Mairs / Date: 2026-03-06 12:04:21
+# add by Telegram user: Mairs / Date: 2026-03-10 17:42:57
 # add by Telegram user: P / Date: 2025-07-26 01:45:38
 # add by Telegram user: P / Date: 2025-07-26 01:49:54
 # add by Telegram user: Saulmini / Date: 2025-07-23 09:33:33
@@ -447,6 +448,7 @@
 # 笔袋应用 学习网站 / add by Telegram user: Jiajun / Date: 2025-09-11 19:23:53
 # 米思齐官网 / add by Telegram user: 嘿嘿 / Date: 2026-01-11 20:41:54
 # 精准定位 / add by Telegram user: 真怪誕呀 / Date: 2025-08-01 01:47:12
+# 精易论坛 / add by Telegram user: 美 / Date: 2026-03-11 10:39:10
 # 红警重聚 Reunion 2023
 # 纵维立方3d打印 fmd光固化生产厂家 / add by Telegram user: 芒果 / Date: 2025-08-19 03:46:55
 # 绿叶慧购 / add by Telegram user: Neilyo / Date: 2025-09-04 11:36:34
@@ -706,6 +708,7 @@ epg.aptv.app
 epg.v1.mk
 et0731.com
 everdrawing.com
+excelbbx.net
 fdfinvoice.com
 feihengip.com
 feizhiyi.com
@@ -811,6 +814,7 @@ ifconfig.co
 ifengmap.com
 ifish7.com
 igpsport.com
+ijingyi.com
 ilucky.net
 imacos.top
 immortalwrt.org
