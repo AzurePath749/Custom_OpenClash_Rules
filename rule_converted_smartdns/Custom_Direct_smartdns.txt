@@ -191,6 +191,7 @@
 # add by Telegram user: r / Date: 2026-01-19 16:34:38
 # add by Telegram user: r / Date: 2026-01-23 16:13:33
 # add by Telegram user: shmily1866 / Date: 2026-03-08 10:13:03
+# add by Telegram user: shmily1866 / Date: 2026-03-14 00:14:28
 # add by Telegram user: whsiny_1112 / Date: 2026-03-09 12:45:40
 # add by Telegram user: y / Date: 2025-10-18 22:22:04
 # add by Telegram user: y / Date: 2026-02-09 19:31:31
@@ -918,6 +919,7 @@ ottai.com
 ottiptv.cc
 ourschool.cc
 p01.epsonconnect.com
+packertec.com
 paperang.com
 passnat.com
 piedaochuan.top
