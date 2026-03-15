@@ -434,6 +434,7 @@
 # 烟花云小程序 / add by Telegram user: o.O? / Date: 2026-02-21 22:25:27
 # 爱普生打印机
 # 牛逼云无需富强官网 / add by Telegram user: 真怪誕呀 / Date: 2025-08-23 17:18:18
+# 物联网卡管理 / add by Telegram user: More / Date: 2026-03-15 09:12:19
 # 特力科技 / add by Telegram user: Evan / Date: 2026-02-28 10:00:18
 # 独家御膳房小程序 / add by Telegram user: 闻西 / Date: 2026-02-10 19:17:02
 # 环球英语多媒体资料库 / add by Telegram user: 真怪誕呀 / Date: 2025-08-01 01:32:58
@@ -822,6 +823,7 @@ ilucky.net
 imacos.top
 immortalwrt.org
 iosgujian.com
+iot889.com
 iotrix.net
 ip159.com
 ip6.seeip.org
