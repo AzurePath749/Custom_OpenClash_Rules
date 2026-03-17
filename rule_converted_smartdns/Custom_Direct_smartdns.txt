@@ -159,6 +159,12 @@
 # add by Telegram user: Mairs / Date: 2026-02-12 17:16:27
 # add by Telegram user: Mairs / Date: 2026-03-06 12:04:21
 # add by Telegram user: Mairs / Date: 2026-03-10 17:42:57
+# add by Telegram user: Mairs / Date: 2026-03-16 18:39:39
+# add by Telegram user: Mairs / Date: 2026-03-16 19:00:59
+# add by Telegram user: Mairs / Date: 2026-03-17 09:19:16
+# add by Telegram user: Mairs / Date: 2026-03-17 09:21:48
+# add by Telegram user: Mairs / Date: 2026-03-17 09:21:58
+# add by Telegram user: Mairs / Date: 2026-03-17 09:33:34
 # add by Telegram user: P / Date: 2025-07-26 01:45:38
 # add by Telegram user: P / Date: 2025-07-26 01:49:54
 # add by Telegram user: Saulmini / Date: 2025-07-23 09:33:33
@@ -425,6 +431,7 @@
 # 海翔登录
 # 深圳第一健康机构网站 / add by Telegram user: Animi / Date: 2025-12-13 00:42:45
 # 港话通 / add by Telegram user: 真怪誕呀 / Date: 2026-02-03 19:00:10
+# 游戏 / add by Telegram user: j / Date: 2026-03-16 21:11:57
 # 游戏PP / add by Telegram user: 雪菜 / Date: 2026-02-06 13:45:01
 # 游戏类规则
 # 游戏网站 / add by Telegram user: Leo / Date: 2025-07-23 17:52:55
@@ -455,6 +462,7 @@
 # 红警重聚 Reunion 2023
 # 纵维立方3d打印 fmd光固化生产厂家 / add by Telegram user: 芒果 / Date: 2025-08-19 03:46:55
 # 绿叶慧购 / add by Telegram user: Neilyo / Date: 2025-09-04 11:36:34
+# 网盘搜索 / add by Telegram user: j / Date: 2026-03-16 21:14:03
 # 考试培训网站 / add by Telegram user: Wintermute / Date: 2025-08-03 14:50:21
 # 肥羊 All in One
 # 脚本官网 / add by Telegram user: 网猫-工作时间早10-晚11 / Date: 2025-09-08 11:32:11
@@ -597,6 +605,7 @@
 737698.xyz
 77shuku.org
 7sef.com
+85sc.com
 86656.net
 8kc.top
 900cha.com
@@ -633,6 +642,7 @@ asgardion.space
 atticus.vip
 awstme.top
 axuex.top
+babawar.com
 baiyishequ.com
 banban.work
 bangumi.tv
@@ -666,6 +676,7 @@ cheshire.top
 chii.in
 chinatle.com
 chujingapp.com
+chushi.cool
 clivia.fun
 cmbc.run
 cn-music.mefun.vip
@@ -796,6 +807,8 @@ hijin.vip
 hiwms.com
 hkchat.app
 hnxzctec.com
+hongxingdl.com
+hongxingdl.love
 hsbc.com.hk
 hstbroker.com
 hszq6.com
@@ -942,6 +955,7 @@ privateapi.xyz
 ptl.gs
 ptlgs.org
 pwithe.com
+qianfan.app
 qiankunshopping.com
 qianuni.com
 qianxuecloud.com
@@ -1046,6 +1060,7 @@ wxdw.top
 x86pi.com
 xbcloudprint.com
 xbgjw.com
+xboxfan.com
 xdqtech.com
 xdtool.com
 xesabc.com
@@ -1089,6 +1104,7 @@ z6e.com
 zcloud.world
 zctnet.top
 zeekrline.com
+zhangleglobal.com
 zhi10.com
 zhituwujie.com
 zhixingyunke.com
