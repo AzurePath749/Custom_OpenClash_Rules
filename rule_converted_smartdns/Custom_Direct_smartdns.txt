@@ -1,7 +1,7 @@
 
 # ---------------------------------------
 # 115
-# 2026.1.25 分类整理完毕
+# 2026.3.18 分类整理完毕
 # 3D模型下载网站 / add by Telegram user: 哆啦A梦 / Date: 2025-11-10 13:20:28
 # 6V电影网 / add by Telegram user: 鱼 / Date: 2025-10-08 17:51:33
 # 985宇宙盒子官网（steam离线号库） / add by Telegram user: 真怪誕呀 / Date: 2025-08-01 01:20:05
@@ -553,8 +553,7 @@
 #DOMAIN-SUFFIX,immersivetranslate.com
 #DOMAIN-SUFFIX,ipinfo.io
 #DOMAIN-SUFFIX,jiucaishuo.com
-#DOMAIN-SUFFIX,kaspersky-labs.com
-#DOMAIN-SUFFIX,kaspersky.com
+#DOMAIN-SUFFIX,kyarucloud.moe
 #DOMAIN-SUFFIX,lvfapiao.com
 #DOMAIN-SUFFIX,mashangfangxin.com
 #DOMAIN-SUFFIX,megawords.cc
@@ -628,7 +627,7 @@ aistudio-app.com
 akamaihd.net
 akamaized.net
 alonginwind.eu.org
-alonginwind.top
+alonginwind.to
 aloys233.top
 antping.com
 anycubic.com
@@ -862,6 +861,8 @@ jzagile.com
 kaihong.com
 kaijiejinrong.com
 kancaibao.com
+kaspersky-labs.com
+kaspersky.com
 kcbd.top
 kejiweixun.com
 keyoo.com
@@ -869,7 +870,6 @@ kgithub.com
 kit327.com
 kmeila.com
 kuaicha888.com
-kyarucloud.moe
 lanyun.net
 laogongju.com
 latexlive.com
