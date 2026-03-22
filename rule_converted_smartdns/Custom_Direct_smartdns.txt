@@ -165,6 +165,9 @@
 # add by Telegram user: Mairs / Date: 2026-03-17 09:21:48
 # add by Telegram user: Mairs / Date: 2026-03-17 09:21:58
 # add by Telegram user: Mairs / Date: 2026-03-17 09:33:34
+# add by Telegram user: Mairs / Date: 2026-03-21 12:00:24
+# add by Telegram user: Mairs / Date: 2026-03-21 12:57:11
+# add by Telegram user: Mairs / Date: 2026-03-21 13:18:16
 # add by Telegram user: P / Date: 2025-07-26 01:45:38
 # add by Telegram user: P / Date: 2025-07-26 01:49:54
 # add by Telegram user: Saulmini / Date: 2025-07-23 09:33:33
@@ -247,6 +250,7 @@
 # mc投影图下载 / add by Telegram user: Aloys / Date: 2025-09-18 22:43:15
 # msl官网 / add by Telegram user: Giveup. / Date: 2025-07-30 22:13:02
 # nat 类型检测 / add by Telegram user: 一只 / Date: 2026-01-26 21:02:18
+# openkylin / add by Telegram user: y / Date: 2026-03-22 00:13:07
 # pt站劳教所 / add by Telegram user: kevin / Date: 2025-09-22 14:35:53
 # pt站劳教所 / add by Telegram user: kevin / Date: 2025-09-22 14:36:31
 # ros路由表更新 / add by Telegram user: 雪菜 / Date: 2025-09-20 23:14:04
@@ -261,6 +265,7 @@
 # skipped: SRC-PORT,41641
 # steamcommunity 302
 # steam离线号游戏库 / add by Telegram user: 真怪誕呀 / Date: 2025-07-29 13:59:20
+# traderecord3680.xyz / add by Telegram user: Bin / Date: 2026-03-21 22:59:08
 # x86Pi / add by Telegram user: Aethersailor / Date: 2025-09-08 12:03:12
 # xiaomi.com / add by Telegram user: r / Date: 2025-08-21 18:58:58
 # 一码贵州 / add by Telegram user: SychO / Date: 2025-08-18 01:41:36
@@ -656,6 +661,7 @@ bingshandashu.com
 bjtzeduyun.com
 bochaai.com
 bochk.com
+boxim.online
 boyuemobile.com
 bsbsb.top
 bunny.net
@@ -672,6 +678,7 @@ checkipv6.dyndns.org
 chenyuxia.com
 cheriexsky.love
 cheshire.top
+chessease.net
 chii.in
 chinatle.com
 chujingapp.com
@@ -928,6 +935,7 @@ oceando.cloud
 ok321.top
 onebuygz.com
 onetools.top
+openkylin.top
 opentrust.net
 osbdf.com
 ottai.com
@@ -1050,6 +1058,7 @@ webs.vc
 wenyi188.com
 weshape3d.com
 wewillpro.com
+wildfirechat.net
 wjx.top
 wlcdn88.com
 wologic.net
@@ -1065,6 +1074,7 @@ xdqtech.com
 xdtool.com
 xesabc.com
 xfltd.org
+xgzb.top
 xiankabao.com
 xiaobeiyangji.com
 xiaochuanyun.com
