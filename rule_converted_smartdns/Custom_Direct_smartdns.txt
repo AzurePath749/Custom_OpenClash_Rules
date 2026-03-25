@@ -121,6 +121,7 @@
 # add by Telegram user: Blunt / Date: 2025-11-03 23:27:53
 # add by Telegram user: Coco / Date: 2025-07-23 22:57:01
 # add by Telegram user: Coco / Date: 2025-07-23 22:58:43
+# add by Telegram user: Coco / Date: 2026-03-25 01:04:28
 # add by Telegram user: Evan / Date: 2025-07-23 08:45:37
 # add by Telegram user: Evan / Date: 2025-07-23 08:46:35
 # add by Telegram user: Evan / Date: 2025-07-23 08:47:03
@@ -234,6 +235,7 @@
 # aicoding / add by Telegram user: Makka / Date: 2025-12-27 10:11:32
 # apple发票 / add by Telegram user: More / Date: 2026-02-12 14:13:43
 # bark默认服务器的域名 / add by Telegram user: Shu / Date: 2025-11-15 18:41:59
+# campustop网课 / add by Telegram user: along / Date: 2026-03-24 18:24:12
 # cent浏览器论坛网站 / add by Telegram user: li / Date: 2025-08-20 11:59:34
 # dnshe免费域名 / add by Telegram user: r / Date: 2026-01-14 17:48:56
 # easytier服务 / add by Telegram user: hvccff / Date: 2025-11-17 08:22:05
@@ -637,6 +639,7 @@ aloys233.top
 antping.com
 anycubic.com
 anyrouter.top
+anytocopy.com
 api.myip.com
 apm-log-upload-os.hoyoverse.com
 aqtwwx.net
@@ -1014,6 +1017,7 @@ svyun.com
 sxlljm.com
 tailgdd.com
 tailscale.com
+talk-cloud.net
 tangguobaohe.com
 tclai.top
 tcp.mk
