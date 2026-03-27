@@ -1,7 +1,7 @@
 
 # ---------------------------------------
 # 115
-# 2026.3.18 分类整理完毕
+# 2026.3.26 分类整理完毕
 # 3D模型下载网站 / add by Telegram user: 哆啦A梦 / Date: 2025-11-10 13:20:28
 # 6V电影网 / add by Telegram user: 鱼 / Date: 2025-10-08 17:51:33
 # 985宇宙盒子官网（steam离线号库） / add by Telegram user: 真怪誕呀 / Date: 2025-08-01 01:20:05
@@ -225,6 +225,7 @@
 # add by Telegram user: 嘿嘿 / Date: 2026-02-10 18:40:48
 # add by Telegram user: 嘿嘿 / Date: 2026-02-11 19:11:44
 # add by Telegram user: 尼古拉斯 / Date: 2025-11-02 10:53:57
+# add by Telegram user: 当当 / Date: 2026-03-26 21:32:18
 # add by Telegram user: 法兰西 / Date: 2025-09-22 20:12:53
 # add by Telegram user: 石 / Date: 2025-08-08 22:48:01
 # add by Telegram user: 网猫-工作时间早10-晚11 / Date: 2025-09-10 09:21:45
@@ -377,6 +378,7 @@
 # 小说网站 / add by Telegram user: 楉笙 / Date: 2025-12-15 21:46:50
 # 巨正源旗下电商平台 / add by Telegram user: 做一晚泥工 / Date: 2025-12-21 16:54:25
 # 希沃学习机
+# 开盘红app是大陆地区很活的股票财经软件 / add by Telegram user: 🥝🥝🥝混个脸熟 / Date: 2026-03-26 15:52:39
 # 开鸿 / add by Telegram user: y / Date: 2026-02-26 21:22:50
 # 强制直连域名列表，来自个人收集
 # 影视站 / add by Telegram user: Feng Ninger / Date: 2025-08-11 11:55:42
@@ -688,6 +690,7 @@ chujingapp.com
 chushi.cool
 clivia.fun
 cmbc.run
+cmhk.com
 cn-music.mefun.vip
 cnb.space
 cocav.com
@@ -870,6 +873,7 @@ jxpp.com
 jzagile.com
 kaihong.com
 kaijiejinrong.com
+kaipanhong.com
 kancaibao.com
 kaspersky-labs.com
 kaspersky.com
