@@ -206,6 +206,7 @@
 # add by Telegram user: y / Date: 2025-10-18 22:22:04
 # add by Telegram user: y / Date: 2026-02-09 19:31:31
 # add by Telegram user: y / Date: 2026-03-07 10:08:17
+# add by Telegram user: y / Date: 2026-03-29 18:08:46
 # add by Telegram user: young / Date: 2025-10-26 11:13:59
 # add by Telegram user: young / Date: 2025-11-03 23:58:00
 # add by Telegram user: young / Date: 2025-11-12 18:25:51
@@ -671,6 +672,7 @@ boyuemobile.com
 bsbsb.top
 bunny.net
 canghaiip.com
+cangjie-lang.net
 cc.cd
 cdn.ist
 centbrowser.net
