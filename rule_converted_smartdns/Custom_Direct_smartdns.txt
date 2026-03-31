@@ -321,6 +321,7 @@
 # 其他
 # 冰山数据 / add by Telegram user: Mairs / Date: 2026-01-22 17:51:23
 # 分享网站 / add by Telegram user: 哈Lay / Date: 2025-12-18 22:10:39
+# 动漫网站 / add by Telegram user: 哈Lay / Date: 2026-03-30 17:28:29
 # 北京公交地铁APP："亿通行" / add by Telegram user: zero / Date: 2026-01-02 23:03:30
 # 北京教委 / add by Telegram user: Mairs / Date: 2026-01-22 17:50:02
 # 医疗健康 / add by Telegram user: 闹斯特麻麻 / Date: 2025-07-30 10:07:17
@@ -358,6 +359,7 @@
 # 在线LaTeX公式编辑器 / add by Telegram user: 真怪誕呀 / Date: 2026-02-07 01:01:20
 # 培训网站 / add by Telegram user: chrysaly / Date: 2025-07-24 20:29:33
 # 墨督督私域网课 / add by Telegram user: Fruit / Date: 2025-07-29 19:33:49
+# 复利笔记小程序 / add by Telegram user: 🥝🥝🥝混个脸熟 / Date: 2026-03-31 00:28:03
 # 大象駕駛 / add by Telegram user: Joe / Date: 2025-11-15 15:05:31
 # 夫子车 / add by Telegram user: Joe / Date: 2025-11-18 23:02:59
 # 好太太家居智能控制服务器 / add by Telegram user: Coco / Date: 2025-07-23 22:54:27
@@ -472,6 +474,7 @@
 # 红警重聚 Reunion 2023
 # 纵维立方3d打印 fmd光固化生产厂家 / add by Telegram user: 芒果 / Date: 2025-08-19 03:46:55
 # 绿叶慧购 / add by Telegram user: Neilyo / Date: 2025-09-04 11:36:34
+# 网盘 / add by Telegram user: 哈Lay / Date: 2026-03-30 17:29:28
 # 网盘搜索 / add by Telegram user: j / Date: 2026-03-16 21:14:03
 # 考试培训网站 / add by Telegram user: Wintermute / Date: 2025-08-03 14:50:21
 # 肥羊 All in One
@@ -753,6 +756,7 @@ fssbcc.top
 fsytss.com
 ft07.com
 functorz.com
+fuyinkeji.top
 fuziche.com
 fzshouji.com
 fzvcolco.com
@@ -983,6 +987,7 @@ qinglue.com
 qmeng.top
 quanxinfu.com
 qweatherapi.com
+qzyun.net
 rayws.top
 redenmc.com
 registry.dockermirror.com
@@ -1101,6 +1106,7 @@ xixih.cc
 xkkapk.com
 xn--4kq62z5rby2qupq9ub.top
 xn--cesw6hd3s99f.com
+xn--vhqr42drhf5k7b.com
 xopenbeta.com
 xuanyuancode.com
 xuepaipai.com
