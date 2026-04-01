@@ -491,6 +491,8 @@
 # 表答 / add by Telegram user: Joe / Date: 2025-11-14 21:24:45
 # 观看的emby域名 / add by Telegram user: Lilith / Date: 2025-09-05 01:20:55
 # 觅凹宠物喂食器 / add by Telegram user: Ping / Date: 2026-01-18 20:04:11
+# 视频 / add by Telegram user: Man / Date: 2026-03-31 23:22:47
+# 视频 / add by Telegram user: Man / Date: 2026-03-31 23:25:12
 # 视频 / add by Telegram user: siri / Date: 2025-11-23 13:05:05
 # 视频上传 / add by Telegram user: 美 / Date: 2026-02-24 18:53:14
 # 视频下载网站 / add by Telegram user: 尼古拉斯 / Date: 2025-11-02 11:00:56
@@ -613,6 +615,7 @@
 52muban.com
 55555.ink
 657192.com
+66990000.xyz
 6v520.net
 737698.xyz
 77shuku.org
@@ -733,6 +736,7 @@ eagsen.com
 easytier.top
 easytomessage.com
 einfo-tech.com
+emby.yun
 englibrary.com
 enyugame.net
 epark.cc
