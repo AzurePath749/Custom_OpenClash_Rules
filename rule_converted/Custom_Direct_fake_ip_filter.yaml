@@ -2,6 +2,7 @@ payload:
   - '+.immortalwrt.org'
   - '+.tailscale.com'
   - '+.argotunnel.com'
+  - '+.cftunnel.com'
   - '+.gh-proxy.com'
   - '+.gh.con.sh'
   - '+.gh.ddlc.top'
