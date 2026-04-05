@@ -16,6 +16,7 @@
 # Cloudflare Tunnel
 # DDNS
 # DOMAIN-SUFFIX,ip-api.com 会影响某些 DNS 泄露检测网站的结果，暂时屏蔽
+# DaoCloud 镜像 / add by Telegram user: 真怪誕呀 / Date: 2026-04-04 17:30:11
 # Dell
 # Docker 反代 CDN
 # Emby 小雅 相关
@@ -712,6 +713,7 @@ cyouzai.com
 d4ctech.com
 dadateach.com
 dahai96.com
+daocloud.vip
 day.app
 dayilive.com
 dcgstd.com
