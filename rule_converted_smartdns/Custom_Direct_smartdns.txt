@@ -460,6 +460,7 @@
 # 独家御膳房小程序 / add by Telegram user: 闻西 / Date: 2026-02-10 19:17:02
 # 环球英语多媒体资料库 / add by Telegram user: 真怪誕呀 / Date: 2025-08-01 01:32:58
 # 瑞鹏云 / add by Telegram user: 777 / Date: 2026-03-09 18:35:38
+# 甜啦啦微信小程序 / add by Telegram user: o.O? / Date: 2026-04-07 13:10:09
 # 生死狙击2客户端域名 / add by Telegram user: 花火 / Date: 2025-09-27 00:43:49
 # 电动车管理 / add by Telegram user: Lailin / Date: 2025-08-28 03:36:00
 # 电费电量计算器 - 老工具 / add by Telegram user: 哆啦A梦 / Date: 2025-11-21 11:06:35
@@ -490,6 +491,7 @@
 # 葱米APP家长版 / add by Telegram user: Evan / Date: 2025-08-21 21:23:34
 # 蓝宝石显卡官网 / add by Telegram user: 💡💡 / Date: 2025-08-07 06:58:20
 # 蜜蜂试卷APP 域名 / add by Telegram user: hjxt / Date: 2025-08-21 09:44:58
+# 蝙蝠聊天 / add by Telegram user: 嘿嘿 / Date: 2026-04-07 19:19:26
 # 表答 / add by Telegram user: Joe / Date: 2025-11-14 21:24:45
 # 观看的emby域名 / add by Telegram user: Lilith / Date: 2025-09-05 01:20:55
 # 觅凹宠物喂食器 / add by Telegram user: Ping / Date: 2026-01-18 20:04:11
@@ -666,6 +668,7 @@ babawar.com
 baiyishequ.com
 banban.work
 bangumi.tv
+batchat.com
 bdcb.cc
 beautifulcarrot.com
 belimked.com
@@ -1050,6 +1053,7 @@ terra-master.com
 theluyuan.com
 thinkerride.com
 thmnet.com
+tianlala.com
 timbrd.com
 tixue.net
 tmallyc.com
