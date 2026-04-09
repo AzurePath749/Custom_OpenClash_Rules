@@ -96,6 +96,7 @@
 # add by Telegram user: Aethersailor / Date: 2026-02-07 13:37:00
 # add by Telegram user: Aethersailor / Date: 2026-03-05 10:48:07
 # add by Telegram user: Aethersailor / Date: 2026-04-06 12:25:08
+# add by Telegram user: Aethersailor / Date: 2026-04-08 21:30:53
 # add by Telegram user: Aethersailor / Date:2025-07-21 22:18:39
 # add by Telegram user: Aethersailor / Date:2025-07-22 04:14:28
 # add by Telegram user: Aethersailor / Date:2025-07-22 11:41:34
@@ -467,6 +468,7 @@
 # 电费计算器-在线工具 / add by Telegram user: 哆啦A梦 / Date: 2025-11-21 11:05:50
 # 百度网盘解析 / add by Telegram user: x / Date: 2025-12-07 18:19:35
 # 盖世童书的网址 / add by Telegram user: sanligu / Date: 2025-07-29 15:52:19
+# 石景山医院 / add by Telegram user: along / Date: 2026-04-09 10:35:01
 # 社区 / add by Telegram user: 哈Lay / Date: 2025-12-29 12:54:22
 # 神烦.网络验证平台 / add by Telegram user: choner / Date: 2026-02-13 13:46:11
 # 立林全屋智能 / add by Telegram user: Q / Date: 2025-09-20 05:42:29
@@ -677,6 +679,7 @@ bgm.tv
 biandangroup.com
 biaoda.me
 bingshandashu.com
+bjssjsyy.com
 bjtzeduyun.com
 bochaai.com
 bochk.com
@@ -1031,6 +1034,7 @@ sixloy428.top
 sksight.com
 snfox.com
 snltty.com
+soulteary.com
 sptv.ii00.cc
 ssjj2.com
 starlink.uno
