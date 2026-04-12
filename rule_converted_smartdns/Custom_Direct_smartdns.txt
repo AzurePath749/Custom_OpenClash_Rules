@@ -443,6 +443,7 @@
 # 浏阳天空剧院小程序 / add by Telegram user: o.O? / Date: 2026-02-21 22:26:40
 # 浩物生活 / add by Telegram user: EzrAAA / Date: 2025-09-06 18:01:14
 # 海信供应商登录系统 / add by Telegram user: 雪菜 / Date: 2025-09-20 22:52:55
+# 海氏烘焙 / add by Telegram user: yz / Date: 2026-04-11 19:17:24
 # 海翔登录
 # 深圳第一健康机构网站 / add by Telegram user: Animi / Date: 2025-12-13 00:42:45
 # 港话通 / add by Telegram user: 真怪誕呀 / Date: 2026-02-03 19:00:10
@@ -495,6 +496,7 @@
 # 蓝宝石显卡官网 / add by Telegram user: 💡💡 / Date: 2025-08-07 06:58:20
 # 蜜蜂试卷APP 域名 / add by Telegram user: hjxt / Date: 2025-08-21 09:44:58
 # 蝙蝠聊天 / add by Telegram user: 嘿嘿 / Date: 2026-04-07 19:19:26
+# 表盘市场 / add by Telegram user: More / Date: 2026-04-11 16:48:01
 # 表答 / add by Telegram user: Joe / Date: 2025-11-14 21:24:45
 # 观看的emby域名 / add by Telegram user: Lilith / Date: 2025-09-05 01:20:55
 # 觅凹宠物喂食器 / add by Telegram user: Ping / Date: 2026-01-18 20:04:11
@@ -733,6 +735,7 @@ dell.com
 dfhog.com
 dhub.kubesre.xyz
 dingdingzn.com
+divoiotcloud.com
 diyiedu.com
 dnshe.com
 docker.1panel.live
@@ -1024,6 +1027,7 @@ seedpace.com
 server2.cn2gias.uk
 sgtv.ii00.cc
 shanghai-parking.com
+shanghongbei.com
 shineacc.com
 shuangqingtech.com
 shuinfo.com
