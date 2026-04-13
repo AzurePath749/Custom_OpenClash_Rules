@@ -1,7 +1,7 @@
 
 # ---------------------------------------
 # 115
-# 2026.4.10 分类整理完毕
+# 2026.4.12 分类整理完毕
 # 3D模型下载网站 / add by Telegram user: 哆啦A梦 / Date: 2025-11-10 13:20:28
 # 6V电影网 / add by Telegram user: 鱼 / Date: 2025-10-08 17:51:33
 # 985宇宙盒子官网（steam离线号库） / add by Telegram user: 真怪誕呀 / Date: 2025-08-01 01:20:05
@@ -96,6 +96,8 @@
 # add by Telegram user: Aethersailor / Date: 2026-03-05 10:48:07
 # add by Telegram user: Aethersailor / Date: 2026-04-06 12:25:08
 # add by Telegram user: Aethersailor / Date: 2026-04-08 21:30:53
+# add by Telegram user: Aethersailor / Date: 2026-04-12 15:40:00
+# add by Telegram user: Aethersailor / Date: 2026-04-12 15:43:11
 # add by Telegram user: Aethersailor / Date:2025-07-21 22:18:39
 # add by Telegram user: Aethersailor / Date:2025-07-22 04:14:28
 # add by Telegram user: Aethersailor / Date:2025-07-22 11:41:34
@@ -211,6 +213,7 @@
 # add by Telegram user: young / Date: 2025-10-26 11:13:59
 # add by Telegram user: young / Date: 2025-11-03 23:58:00
 # add by Telegram user: young / Date: 2025-11-12 18:25:51
+# add by Telegram user: yz / Date: 2026-04-12 21:34:46
 # add by Telegram user: zero / Date: 2025-12-31 12:40:25
 # add by Telegram user:  / Date: 2026-03-10 00:12:14
 # add by Telegram user:  / Date: 2026-03-10 00:15:38
@@ -305,7 +308,7 @@
 # 以下域名已被 GeoSite 上游项目收录，定期删除
 # 以下域名已被收录，计划于 2025.10.6 删除
 # 以下域名待提交 PR
-# 以下域名由用户通过机器人添加，无备案且 NS 不属于中国大陆，或解析结果不属于中国大陆
+# 以下域名由用户通过机器人添加，无备案且 NS 不属于中国大陆，或解析结果不属于中国大陆，或属于 .cn/.top 域名
 # 以下是准备向 GeoSite 上游仓库提交 PR 的国内冷门域名，收录后会注释对应内容
 # 以下是应当直连的冷门国内域名规则
 # 企业博客 用的腾讯云cdn 更推荐直连 / add by Telegram user: 🤗 / Date: 2025-07-23 02:33:17
@@ -339,6 +342,7 @@
 # 华盛通 / add by Telegram user: 真怪誕呀 / Date: 2025-08-01 15:14:53
 # 华盛通 / add by Telegram user: 真怪誕呀 / Date: 2025-08-01 15:15:35
 # 华盛通 / add by Telegram user: 真怪誕呀 / Date: 2025-08-03 12:50:59
+# 南京市江宁水务集团小程序 / add by Telegram user: 法兰西 / Date: 2026-04-12 19:47:44
 # 南方电网
 # 博客 / add by Telegram user: Aloys / Date: 2025-09-18 22:38:49
 # 博客 / add by Telegram user: 哈Lay / Date: 2026-01-07 21:31:37
@@ -718,6 +722,7 @@ cnb.space
 cocav.com
 codeloop.top
 coffee-iot.com
+cone-x.com
 congmiqq.com
 coros.com
 crtyhr.com
@@ -885,6 +890,7 @@ itptg.com
 jduoduo.com
 jfjt.cc
 jh96095.com
+jiangningwater.com
 jiaoyanyun.com
 jieyoutsg.com
 jiliuwang.net
@@ -1014,6 +1020,7 @@ rewards.bing.com
 royqh.net
 rsfcxq.com
 ruijie.com
+rxcrs.com
 saduck.top
 sanligu.top
 sapphiretech.com
@@ -1067,6 +1074,7 @@ tixue.net
 tmallyc.com
 tnas.link
 tnas.online
+tongkask.com
 tool56.com
 topwd.top
 tozi-cn.top
