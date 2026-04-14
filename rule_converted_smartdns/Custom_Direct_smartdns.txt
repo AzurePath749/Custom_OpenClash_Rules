@@ -264,6 +264,7 @@
 # pt站劳教所 / add by Telegram user: kevin / Date: 2025-09-22 14:35:53
 # ros路由表更新 / add by Telegram user: 雪菜 / Date: 2025-09-20 23:14:04
 # sanligu home lab / add by Telegram user: sanligu / Date: 2025-07-29 15:50:35
+# skillhub的api域名 / add by Telegram user: 美 / Date: 2026-04-13 14:25:07
 # skipped (CIDR): IP-CIDR,108.174.48.100/32,no-resolve
 # skipped (CIDR): IP-CIDR,198.41.192.0/24,no-resolve
 # skipped (CIDR): IP-CIDR,198.41.200.0/24,no-resolve
@@ -386,6 +387,7 @@
 # 小说网站 / add by Telegram user: Zero / Date: 2026-03-05 22:37:16
 # 小说网站 / add by Telegram user: 晨曦 / Date: 2026-02-27 22:26:08
 # 小说网站 / add by Telegram user: 楉笙 / Date: 2025-12-15 21:46:50
+# 少女前线2追放官方游戏论坛 / add by Telegram user: cysr214 / Date: 2026-04-14 03:05:00
 # 巨正源旗下电商平台 / add by Telegram user: 做一晚泥工 / Date: 2025-12-21 16:54:25
 # 希沃学习机
 # 开盘红app是大陆地区很活的股票财经软件 / add by Telegram user: 🥝🥝🥝混个脸熟 / Date: 2026-03-26 15:52:39
@@ -766,6 +768,7 @@ epg.v1.mk
 et0731.com
 everdrawing.com
 excelbbx.net
+exiliumgf.com
 fdfinvoice.com
 feihengip.com
 feizhiyi.com
@@ -923,6 +926,7 @@ latexlive.com
 leelen.com
 letaoedu.com
 lg3000.top
+lightmake.site
 liunn.com
 liveperson.net
 longmenshuju.com
