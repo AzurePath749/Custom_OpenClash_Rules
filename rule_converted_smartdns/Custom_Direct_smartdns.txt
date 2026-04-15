@@ -126,6 +126,7 @@
 # add by Telegram user: Coco / Date: 2025-07-23 22:57:01
 # add by Telegram user: Coco / Date: 2025-07-23 22:58:43
 # add by Telegram user: Coco / Date: 2026-03-25 01:04:28
+# add by Telegram user: Coco / Date: 2026-04-15 02:22:09
 # add by Telegram user: Evan / Date: 2025-07-23 08:45:37
 # add by Telegram user: Evan / Date: 2025-07-23 08:46:35
 # add by Telegram user: Evan / Date: 2025-07-23 08:47:03
@@ -184,6 +185,7 @@
 # add by Telegram user: Yilan / Date: 2025-10-24 21:56:31
 # add by Telegram user: Yilan / Date: 2025-10-25 09:36:32
 # add by Telegram user: Yongyu / Date: 2025-08-17 01:12:13
+# add by Telegram user: along / Date: 2026-04-14 13:08:15
 # add by Telegram user: chrysaly / Date: 2025-07-25 11:31:30
 # add by Telegram user: h / Date: 2025-08-27 22:24:19
 # add by Telegram user: h / Date: 2026-01-01 14:23:06
@@ -661,6 +663,7 @@ akamaihd.net
 akamaized.net
 alonginwind.eu.org
 alonginwind.to
+alonginwind.top
 aloys233.top
 antping.com
 anycubic.com
@@ -1167,6 +1170,7 @@ zctnet.top
 zeekrline.com
 zhangleglobal.com
 zhi10.com
+zhiexa.com
 zhituwujie.com
 zhixingyunke.com
 zhongancloud.com
