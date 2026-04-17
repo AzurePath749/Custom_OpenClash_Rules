@@ -249,6 +249,7 @@
 # cent浏览器论坛网站 / add by Telegram user: li / Date: 2025-08-20 11:59:34
 # dnshe免费域名 / add by Telegram user: r / Date: 2026-01-14 17:48:56
 # easytier服务 / add by Telegram user: hvccff / Date: 2025-11-17 08:22:05
+# emby服务器 / add by Telegram user: 𝓚𝓮𝓵𝓿𝓲𝓷𝓟 / Date: 2026-04-17 10:47:10
 # fnOS
 # girigirilove在线追番网站 / add by Telegram user: 真怪誕呀 / Date: 2025-08-23 17:26:28
 # hoyoverse.com
@@ -956,6 +957,7 @@ micu.hk
 mifeng.plus
 mifon.com
 minor-api-os.hoyoverse.com
+miraiemby.com
 mixly.org
 mobai.sbs
 modelscope.net
