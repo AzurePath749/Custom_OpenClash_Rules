@@ -371,6 +371,7 @@
 # 在线AI生成 / add by Telegram user: ecerc / Date: 2025-10-29 09:30:57
 # 在线LaTeX公式编辑器 / add by Telegram user: 真怪誕呀 / Date: 2026-02-07 01:01:20
 # 培训网站 / add by Telegram user: chrysaly / Date: 2025-07-24 20:29:33
+# 塔吉多 / add by Telegram user: 雪菜 / Date: 2026-04-20 00:23:55
 # 墨督督私域网课 / add by Telegram user: Fruit / Date: 2025-07-29 19:33:49
 # 复利笔记小程序 / add by Telegram user: 🥝🥝🥝混个脸熟 / Date: 2026-03-31 00:28:03
 # 大象駕駛 / add by Telegram user: Joe / Date: 2025-11-15 15:05:31
@@ -1069,6 +1070,7 @@ svyun.com
 sxlljm.com
 tailgdd.com
 tailscale.com
+tajiduo.com
 talk-cloud.net
 tangguobaohe.com
 tclai.top
