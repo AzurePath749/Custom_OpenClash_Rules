@@ -51,6 +51,7 @@
 # REPO: https://github.com/Aethersailor/Custom_OpenClash_Rules
 # Server酱
 # Server酱³ · 极简推送服务 / add by Telegram user: 雪菜 / Date: 2025-10-20 18:34:08
+# SyServer / add by Telegram user: 嘿嘿 / Date: 2026-04-21 20:36:46
 # Tailscale
 # Telegram user：Aethersailor / Date:2025-07-21
 # UniGetUI
@@ -1070,6 +1071,7 @@ sunrisecontent.akamaized.net
 suyur.com
 svyun.com
 sxlljm.com
+sy1.top
 tailgdd.com
 tailscale.com
 tajiduo.com
