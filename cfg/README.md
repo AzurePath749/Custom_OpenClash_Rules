@@ -15,20 +15,20 @@
 
 Custom_Clash.ini
 ```
-https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/cfg/Custom_Clash.ini
+https://testingcf.jsdelivr.net/gh/AzurePath749/Custom_OpenClash_Rules@main/cfg/Custom_Clash.ini
 ```
 
 Custom_Clash_GFW.ini
 ```
-https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/cfg/Custom_Clash_GFW.ini
+https://testingcf.jsdelivr.net/gh/AzurePath749/Custom_OpenClash_Rules@main/cfg/Custom_Clash_GFW.ini
 ```
 
 Custom_Clash_Lite.ini
 ```
-https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/cfg/Custom_Clash_Lite.ini
+https://testingcf.jsdelivr.net/gh/AzurePath749/Custom_OpenClash_Rules@main/cfg/Custom_Clash_Lite.ini
 ```
 
 Custom_Full_Clash.ini
 ```
-https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/cfg/Custom_Clash_Full.ini
+https://testingcf.jsdelivr.net/gh/AzurePath749/Custom_OpenClash_Rules@main/cfg/Custom_Clash_Full.ini
 ```

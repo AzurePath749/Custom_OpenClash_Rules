@@ -969,7 +969,7 @@ rule-providers:
     interval: 10800  # 3小时
     path: ./rule_provider/Custom_Port_Direct.yaml
     type: http
-    url: "https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/rule/Custom_Port_Direct.yaml"
+    url: "https://testingcf.jsdelivr.net/gh/AzurePath749/Custom_OpenClash_Rules@main/rule/Custom_Port_Direct.yaml"
     format: yaml
 
   Custom_Direct_Domain:
@@ -977,7 +977,7 @@ rule-providers:
     interval: 10800
     path: ./rule_provider/Custom_Direct_Domain.yaml
     type: http
-    url: "https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/rule/Custom_Direct_Domain.mrs"
+    url: "https://testingcf.jsdelivr.net/gh/AzurePath749/Custom_OpenClash_Rules@main/rule/Custom_Direct_Domain.mrs"
     format: mrs  # 二进制格式
 
   Custom_Direct_IP:
@@ -985,7 +985,7 @@ rule-providers:
     interval: 10800  # 3小时
     path: ./rule_provider/Custom_Direct_Classical_IP.yaml
     type: http
-    url: "https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/rule/Custom_Direct_Classical_IP.yaml"
+    url: "https://testingcf.jsdelivr.net/gh/AzurePath749/Custom_OpenClash_Rules@main/rule/Custom_Direct_Classical_IP.yaml"
     format: yaml
 
   Custom_Proxy_Domain:
@@ -993,7 +993,7 @@ rule-providers:
     interval: 10800  # 3小时
     path: ./rule_provider/Custom_Proxy_Domain.yaml
     type: http
-    url: "https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/rule/Custom_Proxy_Domain.mrs"
+    url: "https://testingcf.jsdelivr.net/gh/AzurePath749/Custom_OpenClash_Rules@main/rule/Custom_Proxy_Domain.mrs"
     format: mrs  # 二进制格式
 
   Custom_Proxy_IP:
@@ -1001,7 +1001,7 @@ rule-providers:
     interval: 10800  # 3小时
     path: ./rule_provider/Custom_Proxy_Classical_IP.yaml
     type: http
-    url: "https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/rule/Custom_Proxy_Classical_IP.yaml"
+    url: "https://testingcf.jsdelivr.net/gh/AzurePath749/Custom_OpenClash_Rules@main/rule/Custom_Proxy_Classical_IP.yaml"
     format: yaml
 
   Steam_CDN:
@@ -1009,5 +1009,5 @@ rule-providers:
     interval: 10800  # 3小时
     path: ./rule_provider/Steam_CDN_Classical.yaml
     type: http
-    url: "https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/rule/Steam_CDN_Classical.yaml"
+    url: "https://testingcf.jsdelivr.net/gh/AzurePath749/Custom_OpenClash_Rules@main/rule/Steam_CDN_Classical.yaml"
     format: yaml

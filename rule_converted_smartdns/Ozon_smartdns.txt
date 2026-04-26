@@ -2,7 +2,7 @@
 # AUTHOR: Aethersailor
 # NAME: Ozon
 # Ozon 域名规则
-# REPO: https://github.com/Aethersailor/Custom_OpenClash_Rules
+# REPO: https://github.com/AzurePath749/Custom_OpenClash_Rules
 # 建议使用 geosite:ozon
 # 本规则不再更新
 # 规则内容已合并至 v2fly/domain-list-community 

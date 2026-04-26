@@ -18,7 +18,7 @@ jobs:
         env:
           TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          git clone https://x-access-token:${TOKEN}@github.com/Aethersailor/Custom_OpenClash_Rules.wiki.git _wiki
+          git clone https://x-access-token:${TOKEN}@github.com/AzurePath749/Custom_OpenClash_Rules.wiki.git _wiki
 
       - name: Prepare doc directory in wiki repository
         run: |

@@ -16,7 +16,7 @@
 # GOG - 客户端更新/游戏下载[Akamai]
 # GOG - 客户端更新/游戏下载[Fastly]
 # NAME: Game_Download_CDN
-# REPO: https://github.com/Aethersailor/Custom_OpenClash_Rules
+# REPO: https://github.com/AzurePath749/Custom_OpenClash_Rules
 # Rockstar Launcher - 客户端更新/游戏更新/下载
 # Roti - 游戏更新/下载
 # Steam - 游戏下载(中国区)[新流云]

@@ -1,7 +1,7 @@
 
 # AUTHOR: Aethersailor
 # NAME: Encrypted_DNS
-# REPO: https://github.com/Aethersailor/Custom_OpenClash_Rules
+# REPO: https://github.com/AzurePath749/Custom_OpenClash_Rules
 # skipped (CIDR): IP-CIDR,1.0.0.1/32,no-resolve
 # skipped (CIDR): IP-CIDR,1.1.1.1/32,no-resolve
 # skipped (CIDR): IP-CIDR,101.102.103.104/32,no-resolve

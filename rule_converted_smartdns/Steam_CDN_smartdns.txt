@@ -1,7 +1,7 @@
 
 # AUTHOR: Aethersailor
 # NAME: Steam_CDN
-# REPO: https://github.com/Aethersailor/Custom_OpenClash_Rules
+# REPO: https://github.com/AzurePath749/Custom_OpenClash_Rules
 # Steam 下载 CDN 地址规则
 # Steam 下载节点 CDN 地址
 # skipped (CIDR): IP-CIDR,103.10.124.0/23,no-resolve

@@ -48,7 +48,7 @@
 # Online Judge System / add by Telegram user: More / Date: 2025-10-01 22:48:59
 # PR 至 felixonmars/dnsmasq-china-list
 # PR 至 v2fly/domain-list-community.
-# REPO: https://github.com/Aethersailor/Custom_OpenClash_Rules
+# REPO: https://github.com/AzurePath749/Custom_OpenClash_Rules
 # Server酱
 # Server酱³ · 极简推送服务 / add by Telegram user: 雪菜 / Date: 2025-10-20 18:34:08
 # SyServer / add by Telegram user: 嘿嘿 / Date: 2026-04-21 20:36:46
@@ -256,7 +256,7 @@
 # fnOS
 # girigirilove在线追番网站 / add by Telegram user: 真怪誕呀 / Date: 2025-08-23 17:26:28
 # hoyoverse.com
-# https://github.com/Aethersailor/Custom_OpenClash_Rules/issues/355
+# https://github.com/AzurePath749/Custom_OpenClash_Rules/issues/355
 # iOS旧版App服务 / add by Telegram user: 雪菜 / Date: 2025-12-27 11:39:43
 # ios 固件下载
 # iptv源 / add by Telegram user: sanligu / Date: 2025-09-11 19:15:47

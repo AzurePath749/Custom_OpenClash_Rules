@@ -8,7 +8,7 @@ RAW_FILE_PREFIX="https://testingcf.jsdelivr.net/gh/vernesong/OpenClash@refs/head
 clear
 echo "##########################################################"
 echo "#                Custom_OpenClash_Rules                  #"
-echo "# https://github.com/Aethersailor/Custom_OpenClash_Rules #"
+echo "# https://github.com/AzurePath749/Custom_OpenClash_Rules #"
 echo "##########################################################"
 echo
 sleep 1

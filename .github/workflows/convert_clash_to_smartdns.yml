@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       TARGET_BRANCH: ${{ inputs.branch != '' && inputs.branch || github.ref_name }}
-      UPSTREAM_REPO: "Aethersailor/Custom_OpenClash_Rules"
+      UPSTREAM_REPO: "AzurePath749/Custom_OpenClash_Rules"
       UPSTREAM_BRANCH: "main"
     steps:
       # 1️⃣ 检出仓库

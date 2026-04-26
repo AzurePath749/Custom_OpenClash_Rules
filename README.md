@@ -1,9 +1,9 @@
 <h1 align="center">🚀 OpenClash 保姆级设置方案<br>⠀⠀&<br>🛡️ 全分组防泄漏订阅转换规则</h1>
 
 <p align="center">
-	<img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/Aethersailor/Custom_OpenClash_Rules?style=flat">
-	<img alt="GitHub contributors" src="https://img.shields.io/github/contributors/Aethersailor/Custom_OpenClash_Rules?style=flat">
-	<img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/t/Aethersailor/Custom_OpenClash_Rules?style=flat">
+	<img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/AzurePath749/Custom_OpenClash_Rules?style=flat">
+	<img alt="GitHub contributors" src="https://img.shields.io/github/contributors/AzurePath749/Custom_OpenClash_Rules?style=flat">
+	<img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/t/AzurePath749/Custom_OpenClash_Rules?style=flat">
 	<img alt="Website" src="https://img.shields.io/website?url=https%3A%2F%2Fapi.asailor.org%2Fversion&up_message=online&down_message=offline&style=flat&label=backend">
 	<a href="https://t.me/custom_openclash_rules">
 		<img src="http://img.shields.io/badge/dynamic/json?style=flat&label=channel&logo=telegram&query=$.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dtelegram%26queryKey%3Dcustom_openclash_rules" alt="Telegram">
@@ -41,7 +41,7 @@
 
 > 🧩 **彻底告别手搓配置和多个插件套娃的繁琐设置方法，保证零基础小白也能轻松看懂。**
 
-按照本项目的 [Wiki](https://github.com/Aethersailor/Custom_OpenClash_Rules/wiki) 中的设置方案，搭配本项目的[订阅转换模板](https://raw.githubusercontent.com/Aethersailor/Custom_OpenClash_Rules/main/cfg/Custom_Clash.ini)，花费数分钟对 OpenClash 进行设置，无需套娃其他工具，仅依靠 OpenClash 自身即可实现快速、无污染、无泄漏的 DNS 解析以及完善多样的分流功能，同时配合 Dnsmasq 可实现无需第三方插件的广告拦截，并且完美兼容 IPv6。
+按照本项目的 [Wiki](https://github.com/AzurePath749/Custom_OpenClash_Rules/wiki) 中的设置方案，搭配本项目的[订阅转换模板](https://raw.githubusercontent.com/AzurePath749/Custom_OpenClash_Rules/main/cfg/Custom_Clash.ini)，花费数分钟对 OpenClash 进行设置，无需套娃其他工具，仅依靠 OpenClash 自身即可实现快速、无污染、无泄漏的 DNS 解析以及完善多样的分流功能，同时配合 Dnsmasq 可实现无需第三方插件的广告拦截，并且完美兼容 IPv6。
 
 同时也提供了使用 OpenClash 远程覆写功能实现的一键设置文件。
 
@@ -82,7 +82,7 @@
 
 本项目的订阅转换模板是参考 [ACL4SSR](https://github.com/ACL4SSR/ACL4SSR/tree/master) 等规则的订阅模板进行了魔改和完善而来，分流数据基于 GeoSite。
 
-**按照本项目 [Wiki](https://github.com/Aethersailor/Custom_OpenClash_Rules/wiki) 中的设置方案，配合本项目的订阅转换模板对 OpenClash 进行配置，即可实现以下特性，更优雅的使用你的 OpenClash：**
+**按照本项目 [Wiki](https://github.com/AzurePath749/Custom_OpenClash_Rules/wiki) 中的设置方案，配合本项目的订阅转换模板对 OpenClash 进行配置，即可实现以下特性，更优雅的使用你的 OpenClash：**
 
 - 🚀 **优化的 DNS 设置，闪电般的国内访问速度。**  
 > 国内域名采用运营商 DNS 解析，域名和 IP 均绕过 OpenClash 内核并返回真实 IP，让 OpenClash 对国内访问的影响降低到几乎为零。
@@ -119,7 +119,7 @@
 > 
 > **本项目依赖 OpenClash 的"绕过中国大陆"功能实现效果。**
 
-准备好你的订阅链接，然后按照本项目 Wiki 中的对应部分对 OpenClash 进行设置：[OpenClash-设置方案](https://github.com/Aethersailor/Custom_OpenClash_Rules/wiki/OpenClash-设置方案)
+准备好你的订阅链接，然后按照本项目 Wiki 中的对应部分对 OpenClash 进行设置：[OpenClash-设置方案](https://github.com/AzurePath749/Custom_OpenClash_Rules/wiki/OpenClash-设置方案)
 
 方案中已包括了本项目订阅转换模板的使用方法，根据描述，自行选择需要使用的规则模板即可。
 
@@ -137,7 +137,7 @@
 
 > 由于本项目为自用目的，且个人时间有限，只能随缘更新，因此不提供个性化修改服务。
 
-具体个性化实现方式，请参考 Wiki 中的对应章节：[个性化需求](https://github.com/Aethersailor/Custom_OpenClash_Rules/wiki/%E5%85%B6%E4%BB%96%E8%AF%B4%E6%98%8E#%E5%85%B3%E4%BA%8E%E4%B8%AA%E6%80%A7%E5%8C%96%E9%9C%80%E6%B1%82)
+具体个性化实现方式，请参考 Wiki 中的对应章节：[个性化需求](https://github.com/AzurePath749/Custom_OpenClash_Rules/wiki/%E5%85%B6%E4%BB%96%E8%AF%B4%E6%98%8E#%E5%85%B3%E4%BA%8E%E4%B8%AA%E6%80%A7%E5%8C%96%E9%9C%80%E6%B1%82)
 
 ### 🈸 关于冷门国内域名收录问题
 
@@ -159,7 +159,7 @@
 
 ~~本项目借助 OpenClash 的"开发者选项"功能，实现不依赖第三方插件的广告过滤功能。~~
 
-~~具体设置见 Wiki 中的方案：[广告拦截设置方案](https://github.com/Aethersailor/Custom_OpenClash_Rules/wiki/%E6%97%A0%E6%8F%92%E4%BB%B6%E5%B9%BF%E5%91%8A%E6%8B%A6%E6%88%AA%E5%8A%9F%E8%83%BD%E8%AE%BE%E7%BD%AE%E6%96%B9%E6%A1%88)~~
+~~具体设置见 Wiki 中的方案：[广告拦截设置方案](https://github.com/AzurePath749/Custom_OpenClash_Rules/wiki/%E6%97%A0%E6%8F%92%E4%BB%B6%E5%B9%BF%E5%91%8A%E6%8B%A6%E6%88%AA%E5%8A%9F%E8%83%BD%E8%AE%BE%E7%BD%AE%E6%96%B9%E6%A1%88)~~
 
 ~~内含一键设置脚本和手动添加两种方式。~~
 
@@ -171,7 +171,7 @@
 
 通过正确设置 OpenWrt 的 IPv6 功能以及 OpenClash，即可实现 OpenWrt 主路由下的 IPv6 和 OpenClash 的完美兼容。在实现 IPv6 国内外分流代理的同时，还能完美通过 IPv6-Test 的国内和国外镜像站点测试。
 
-OpenWrt 的 IPv6 设置方案见本项目的 Wiki：[OpenWrt-IPv6-设置方案](https://github.com/Aethersailor/Custom_OpenClash_Rules/wiki/OpenWrt-IPv6-设置方案)
+OpenWrt 的 IPv6 设置方案见本项目的 Wiki：[OpenWrt-IPv6-设置方案](https://github.com/AzurePath749/Custom_OpenClash_Rules/wiki/OpenWrt-IPv6-设置方案)
 
 ---
 
@@ -193,7 +193,7 @@ https://api.asailor.org/sub
 
 ### ❓ 不能上网？分流不正常？某些网站打不开？OpenClash 不能启动？
 
-出现故障请参考 [Wiki 中的故障排除部分](https://github.com/Aethersailor/Custom_OpenClash_Rules/wiki/%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4)，内含常见问题的解决方法。
+出现故障请参考 [Wiki 中的故障排除部分](https://github.com/AzurePath749/Custom_OpenClash_Rules/wiki/%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4)，内含常见问题的解决方法。
 
 🛠️ 项目维护者可以确定，本项目的设置方案完美无瑕，建议不要从本项目的内容上找原因，以免浪费时间。某些特殊问题如 Google Play 更新问题涉及诸多原因，和模板本身并无关系。
 
@@ -252,8 +252,8 @@ Traffic、GB、Expire
 
 ## 🤝 贡献者
 
-<a href="https://github.com/Aethersailor/Custom_OpenClash_Rules/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Aethersailor/Custom_OpenClash_Rules" />
+<a href="https://github.com/AzurePath749/Custom_OpenClash_Rules/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=AzurePath749/Custom_OpenClash_Rules" />
 </a>
 
 ---
@@ -316,11 +316,11 @@ Traffic、GB、Expire
 
 ## ⭐ 记录
 
-<a href="https://www.star-history.com/#Aethersailor/Custom_OpenClash_Rules&Date">
+<a href="https://www.star-history.com/#AzurePath749/Custom_OpenClash_Rules&Date">
  <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=Aethersailor/Custom_OpenClash_Rules&type=Date&theme=dark" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=Aethersailor/Custom_OpenClash_Rules&type=Date" />
-   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=Aethersailor/Custom_OpenClash_Rules&type=Date" />
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=AzurePath749/Custom_OpenClash_Rules&type=Date&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=AzurePath749/Custom_OpenClash_Rules&type=Date" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=AzurePath749/Custom_OpenClash_Rules&type=Date" />
  </picture>
 </a>
 
