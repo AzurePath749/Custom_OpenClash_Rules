@@ -1,0 +1,206 @@
+name: Convert ShellCrash fake_ip_filter to MRS format
+
+on:
+  schedule:
+    # 每天 UTC 时间 02:00 自动运行（北京时间 10:00）
+    - cron: '0 2 * * *'
+  workflow_dispatch:  # 支持手动触发
+  workflow_call:
+    inputs:
+      branch:
+        required: false
+        type: string
+        default: ''
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+    env:
+      TARGET_BRANCH: ${{ inputs.branch != '' && inputs.branch || github.ref_name }}
+    steps:
+      # 1️⃣ 检出仓库
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ env.TARGET_BRANCH }}
+          fetch-depth: 0
+
+      # 2️⃣ 缓存 mihomo 二进制文件
+      - name: Cache mihomo binary
+        id: cache-mihomo
+        uses: actions/cache@v4
+        with:
+          path: |
+            mihomo
+            mihomo-version.txt
+          key: mihomo-${{ runner.os }}-${{ hashFiles('mihomo-version.txt') }}
+          restore-keys: |
+            mihomo-${{ runner.os }}-
+
+      # 3️⃣ 下载并安装 mihomo（仅在缓存未命中时）
+      - name: Download and setup mihomo
+        if: steps.cache-mihomo.outputs.cache-hit != 'true'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "📦 Fetching latest mihomo release..."
+          
+          # 使用 jq 解析 JSON
+          LATEST_VERSION=$(curl -s -H "Authorization: token $GITHUB_TOKEN" \
+            https://api.github.com/repos/MetaCubeX/mihomo/releases/latest | \
+            jq -r '.tag_name // empty')
+          
+          # 检查版本号是否获取成功
+          if [ -z "$LATEST_VERSION" ]; then
+            echo "⚠️ Failed to fetch latest version, using fallback version"
+            LATEST_VERSION="v1.18.10"
+          fi
+          
+          echo "$LATEST_VERSION" > mihomo-version.txt
+          echo "✅ Latest version: $LATEST_VERSION"
+          
+          echo "⬇️ Downloading mihomo for Linux amd64..."
+          wget -q https://github.com/MetaCubeX/mihomo/releases/download/${LATEST_VERSION}/mihomo-linux-amd64-${LATEST_VERSION}.gz
+          
+          if [ $? -ne 0 ]; then
+            echo "❌ Download failed"
+            exit 1
+          fi
+          
+          echo "📦 Extracting..."
+          gunzip mihomo-linux-amd64-${LATEST_VERSION}.gz
+          mv mihomo-linux-amd64-${LATEST_VERSION} mihomo
+          chmod +x mihomo
+          
+          echo "✅ mihomo is ready ($(./mihomo -v 2>&1 | head -n1 || echo 'version check skipped'))"
+
+      - name: Verify mihomo installation
+        run: |
+          if [ -f "mihomo" ]; then
+            chmod +x mihomo
+            echo "✅ Using cached mihomo: $(./mihomo -v 2>&1 | head -n1 || echo 'version unknown')"
+            if [ -f "mihomo-version.txt" ]; then
+              echo "📌 Version: $(cat mihomo-version.txt)"
+            fi
+          else
+            echo "❌ mihomo binary not found"
+            exit 1
+          fi
+
+      # 4️⃣ 下载 ShellCrash fake_ip_filter.list
+      - name: Download fake_ip_filter.list
+        run: |
+          echo "📥 Downloading fake_ip_filter.list from ShellCrash..."
+          
+          mkdir -p shellcrash_temp
+          
+          wget -q -O shellcrash_temp/fake_ip_filter.list https://github.com/juewuy/ShellCrash/raw/refs/heads/dev/public/fake_ip_filter.list
+          
+          if [ $? -eq 0 ] && [ -f shellcrash_temp/fake_ip_filter.list ]; then
+            echo "✅ fake_ip_filter.list downloaded successfully"
+            echo ""
+            echo "📊 File info:"
+            ls -lh shellcrash_temp/fake_ip_filter.list
+            echo ""
+            echo "📝 First 10 lines:"
+            head -n 10 shellcrash_temp/fake_ip_filter.list
+          else
+            echo "❌ Failed to download fake_ip_filter.list"
+            exit 1
+          fi
+
+      # 5️⃣ 转换 list 格式为 YAML 格式
+      - name: Convert list to YAML format
+        run: |
+          echo "🔄 Converting list format to YAML format..."
+          
+          input_file="shellcrash_temp/fake_ip_filter.list"
+          output_file="shellcrash_temp/fake_ip_filter.yaml"
+          
+          # 创建 YAML 文件头
+          echo "payload:" > "$output_file"
+          
+          # 读取 list 文件,跳过空行和注释,转换为 YAML 格式
+          while IFS= read -r line; do
+            # 跳过空行
+            [ -z "$line" ] && continue
+            
+            # 跳过注释行(以 # 或 ! 开头)
+            [[ "$line" =~ ^[#!] ]] && continue
+            
+            # 去除行首尾空格
+            line=$(echo "$line" | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
+            
+            # 跳过处理后的空行
+            [ -z "$line" ] && continue
+            
+            # 添加到 YAML 文件
+            echo "  - '$line'" >> "$output_file"
+          done < "$input_file"
+          
+          echo "✅ YAML conversion complete"
+          echo ""
+          echo "📊 YAML file info:"
+          ls -lh "$output_file"
+          echo ""
+          echo "📝 First 15 lines of YAML:"
+          head -n 15 "$output_file"
+
+      # 6️⃣ 转换 YAML 为 MRS 格式
+      - name: Convert YAML to MRS format
+        run: |
+          echo "🔄 Converting YAML to MRS format..."
+          
+          mkdir -p rule_converted_mrs
+          
+          input_file="shellcrash_temp/fake_ip_filter.yaml"
+          output_file="rule_converted_mrs/OpenClash_Default_fake_ip_filter.mrs"
+          
+          echo "📄 Converting: fake_ip_filter.yaml"
+          echo "   → Output: $output_file"
+          
+          # 使用 mihomo 转换为 MRS 格式
+          if ./mihomo convert-ruleset domain yaml "$input_file" "$output_file" 2>&1; then
+            if [ -f "$output_file" ]; then
+              file_size=$(ls -lh "$output_file" | awk '{print $5}')
+              echo "   ✅ Success (size: $file_size)"
+              
+              echo ""
+              echo "📋 Generated MRS file:"
+              ls -lh rule_converted_mrs/
+            else
+              echo "   ❌ Failed: output file not created"
+              exit 1
+            fi
+          else
+            echo "   ❌ Failed: conversion error"
+            exit 1
+          fi
+          
+          # 清理临时文件
+          rm -rf shellcrash_temp
+
+      # 7️⃣ 提交并推送结果
+      - name: Commit and push converted results
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add rule_converted_mrs
+          
+          # 检查是否有变化
+          if git diff --staged --quiet; then
+            echo "📝 No changes detected, skipping commit"
+          else
+            git commit -m "Auto update ShellCrash fake_ip_filter MRS format [$(date +'%Y-%m-%d %H:%M:%S UTC')]"
+            
+            echo "🔄 Pulling latest changes from remote before push..."
+            git pull --rebase origin "${TARGET_BRANCH}" || true
+            
+            echo "🚀 Pushing changes to ${TARGET_BRANCH}..."
+            git push origin HEAD:"${TARGET_BRANCH}" || {
+              echo "❌ Push failed after rebase attempt, retrying with force-with-lease..."
+              git push origin HEAD:"${TARGET_BRANCH}" --force-with-lease
+            }
+            
+            echo "✅ Changes pushed successfully!"
+          fi
