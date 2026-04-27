@@ -1,5 +1,6 @@
 
 # AUTHOR: Aethersailor
+# Cloudflare DNS
 # EA Desktop 云同步
 # Google 相关
 # GooglePlay 相关
@@ -10,6 +11,8 @@
 # PS5 STUN
 # PT 相关
 # REPO: https://github.com/AzurePath749/Custom_OpenClash_Rules
+# skipped (CIDR): IP-CIDR,1.0.0.1/32,no-resolve
+# skipped (CIDR): IP-CIDR,1.1.1.1/32,no-resolve
 # 其他
 # 嵌入式相关
 # 强制代理列表，来自个人收集
@@ -20,7 +23,6 @@ cloudsync-prod.s3.us-east-1.amazonaws.com
 dmhy.org
 googleapis.cn
 hoyolab.com
-hoyoverse.com
 ip.sb
 ipify.org
 mtalk.google.com
